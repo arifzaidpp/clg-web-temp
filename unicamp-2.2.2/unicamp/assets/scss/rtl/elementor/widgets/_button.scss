@@ -1,0 +1,29 @@
+.rtl {
+	.tm-button {
+		&.icon-left {
+			.button-icon {
+				margin-right: 0 !important;
+				margin-left: 14px;
+			}
+
+			&.tm-button-xs {
+				.button-icon {
+					margin-left: 7px;
+				}
+			}
+		}
+
+		&.icon-right {
+			.button-icon {
+				margin-left: 0 !important;
+				margin-right: 14px;
+			}
+
+			&.tm-button-xs {
+				.button-icon {
+					margin-right: 7px;
+				}
+			}
+		}
+	}
+}

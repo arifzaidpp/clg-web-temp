@@ -1,0 +1,1 @@
+jQuery(document).ready(function(t){"use strict";t("#course-sorting-select").on("change",function(e){var n=t(this).find(":selected").data("url");window.location=n})});

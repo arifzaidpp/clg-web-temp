@@ -1,0 +1,39 @@
+.desktop-menu {
+
+	.toggle-sub-menu:before {
+		margin-top: 0;
+	}
+
+	.sm-simple {
+		.children {
+			a {
+				.toggle-sub-menu {
+					left: 0;
+					right: auto;
+
+					&:before {
+						left: 30px;
+						right: auto;
+						content: '\f053';
+					}
+				}
+			}
+		}
+
+		&:not(.sm-vertical) {
+			> li {
+				> .children {
+					&:before,
+					&:after {
+						left: auto;
+						right: 42px;
+					}
+
+					&:before {
+						transform: translateX(1px);
+					}
+				}
+			}
+		}
+	}
+}

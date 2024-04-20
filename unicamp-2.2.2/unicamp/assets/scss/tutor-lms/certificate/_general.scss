@@ -1,0 +1,202 @@
+.tutor-download-certificate {
+	padding: 0 0 100px !important;
+}
+
+.tutor-dc-button-group {
+	position: static !important;
+	display: flex;
+	align-items: center;
+	margin: 20px -10px 0;
+
+	> div {
+		padding: 0 10px;
+	}
+
+	.tooltip-wrap .tooltip-txt {
+		padding: 0 15px;
+	}
+}
+
+body.course-certificate-page {
+	background: none;
+
+	.tutor-certificate-demo {
+		padding: 0 0 20px;
+	}
+
+	.tutor-certificate-container {
+		align-items: center;
+		margin: 0 -15px 80px;
+		font-family: inherit !important;
+
+		> div {
+			margin: 0;
+			padding: 0 15px;
+		}
+
+		.tutor-dropdown {
+			margin: 0 0 20px;
+		}
+	}
+
+	.tutor-certificate-img-container {
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%;
+		padding-right: 45px !important;
+
+		img {
+			border: 0;
+			padding: 0;
+			border-radius: 10px;
+			background: none;
+			box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+		}
+	}
+
+	.tutor-certificate-sidebar {
+		flex: 0 0 33.333336%;
+		max-width: 33.333336%;
+	}
+
+	.tutor-certificate-sidebar-btn-container {
+		> div {
+			margin-bottom: 20px;
+		}
+
+		.download-btn {
+			height: 60px;
+			line-height: 58px;
+			text-transform: none;
+			justify-content: center;
+
+			i {
+				@extend %FontAwesomeRegularImportant;
+				font-size: 15px;
+				border: 0;
+				padding: 0;
+				position: static;
+				text-align: left;
+				margin: 0 0 0 10px;
+
+				&:before {
+					content: '\f019';
+				}
+			}
+		}
+	}
+
+	.tutor-certificate-btn-group {
+		margin: 0 -10px !important;
+
+		.tutor-copy-link,
+		.tutor-share-btn {
+			flex: 0 0 calc(50% - 20px);
+			max-width: calc(50% - 20px);
+			margin: 0 10px;
+			width: auto;
+		}
+
+		button {
+			background: #f5f5f5;
+			border-color: #f5f5f5;
+			color: $primary-color;
+			text-transform: none;
+			padding: 0 15px;
+		}
+	}
+
+	.tutor-certificate-sidebar-course {
+		margin: 34px 0 0;
+
+		h3 {
+			font-size: 24px;
+			line-height: 1.5;
+			color: $heading-color;
+			font-weight: $heading-font-weight;
+		}
+
+		h1.course-name {
+			font-size: 16px;
+			line-height: 28px;
+			margin-bottom: 12px;
+
+			a {
+				color: inherit;
+
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+
+	.tutor-course-loop-level {
+		font-size: 13px;
+		line-height: 22px;
+		font-weight: $heading-font-weight;
+		color: #6cbd7e;
+		background: #e9f5ec;
+		padding: 0 8px;
+	}
+
+	.tutor-star-rating-group {
+		margin: 8px 0 0;
+	}
+
+	.tutor-sidebar-course-author {
+		img {
+			width: 28px;
+			height: 28px;
+			margin: 0 9px 0 0;
+		}
+
+		span {
+			line-height: 28px;
+		}
+
+		a {
+			color: $primary-color;
+
+			strong {
+				font-weight: 400;
+			}
+		}
+	}
+
+	.tutor-dropdown-content {
+		background: #fff;
+		border-radius: 5px;
+
+		.tutor-social-share-wrap {
+			margin: 0;
+
+			.tutor_share {
+				line-height: 40px;
+				font-size: 16px;
+				color: $text-lighten-color;
+
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.theme-unicamp {
+		.tutor-certificate-container {
+			display: block;
+
+			> div {
+				width: 100%;
+				max-width: 100% !important;
+				padding: 0 15px !important;
+			}
+		}
+
+		.tutor-certificate-img-container {
+			margin: 0 0 30px !important;
+		}
+	}
+}

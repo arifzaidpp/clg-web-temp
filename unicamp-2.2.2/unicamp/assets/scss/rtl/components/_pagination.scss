@@ -1,0 +1,14 @@
+.rtl {
+	.comment-nav-links,
+	.page-pagination,
+	.page-numbers {
+		li {
+			.next,
+			.prev {
+				span {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+}

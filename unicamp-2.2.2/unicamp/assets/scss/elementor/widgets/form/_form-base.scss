@@ -1,0 +1,29 @@
+.unicamp-button-align-start {
+	.form-submit {
+		justify-content: flex-start;
+	}
+}
+
+.unicamp-button-align-center {
+	.form-submit {
+		justify-content: center;
+	}
+}
+
+.unicamp-button-align-end {
+	.form-submit {
+		justify-content: flex-end;
+	}
+}
+
+.unicamp-button-align-stretch {
+	.form-submit {
+		input[type='submit'],
+		button {
+			text-align: center;
+			-webkit-flex-basis: 100%;
+			-ms-flex-preferred-size: 100%;
+			flex-basis: 100%;
+		}
+	}
+}

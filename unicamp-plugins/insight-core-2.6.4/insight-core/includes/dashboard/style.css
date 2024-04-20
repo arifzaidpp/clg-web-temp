@@ -1,0 +1,248 @@
+.tm-components-recommended-carousel {
+	height: 0;
+	overflow: hidden;
+}
+
+.tm-components-recommended-carousel.slick-slider {
+	height: auto;
+	overflow: auto;
+}
+
+.tm-components-recommended-carousel .item {
+	display: block;
+	width: 100%;
+	position: relative;
+	outline: none;
+}
+
+.tm-components-recommended-carousel .item .info {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 40px;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgba(255, 255, 255, .8);
+	color: #222;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.tm-components-recommended-carousel .slick-slider {
+	position: relative;
+}
+
+.tm-components-recommended-carousel .slick-arrow {
+	position: absolute;
+	display: block;
+	bottom: 4px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	overflow: hidden;
+	margin-top: -20px;
+	z-index: 999;
+	padding: 0;
+	font-size: 0;
+	border: none;
+	background-color: transparent;
+	color: #222;
+	outline: none;
+	cursor: pointer;
+	transition: all .35s ease-in-out;
+}
+
+.tm-components-recommended-carousel .slick-arrow:before {
+	font-size: 16px;
+	font-family: Dashicons;
+}
+
+.tm-components-recommended-carousel .slick-prev {
+	left: 12px;
+}
+
+.tm-components-recommended-carousel .slick-prev:before {
+	content: '\f141';
+}
+
+.tm-components-recommended-carousel .slick-next {
+	left: auto;
+	right: 12px;
+}
+
+.tm-components-recommended-carousel .slick-next:before {
+	content: '\f139';
+}
+
+.tm-components-recommended-carousel img {
+	width: 100%;
+	height: auto;
+}
+
+/* Featured themes banner  */
+.tm-featured-themes-banner .slick-slider {
+	height: auto;
+	overflow: auto;
+	position: relative;
+}
+
+.tm-featured-themes-banner .slick-arrow {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: auto;
+	width: 38px;
+	height: 100%;
+	line-height: 40px;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 0;
+	z-index: 999;
+	padding: 0;
+	font-size: 0;
+	border: none;
+	background-color: transparent;
+	color: #222;
+	outline: none;
+	cursor: pointer;
+	transition: all .35s ease-in-out;
+}
+
+.tm-featured-themes-banner .slick-arrow:before {
+	font-size: 16px;
+	font-family: Dashicons;
+}
+
+.tm-featured-themes-banner .slick-arrow:hover {
+	background: rgba(0,0,0,0.02);
+}
+
+.tm-featured-themes-banner .slick-arrow:before {
+	font-size: 22px;
+}
+
+.tm-featured-themes-banner .slick-next {
+	right: 0;
+}
+
+.tm-featured-themes-banner .slick-next:before {
+	content: '\f345';
+}
+
+.tm-featured-themes-banner .slick-prev {
+	left: 0;
+}
+
+.tm-featured-themes-banner .slick-prev:before {
+	content: '\f341';
+}
+
+.tm-featured-themes-banner,
+.tm-featured-themes-banner * {
+	box-sizing: border-box;
+}
+
+.tm-featured-themes-banner {
+	padding: 38px 0 30px !important;
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	position: relative;
+}
+
+.tm-featured-themes-banner__wrapper {
+	padding: 0 38px;
+}
+
+.tm-featured-themes-banner .item__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tm-featured-themes-banner .item__image {
+	flex: 0 0 40%;
+	max-width: 40%;
+}
+
+.tm-featured-themes-banner .item__image img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.tm-featured-themes-banner .item__content {
+	flex: 0 0 60%;
+	max-width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 30px;
+}
+
+.tm-featured-themes-banner .item__title {
+	font-size: 24px;
+	margin: 0;
+	line-height: 1.3;
+}
+
+.tm-featured-themes-banner .item__title a {
+	text-decoration: none;
+	color: #000;
+	outline: none;
+}
+
+.tm-featured-themes-banner .item__title a:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.tm-featured-themes-banner .item__description {
+	font-size: 14px;
+	margin: 20px 0 0 0;
+}
+
+.tm-featured-themes-banner .buttons {
+	margin-top: 25px;
+}
+
+.tm-featured-themes-banner .button {
+	height: 42px;
+	line-height: 42px;
+	display: inline-block;
+	padding: 0 20px;
+	margin: 0;
+	background: #5b94d9;
+	border: none;
+	color: #fff;
+	box-shadow: none;
+	font-weight: 700;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+}
+
+.tm-featured-themes-banner .button + .button {
+	margin-left: 10px;
+}
+
+.tm-featured-themes-banner .button:hover {
+	color: #fff;
+	background: #74a336;
+}
+
+@media screen and (max-width: 767px) {
+	.tm-featured-themes-banner .item__image {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.tm-featured-themes-banner .item__content {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 20px 0 0;
+	}
+}

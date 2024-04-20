@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <title>Family Tree</title>
+    <style>
+        body {
+            background: #f7f7f7;
+
+        }
+
+        .bg-wrap {
+            position: relative;
+        }
+
+        .bg-wrap:before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            background-image: url('./pp-logo.png');
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: contain;
+        }
+
+        .tree {
+            margin: 30px;
+            background-color: #000000;
+            border: 1px solid black;
+            border-radius: 2em;
+            opacity: 0.7;
+            padding-bottom: 20px;
+        }
+
+
+        .tree * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tree ul {
+            padding-top: 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tree li {
+            list-style-type: none;
+            width: 200px;
+            text-align: center;
+            position: relative;
+            padding: 20px 5px;
+        }
+
+        /* Connectors */
+        .tree li::before,
+        .tree li::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 20px;
+            border-top: 2px solid #ccc;
+        }
+
+        .tree li::before {
+            left: 0;
+        }
+
+        .tree li::after {
+            right: 0;
+        }
+
+        .tree li:only-child::after,
+        .tree li:only-child::before {
+            display: none;
+        }
+
+        .tree li:only-child {
+            padding-top: 0;
+        }
+
+        .tree li:first-child::before {
+            border-right: 2px solid #ccc;
+        }
+
+        .tree li:last-child::after {
+            border-left: 2px solid #ccc;
+        }
+
+        /* Additional styles for connecting children */
+        .tree li:not(:only-child) ul::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border-top: 2px solid #ccc;
+            width: 0;
+            height: 20px;
+        }
+
+        .tree li:not(:only-child) ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tree li:not(:only-child)>ul>li {
+            width: 50%;
+        }
+
+        /* More styles for connectors and responsive design */
+
+        .tree ul li {
+            width: 230px !important;
+        }
+
+        .tree ul {
+            padding-top: 20px;
+            position: relative;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+        }
+
+        .tree li {
+            float: left;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+        }
+
+        .tree li::before,
+        .tree li::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 1px solid #ccc;
+            width: 50%;
+            height: 20px;
+        }
+
+        .tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 1px solid #ccc;
+        }
+
+        .tree li:first-child::before,
+        .tree li:last-child::after {
+            border: 0 none;
+        }
+
+        .tree li:last-child::before {
+            border-right: 1px solid #ccc;
+            border-radius: 0 5px 0 0;
+            -webkit-border-radius: 0 5px 0 0;
+            -moz-border-radius: 0 5px 0 0;
+        }
+
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+            -webkit-border-radius: 5px 0 0 0;
+            -moz-border-radius: 5px 0 0 0;
+        }
+
+        .tree ul ul::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border-left: 1px solid #ccc;
+            width: 0;
+            height: 20px;
+        }
+
+        .tree li a {
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: arial, verdana, tahoma;
+            font-size: 11px;
+            display: inline-block;
+
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+        }
+
+        .tree li a:hover,
+        .tree li a:hover+ul li a {
+            background: #c8e4f8;
+            color: #000;
+            border: 1px solid #94a0b4;
+        }
+
+        .tree li a:hover+ul li::after,
+        .tree li a:hover+ul li::before,
+        .tree li a:hover+ul::before,
+        .tree li a:hover+ul ul::before {
+            border-color: #94a0b4;
+        }
+
+        .tree li a img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+
+        .tree li a:hover+.wife {
+            background-color: #c8e4f8 !important;
+            color: #000;
+            border: 1px solid #94a0b4;
+        }
+
+        .family-title {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+            width: 70px;
+        }
+
+        .title-container {
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+        }
+
+        .title {
+            color: white;
+            font-family: "Arial", sans-serif;
+            font-size: 1.3em;
+            letter-spacing: 2px;
+            width: 18em;
+            position: relative;
+            display: inline-flex;
+        }
+
+        .lines {
+            border-top: 2px solid white;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .right,
+        .left {
+            display: inline-block;
+        }
+
+        .right {
+            width: 29vh;
+            margin-top: 15px;
+        }
+
+        .left {
+            width: 29vh;
+            margin-top: 15px;
+            margin-left: -1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-wrap">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-none d-md-flex col-md-1">
+                    <div class="col-md-6 family-title">
+                        <div class="title-container">
+                            <div class="lines right"></div>
+                            <p class="title"><strong>PALLIPARAMBAN FAMILY TREE</strong></p>
+                            <div class="lines left"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="tree">
+                        <ul>
+                            <li>
+                                <a href="#" class="husband"><img src="per.jpg"
+                                        alt="Adoracion" /><br /><strong>Adoracion</strong>
+                                    <p>Husband</p>
+                                </a>
+                                <a href="#" class="wife"><img src="per.jpg"
+                                        alt="Adoracion" /><br /><strong>Adoracion</strong>
+                                    <p>wife</p>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="per.jpg" alt="Margaret" /><br /><strong>Adoracion</strong>
+                                            <p>Husband</p>
+                                        </a>
+                                        <a href="#" class="wife"><img src="per.jpg"
+                                                alt="Margaret" /><br /><strong>Adoracion</strong>
+                                            <p>wife</p>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="per.jpg" alt="David" /><br />David</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="per.jpg" alt="Hana" /><br />Hana</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="per.jpg" alt="Margaret" /><br /><strong>Adoracion</strong>
+                                            <p>Husband</p>
+                                        </a>
+                                        <a href="#" class="wife"><img src="per.jpg"
+                                                alt="Anastasia" /><br /><strong>Adoracion</strong>
+                                            <p>wife</p>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="per.jpg" alt="Sammy" /><br />Sammy</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="per.jpg" alt="Margaret" /><br /><strong>Adoracion</strong>
+                                            <p>Husband</p>
+                                        </a>
+                                        <a href="#" class="wife"><img src="per.jpg"
+                                                alt="Margaret" /><br /><strong>Adoracion</strong>
+                                            <p>wife</p>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="per.jpg" alt="David" /><br />David</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="per.jpg" alt="Hana" /><br />Hana</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

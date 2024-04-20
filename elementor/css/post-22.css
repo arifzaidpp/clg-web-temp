@@ -1,0 +1,45 @@
+.elementor-kit-22 {
+  --e-global-color-primary: #ae152d;
+  --e-global-color-secondary: #111111;
+  --e-global-color-text: #696969;
+  --e-global-color-accent: #ae152d;
+  --e-global-color-874cba6: #ae152d;
+  --e-global-typography-primary-font-weight: 700;
+  --e-global-typography-secondary-font-weight: 500;
+  --e-global-typography-text-font-weight: 400;
+  --e-global-typography-accent-font-weight: 500;
+}
+.elementor-section.elementor-section-boxed > .elementor-container {
+  max-width: 1510px;
+}
+.e-con {
+  --container-max-width: 1510px;
+}
+.elementor-widget:not(:last-child) {
+  margin-block-end: 0px;
+}
+.elementor-element {
+  --widgets-spacing: 0px 0px;
+}
+h1.entry-title {
+  display: var(--page-title-display);
+}
+.elementor-kit-22 e-page-transition {
+  background-color: #ffbc7d;
+}
+@media (max-width: 1024px) {
+  .elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 1024px;
+  }
+  .e-con {
+    --container-max-width: 1024px;
+  }
+}
+@media (max-width: 767px) {
+  .elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 767px;
+  }
+  .e-con {
+    --container-max-width: 767px;
+  }
+}

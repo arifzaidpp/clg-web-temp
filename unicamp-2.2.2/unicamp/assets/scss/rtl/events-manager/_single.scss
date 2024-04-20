@@ -1,0 +1,38 @@
+.single-tp_event {
+	.entry-meta {
+		.meta-icon {
+			margin: 0 0 0 5px;
+		}
+	}
+
+	.entry-event-info li .meta-value {
+		text-align: left;
+	}
+}
+
+.event_auth_form_field label {
+	text-align: right;
+	margin: 0 0 0 10px;
+}
+
+.event_auth_payment_methods {
+	text-align: right;
+}
+
+.single-tp_event {
+	.event-location-details {
+		float: left;
+	}
+
+	.entry-booking-form-bar {
+		float: left;
+	}
+
+	&.single-event-style-01 {
+		.entry-header-right {
+			.entry-countdown {
+				text-align: left;
+			}
+		}
+	}
+}

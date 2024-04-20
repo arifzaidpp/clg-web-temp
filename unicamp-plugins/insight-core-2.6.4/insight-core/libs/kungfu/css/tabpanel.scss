@@ -1,0 +1,148 @@
+@import 'mixin';
+@import 'extend';
+@import 'variables';
+
+.postbox {
+    .inside {
+        > .#{$namespace}-tabpanel {
+            margin: -6px -12px -12px;
+            border-left: 0;
+            border-right: 0;
+        }
+    }
+}
+
+.block-editor-page .postbox .inside > .kungfu-tabpanel {
+    margin: -6px -14px -14px;
+}
+
+.block-editor-page .postbox {
+    margin: 10px 0;
+}
+
+.#{$namespace}-tabpanel {
+    margin-bottom: 20px;
+    &.#{$namespace}-tabpanel-vertical {
+        background: #fff url(#{$icons-path}bg-tabpanel.png) repeat-y -40px 0;
+        @extend %clearfix;
+        > .#{$namespace}-nav-tabs {
+            width: 200px;
+            float: left;
+            z-index: 1;
+            border-bottom: 1px solid $border-color;
+            margin-bottom: -1px;
+            li {
+                border-bottom: 1px solid $border-color;
+                border-right: 1px solid $border-color;
+                &:last-child {
+                    border-bottom: none;
+                }
+                &.active {
+                    border-right: #fcfcfc;
+                    margin-right: -1px;
+                    a {
+                        border-left: 5px solid $primary-color;
+                        margin-left: -1px;
+                    }
+                }
+            }
+        }
+        > .#{$namespace}-tab-content {
+            width: calc(100% - 200px);
+            border-left: 1px solid $border-color;
+            float: left;
+            margin-left: -1px;
+        }
+    }
+    &.#{$namespace}-tabpanel-horizontal {
+        > .#{$namespace}-nav-tabs {
+            background: $bg-color;
+            @extend %clearfix;
+            li {
+                display: inline-flex;
+                float: left;
+                border-right: 1px solid $border-color;
+                a {
+                    border-bottom: 1px solid $border-color;
+                }
+                &.active {
+                    a {
+                        border-bottom-color: #fcfcfc;
+                        border-top: 5px solid $primary-color;
+                        margin-top: -1px;
+                        padding: 6px 15px 10px 35px;
+                    }
+                }
+            }
+        }
+    }
+    > .#{$namespace}-nav-tabs {
+        margin: 0;
+        li {
+            margin-bottom: 0;
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 10px 15px 10px 35px;
+                background: $bg-color;
+                position: relative;
+                color: $title-color;
+                min-height: 38px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                &:focus {
+                    box-shadow: none;
+                }
+                &:hover {
+                    color: $primary-color;
+                    font-weight: 600;
+                }
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    font-size: 18px;
+                    @extend %translate-0-50p;
+                }
+            }
+            &.active {
+                a {
+                    color: $primary-color;
+                    background: #fff;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    > .#{$namespace}-tab-content {
+        background: #fff;
+    }
+    .tab {
+        display: none;
+        padding: 20px;
+        &.active {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .#{$namespace}-tabpanel {
+        &.#{$namespace}-tabpanel-vertical {
+            background-position: -200px 0;
+            > .#{$namespace}-nav-tabs {
+                width: 40px;
+                a {
+                    padding: 0;
+                }
+                .nav-tab-title {
+                    display: none;
+                }
+            }
+            > .#{$namespace}-tab-content {
+                width: calc(100% - 40px);
+            }
+        }
+    }
+}

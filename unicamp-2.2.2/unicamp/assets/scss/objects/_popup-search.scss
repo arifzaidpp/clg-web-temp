@@ -1,0 +1,73 @@
+.page-search-popup {
+	.admin-bar & {
+		top: 32px;
+		height: calc(100% - 32px);
+	}
+
+	.page-search-popup-content {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	.search-form {
+		position: relative;
+		color: #086ad8;
+		width: 1170px;
+		max-width: 90%;
+		margin: 0 auto;
+		transform: translate(0, 50px);
+		transition: all .5s ease-in-out, opacity .5s linear;
+		transition-delay: 0s;
+		opacity: 0;
+	}
+
+	.search-field {
+		font-size: 50px;
+		height: 100px;
+		background-color: transparent !important;
+		border: 0 solid $primary-color;
+		border-bottom-width: 3px;
+		border-radius: 0;
+		padding: 15px 50px 15px 0;
+		color: inherit;
+	}
+
+	.search-submit {
+		display: none;
+	}
+
+	&.open {
+		.search-form {
+			opacity: 1;
+			transform: none;
+			transition-delay: .6s;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(md) {
+	.page-search-popup {
+		.search-field {
+			font-size: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.page-search-popup {
+		.admin-bar & {
+			top: 46px;
+			height: calc(100% - 46px);
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.page-search-popup {
+		.admin-bar & {
+			top: 0;
+			height: 100%;
+		}
+	}
+}

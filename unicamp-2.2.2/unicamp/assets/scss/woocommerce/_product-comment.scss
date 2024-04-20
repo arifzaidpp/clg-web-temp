@@ -1,0 +1,82 @@
+.woocommerce-Reviews-title {
+	margin-bottom: 21px;
+}
+
+.single-product {
+	.comment-reply-title {
+		display: block;
+		margin-top: 23px;
+		margin-bottom: 28px;
+	}
+
+	.comment {
+		.product-comment-rating {
+			display: inline-block;
+			margin: 0 16px 0 0;
+		}
+	}
+
+	.woocommerce-noreviews {
+		margin-bottom: 30px;
+	}
+
+	.comment-form {
+		p {
+			margin-bottom: 25px;
+		}
+	}
+
+	.comment-respond .form-submit {
+		margin: 0;
+	}
+}
+
+.comment-form-rating {
+	line-height: 1;
+	margin-bottom: 30px;
+
+	label {
+		font-weight: 400;
+		color: #9b9b9b;
+	}
+
+	.stars {
+		display: inline-block;
+		margin: 0 0 0 26px !important;
+
+		a {
+			position: relative;
+			height: 1em;
+			width: 1em;
+			text-indent: -999em;
+			display: inline-block;
+			margin-right: 5px;
+			font-size: 18px;
+			color: #fb0;
+
+			&:before {
+				@extend %FontAwesomeRegular;
+				content: '\f005' !important;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 1em;
+				height: 1em;
+				line-height: 1;
+				text-indent: 0;
+			}
+		}
+
+		&.selected a::before {
+			color: inherit;
+			font-weight: 900;
+		}
+
+		a:before,
+		&.selected a.active ~ a::before {
+			color: #ababab;
+			font-weight: 400;
+		}
+	}
+}

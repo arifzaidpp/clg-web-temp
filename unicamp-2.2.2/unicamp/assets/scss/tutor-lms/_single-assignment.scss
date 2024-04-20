@@ -1,0 +1,119 @@
+.assignment-section-heading {
+	font-size: 20px;
+}
+
+.tutor-assignment-content {
+	margin: 0 0 35px;
+}
+
+.assignment-attachment-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.assignment-attachment-card {
+	min-width: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid $box-white-border;
+	background: $box-white-background;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 0 0 20px;
+
+	.tutor-avatar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: $primary-color;
+		color: #fff;
+	}
+
+	.tutor-icon-download-line {
+		font-size: 30px;
+	}
+}
+
+.tutor-assignment-attachment {
+	margin: 30px 0 0;
+	background-color: #eff1f7;
+	padding: 30px;
+	border-radius: 5px;
+
+	.tutor-color-black {
+		color: $heading-color;
+		font-weight: 500;
+	}
+
+	.text-regular-small {
+		font-size: 13px;
+		margin: 0 0 10px;
+	}
+
+	#tutor-assignment-file-upload {
+		display: none;
+	}
+}
+
+.tutor-assignment-submit-btn {
+	margin: 40px 0 0;
+}
+
+.tutor-attachment-files {
+	display: grid;
+	grid-template-columns: 180px auto;
+	margin: 12px 0 0;
+}
+
+.tutor-assignment-description-details {
+	margin: 35px 0 0;
+}
+
+#tutor-assignment-wrap {
+	.tutor-instructor-card {
+		background-color: $box-white-background;
+		border: 1px solid $box-white-border;
+		border-radius: 5px;
+		cursor: pointer;
+		min-width: unset;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 12px 17px;
+
+		.tutor-avatar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			background: #e9edfb;
+			border-radius: 50%;
+			overflow: hidden;
+			font-size: 30px;
+			margin: 0 0 0 10px;
+
+			a {
+				line-height: 1;
+			}
+		}
+	}
+}
+
+.tutor-assignment-details {
+	background-color: $box-white-background;
+	border: 1px solid $box-white-border;
+	border-radius: 5px;
+	cursor: pointer;
+	min-width: unset;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 17px;
+	margin: 30px 0 0;
+}

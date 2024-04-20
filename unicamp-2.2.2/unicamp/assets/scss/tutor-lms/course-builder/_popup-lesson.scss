@@ -1,0 +1,10 @@
+// WP editor fix.
+.wp-core-ui .button,
+.wp-core-ui .button-primary,
+.wp-core-ui .button-secondary {
+	height: auto;
+}
+
+.wp-switch-editor {
+	border-radius: 5px 5px 0 0;
+}

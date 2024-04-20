@@ -1,0 +1,71 @@
+.woocommerce {
+	.woocommerce-pagination {
+		padding-top: 8px;
+
+		ul li span.current {
+			background: $primary-color;
+		}
+	}
+
+	.woocommerce-ordering {
+		display: inline-block;
+		margin: 0;
+		float: none;
+		width: 280px;
+
+		select {
+			min-height: 48px;
+		}
+
+		.unicamp-nice-select-current {
+			.label {
+				&:before {
+					@extend %FontAwesomeRegular;
+					content: '\f036';
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	.cats {
+		margin-bottom: 50px;
+
+		.product-category {
+			.cat-title,
+			.cat-count {
+				color: #fff;
+			}
+		}
+
+		.cat-title {
+			font-size: 15px;
+			margin-bottom: 5px;
+		}
+
+		.cat-image {
+			img {
+				width: 100%;
+			}
+		}
+
+		.cat-text {
+			@extend %NormalTransition;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			padding: 15px;
+			background-color: rgba(0, 0, 0, .8);
+		}
+
+		.cat-count {
+			@extend %NormalTransition;
+			margin: 0;
+			color: initial;
+			font-size: 12px;
+			text-transform: capitalize;
+		}
+	}
+}

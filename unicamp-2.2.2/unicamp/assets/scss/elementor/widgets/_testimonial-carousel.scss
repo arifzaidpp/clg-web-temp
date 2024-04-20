@@ -1,0 +1,534 @@
+.elementor-widget-tm-testimonial {
+	text-align: center;
+
+	.testimonial-item {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.testimonial-quote-icon {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		font-size: 32px;
+		line-height: 1;
+		color: $primary-color;
+
+		svg {
+			transform: scale(-1, -1);
+			width: 1em;
+			height: auto;
+
+			* {
+				fill: currentColor;
+			}
+		}
+	}
+
+	&.align-left {
+		text-align: start;
+	}
+
+	&.align-right {
+		text-align: end;
+	}
+
+	.testimonial-main-content {
+		display: flex;
+		justify-content: center;
+	}
+
+	.content-wrap {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	&.layout-image-inline {
+		.image {
+			flex-shrink: 0;
+			margin: 0 30px 0 0;
+		}
+
+		.info {
+			display: inline-flex;
+			align-items: center;
+			text-align: start;
+		}
+
+		&.align-right {
+			.info {
+				text-align: end;
+				flex-direction: row-reverse;
+			}
+
+			.image {
+				flex-shrink: 0;
+				margin: 0 0 0 30px;
+			}
+
+			.testimonial-item {
+				text-align: end;
+			}
+		}
+	}
+
+	&.layout-image-stacked {
+		.image {
+			margin: 0 0 28px;
+		}
+
+		.info {
+			display: inline-block;
+		}
+
+		.position {
+			margin-top: 11px;
+		}
+	}
+
+	&.layout-image-above {
+		.image {
+			margin-bottom: 20px;
+		}
+
+		.cite {
+			display: block;
+			margin-top: 46px;
+		}
+
+		.position {
+			margin-top: 11px;
+		}
+	}
+
+	&.layout-image-top {
+		.swiper-slide {
+			padding: 36px 0 0;
+		}
+
+		.testimonial-item {
+			padding-top: 51px !important;
+		}
+
+		.image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			transform: translate(0, -50%);
+			display: flex;
+			align-items: center;
+
+			img {
+				position: relative;
+				z-index: 1;
+				width: 72px;
+				height: 72px;
+			}
+		}
+
+		.testimonial-rating {
+			margin: 0 !important;
+			padding: 2px 12px 2px 32px;
+			transform: translateX(-26px);
+			background: #fff;
+			box-shadow: 0 5px 25px rgba(0, 0, 0, .09);
+			border-radius: 15px;
+			font-size: 14px;
+			letter-spacing: 4px;
+		}
+
+		.info {
+			padding: 0 0 12px;
+		}
+	}
+
+	&.layout-image-top-02 {
+		.image {
+			margin: 0 0 32px;
+		}
+
+		.info {
+			padding: 24px 0 0;
+		}
+
+		.position {
+			margin: 4px 0 0;
+		}
+	}
+
+	&.layout-image-left {
+		.testimonial-item {
+			display: flex;
+		}
+
+		.image {
+			flex-shrink: 0;
+			margin: 0 30px 0 0;
+
+			img {
+				width: 70px;
+				height: 70px;
+			}
+		}
+
+		.info {
+			padding: 34px 0 0;
+		}
+	}
+
+	&.image-position-above {
+		.info {
+			padding: 0 0 20px;
+		}
+	}
+
+	&.image-position-below {
+		.info {
+			padding: 20px 0 0;
+		}
+
+		.position {
+			margin: 4px 0 0;
+		}
+	}
+
+	&.image-position-bottom {
+		.testimonial-main-content {
+			height: 100%;
+		}
+
+		.content-wrap {
+			display: inline-flex;
+			flex-direction: column;
+			height: 100%;
+			width: 100%;
+		}
+
+		.content {
+			flex-grow: 1;
+		}
+
+		.info {
+			padding: 60px 0 0;
+			flex-shrink: 0;
+		}
+
+		&.align-center {
+			.info {
+				justify-content: center;
+			}
+		}
+	}
+
+	.image {
+		img {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+		}
+	}
+
+	.text {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.67;
+		color: #696969;
+	}
+
+	.cite {
+		font-style: normal;
+	}
+
+	.title {
+		font-size: 18px;
+		line-height: 1.67;
+		margin: 0 0 11px;
+	}
+
+	.testimonial-rating {
+		margin-bottom: 11px;
+	}
+
+	.name {
+		font-family: $body-font-family;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 26px;
+		margin-bottom: 0;
+	}
+
+	.position {
+		display: block;
+		font-size: 14px;
+	}
+}
+
+.unicamp-testimonial-cite-layout-inline {
+	.name {
+		display: inline-block;
+		margin: 0 13px 0 0 !important;
+	}
+
+	.position {
+		display: inline-block;
+		margin: 0 !important;
+	}
+}
+
+.unicamp-testimonial-style-01 {
+	.testimonial-item {
+		@extend %NormalTransition;
+		position: relative;
+		padding: 30px 30px 33px 40px;
+		background: #fff;
+
+		&:hover {
+			background: #f8f8f8;
+
+			&:after {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+		&:after {
+			@extend %NormalTransition;
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 3px;
+			background: $primary-color;
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	.image {
+		img {
+			width: 70px;
+			height: 70px;
+		}
+	}
+
+	.title {
+		color: $primary-color;
+	}
+
+	.text {
+		font-size: 20px;
+		font-family: $heading-font-family;
+		font-weight: 400;
+		line-height: 34px;
+		color: $heading-color;
+	}
+
+	&.layout-image-inline {
+		.image {
+			margin: 0 15px 0 0;
+		}
+	}
+
+	&.image-position-below {
+		.info {
+			padding: 35px 0 0;
+		}
+	}
+
+	&.layout-image-top {
+		.image {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+}
+
+.unicamp-testimonial-style-02 {
+	.testimonial-item {
+		position: relative;
+		padding: 30px 25px 34px 40px;
+		background: #f8f8f8;
+	}
+
+	.testimonial-quote-icon {
+		color: #e0e3e6;
+		top: 15px;
+		right: 20px;
+	}
+
+	.image {
+		img {
+			width: 70px;
+			height: 70px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+		}
+	}
+
+	.title {
+		color: $primary-color;
+	}
+
+	.text {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 32px;
+	}
+
+	&.layout-image-top-02 {
+		.image {
+			margin: 0 0 33px;
+		}
+
+		.info {
+			padding: 33px 0 0;
+		}
+	}
+
+	&.layout-image-inline {
+		.image {
+			margin: 0 15px 0 0;
+		}
+	}
+
+	&.image-position-below {
+		.info {
+			padding: 35px 0 0;
+		}
+
+		.position {
+			margin: 4px 0 0;
+		}
+	}
+
+	&.layout-image-top {
+		.image {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+}
+
+.unicamp-testimonial-style-03 {
+	// Fix shadow cut.
+	.swiper-inner {
+		margin: -25px;
+	}
+
+	.swiper-container {
+		padding: 25px;
+	}
+
+	.testimonial-item {
+		@extend %NormalTransition;
+		position: relative;
+		padding: 30px 30px;
+		background: #fff;
+	}
+
+	.swiper-slide-visible {
+		.testimonial-item {
+			box-shadow: 0 5px 25px rgba(0, 0, 0, .07);
+		}
+	}
+
+	.testimonial-quote-icon {
+		color: #e0e3e6;
+		top: 15px;
+		right: 20px;
+	}
+
+	.image {
+		img {
+			width: 70px;
+			height: 70px;
+			box-shadow: 0 5px 20px rgba(0, 0, 0, .09);
+		}
+	}
+
+	.title {
+		color: $primary-color;
+	}
+
+	.text {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 28px;
+	}
+
+	&.layout-image-top-02 {
+		.image {
+			margin: 0 0 33px;
+		}
+
+		.info {
+			padding: 33px 0 0;
+		}
+	}
+
+	&.layout-image-inline {
+		.image {
+			margin: 0 15px 0 0;
+		}
+	}
+
+	&.image-position-below {
+		.info {
+			padding: 35px 0 0;
+		}
+
+		.position {
+			margin: 4px 0 0;
+		}
+	}
+
+	&.layout-image-top {
+		.image {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+}
+
+.unicamp-testimonial-pagination {
+	&.style-01 {
+		display: inline-block;
+		width: 315px;
+		max-width: 100%;
+		margin-bottom: 34px;
+
+		.swiper-slide {
+
+			.image {
+				margin-bottom: 0;
+
+				img {
+					width: 85px;
+					height: 85px;
+					border-radius: 50%;
+				}
+			}
+
+			&:not(.swiper-slide-thumb-active) {
+				cursor: pointer;
+
+				img {
+					opacity: .4;
+				}
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.elementor-widget-tm-testimonial.unicamp-testimonial-style-01 {
+		.testimonial-item {
+			padding: 46px 30px 45px;
+		}
+	}
+}

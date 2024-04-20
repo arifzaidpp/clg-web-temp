@@ -1,0 +1,19 @@
+.desktop {
+	.unicamp-product {
+		&.style-grid {
+			.product-wrapper {
+				&:hover {
+					.product-actions {
+						opacity: 1;
+					}
+				}
+			}
+
+			.product-actions {
+				@extend %NormalTransition;
+				/* TranslateY has strange position after quick view popup open. Use opacity instead of. */
+				opacity: 0;
+			}
+		}
+	}
+}

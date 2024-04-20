@@ -1,0 +1,96 @@
+.unicamp-widget-term-list {
+	ul {
+		li {
+			+ li {
+				margin: 12px 0 0;
+			}
+		}
+
+		a {
+			display: inline-block;
+			font-size: 14px;
+			font-weight: $body-font-weight-medium;
+			line-height: 26px;
+		}
+
+		.count {
+			font-weight: 400;
+			color: $text-lighten2-color;
+		}
+
+		> li:not(.disabled) {
+			a {
+				&:hover:before {
+					border-color: $primary-color;
+				}
+			}
+		}
+
+		> li.disabled {
+			a {
+				cursor: auto;
+				color: $link-color;
+
+				&:before {
+					opacity: .5;
+				}
+			}
+		}
+	}
+
+	.children {
+		margin-top: 12px;
+		padding-left: 30px;
+
+		.children {
+			padding-left: 20px;
+		}
+	}
+
+	&.style-check-list {
+		a {
+			position: relative;
+			padding-left: 30px;
+
+			&:before,
+			&:after {
+				@extend %NormalTransition;
+				content: '';
+				position: absolute;
+				width: 18px;
+				height: 18px;
+				border-radius: 0;
+				top: 4px;
+				left: 0;
+			}
+
+			&:before {
+				border: 1px solid #cacaca;
+				background: #fff;
+			}
+
+			&:after {
+				@extend %FontAwesomeRegular;
+				content: '\f00c';
+				font-size: 14px;
+				line-height: 18px;
+				text-align: center;
+				transform: scale(0, 0);
+				color: #fff;
+				background: $primary-color;
+			}
+		}
+
+		.current-term {
+			> a {
+				&:before {
+					border-color: transparent;
+				}
+
+				&:after {
+					transform: scale(1, 1);
+				}
+			}
+		}
+	}
+}

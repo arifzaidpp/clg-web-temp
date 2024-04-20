@@ -1,0 +1,21 @@
+// Fix font-awesome not visible in Rev Slider
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+	&:before {
+		font-family: inherit !important;
+		font-weight: inherit !important;
+	}
+}
+
+.rev-btn {
+	.left-icon {
+		margin-right: 10px !important;
+	}
+
+	.right-icon {
+		margin-left: 10px !important;
+	}
+}

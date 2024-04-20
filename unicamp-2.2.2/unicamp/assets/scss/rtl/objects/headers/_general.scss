@@ -1,0 +1,58 @@
+.rtl {
+	.header-search-form {
+		.search-field {
+			padding-left: 50px;
+			padding-right: 20px;
+		}
+
+		.search-submit {
+			left: 0;
+			right: auto;
+			border-radius: 5px 0 0 5px;
+		}
+	}
+
+	.page-open-components:hover {
+		.circle-one {
+			transform: translateX(-18px);
+		}
+
+		.circle-three {
+			transform: translateX(18px);
+		}
+	}
+
+	.header-user-buttons {
+		.inner {
+			margin-right: 10px;
+			margin-left: -10px;
+			padding-left: 0;
+			padding-right: 20px;
+
+			&:before {
+				right: 0;
+				left: auto;
+			}
+		}
+	}
+
+	.header-contact-links-box {
+		.contact-icon {
+			margin: 0 0 0 12px;
+		}
+	}
+
+	.header-user-links-box {
+		padding-left: 0 !important;
+		padding-right: 30px !important;
+
+		&:before {
+			left: auto;
+			right: 10px;
+		}
+
+		.user-icon {
+			margin: 0 0 0 12px;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.unicamp-banner {
+	display: block;
+	width: 100%;
+
+	.content-wrap {
+		position: relative;
+	}
+
+	.unicamp-image {
+		img {
+			width: 100%;
+		}
+	}
+
+	.content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.title {
+		font-size: 30px;
+		font-weight: 300;
+		background: #fff;
+		padding: 6px 34px 7px;
+		margin: 0;
+	}
+}
+
+@include elementor-breakpoint-down(md) {
+	.unicamp-banner {
+		.title {
+			font-size: 26px;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.unicamp-banner {
+		.title {
+			font-size: 22px;
+		}
+	}
+}

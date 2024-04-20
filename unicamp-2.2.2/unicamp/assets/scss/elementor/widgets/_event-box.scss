@@ -1,0 +1,153 @@
+.unicamp-event-box {
+	position: relative;
+	background: #fff;
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		background: $primary-color;
+	}
+
+	.box-header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 38px 30px 11px;
+	}
+
+	.tm-button-wrapper {
+		flex-shrink: 0;
+		justify-content: flex-end;
+	}
+
+	.tm-button {
+		color: $primary-color;
+
+		&.icon-right .button-icon {
+			margin-left: 5px;
+		}
+	}
+
+	.box-title {
+		font-size: 30px;
+		line-height: 1.47;
+		margin: 0 10px 0 0;
+		flex-grow: 1;
+	}
+
+	.post-item {
+		padding: 24px 30px 25px;
+
+		+ .post-item {
+			border-top: 1px solid #eee;
+		}
+	}
+
+	.event-caption {
+		display: flex;
+	}
+
+	.left-box {
+		flex-shrink: 0;
+		text-align: center;
+		padding: 17px 0 0;
+		margin: 0 40px 0 0;
+		min-width: 56px;
+	}
+
+	.right-box {
+		flex-grow: 1;
+	}
+
+	.post-title {
+		font-size: 20px;
+		font-weight: $heading-font-weight-thin;
+		line-height: 1.5;
+		margin: 0;
+	}
+
+	.event-meta {
+		margin: 11px 0 0;
+	}
+
+	.event-time {
+		font-size: 14px;
+		text-transform: uppercase;
+		line-height: 26px;
+	}
+
+	.event-location {
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.event-date--day {
+		font-size: 40px;
+		line-height: 1;
+		font-family: $heading-font-family;
+		font-weight: 700;
+		color: $primary-color;
+	}
+
+	.event-date--month {
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 24px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: $text-lighten2-color;
+	}
+
+	.box-footer {
+		text-align: center;
+		padding: 0 30px 5px;
+	}
+
+	.btn-view-more {
+		display: inline-block;
+		font-size: 30px;
+		line-height: 1;
+		color: $primary-color;
+		height: 52px;
+		min-width: 52px;
+	}
+}
+
+@include elementor-breakpoint-down(md) {
+	.unicamp-event-box {
+		.left-box {
+			margin: 0 20px 0 0;
+		}
+
+		.box-title {
+			font-size: 25px;
+		}
+
+		.post-title {
+			font-size: 18px;
+		}
+
+		.box-header,
+		.box-footer,
+		.post-item {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.unicamp-event-box {
+		.box-title {
+			font-size: 20px;
+		}
+
+		.post-title {
+			font-size: 16px;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+.rtl {
+	.entry-post-meta {
+		.meta-icon {
+			margin-left: 6px;
+			margin-right: 0;
+		}
+
+		.post-meta-author {
+			img {
+				margin-left: 6px;
+				margin-right: 0;
+			}
+		}
+	}
+
+	.entry-post-tags .tag-label {
+		margin: 0 0 0 7px;
+	}
+
+	.entry-post-share {
+		text-align: left;
+	}
+
+	.post-share {
+		&.style-01 {
+			.share-label {
+				margin: 0 0 0 12px;
+			}
+		}
+
+		&.style-02 {
+			.share-label {
+				margin: 0 0 0 12px;
+			}
+		}
+	}
+
+	.blog-nav-links {
+		.prev h6 {
+			padding: 20px 50px 20px 30px;
+
+			&:before {
+				left: auto;
+				right: 20px;
+				content: '\f105';
+			}
+		}
+
+		.next h6 {
+			text-align: left;
+			padding: 20px 30px 20px 50px;
+
+			&:before {
+				right: auto;
+				left: 20px;
+				content: '\f104';
+			}
+		}
+	}
+
+	.entry-author {
+		.author-description {
+			margin: 0 10px 0 0;
+		}
+	}
+}

@@ -1,0 +1,143 @@
+.unicamp-icon-wrap {
+	line-height: 0;
+}
+
+.unicamp-icon-view {
+	display: inline-block;
+	font-size: 60px;
+}
+
+.unicamp-icon {
+	display: inline-block;
+	text-align: center;
+	font-size: 60px;
+	line-height: 1;
+	transition: all 0.3s;
+	color: $primary-color;
+
+	.icon {
+		@extend %NormalTransition;
+	}
+
+	i,
+	svg {
+		display: block;
+	}
+
+	i {
+		background: inherit;
+	}
+
+	svg {
+		width: 1em;
+		height: 1em;
+		/*max-width: 100%;*/
+	}
+
+	svg.svg-defs-gradient {
+		position: absolute !important;
+		width: 0 !important;
+		height: 0 !important;
+	}
+}
+
+.svg-defs-gradient {
+	.stop-a,
+	.stop-b {
+		@extend %NormalTransition;
+	}
+}
+
+.unicamp-solid-icon {
+	svg {
+		*:not([stroke]) {
+			fill: currentColor;
+		}
+
+		*[stroke^="#"],
+		*[stroke^="url(#"] {
+			stroke: currentColor;
+		}
+
+		*[fill^="#"],
+		*[fill^="url(#"] {
+			fill: currentColor;
+		}
+	}
+}
+
+// Fix Font Awesome Duotone not working with gradient color.
+.unicamp-gradient-icon {
+	.fad {
+		&:before,
+		&:after {
+			background: inherit;
+		}
+	}
+}
+
+.unicamp-icon-view.second {
+	display: none !important;
+}
+
+.unicamp-view-stacked {
+	.unicamp-icon-view {
+		padding: .5em;
+		background-color: $primary-color;
+	}
+
+	.unicamp-icon {
+		color: #fff;
+	}
+
+	.unicamp-icon-view-inner {
+		position: relative;
+		width: 1em;
+		height: 1em;
+
+		.unicamp-icon {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+.unicamp-view-bubble {
+	.unicamp-icon-wrap {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 21px;
+	}
+
+	.unicamp-icon-view {
+		border-radius: 50%;
+		background-image: linear-gradient(-225deg, #{'rgba(var(--unicamp-color-primary-rgb), 0.17)'} 15%, #{'rgba(var(--unicamp-color-primary-rgb), 0.17)'} 85%);
+
+		&.first {
+			padding: .84em;
+		}
+
+		&.second {
+			display: inline-block !important;
+			padding: .28em;
+			position: relative;
+			bottom: 21px;
+			margin-left: 22px;
+		}
+
+		.icon {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0;
+		}
+	}
+}
+
+.unicamp-shape-circle {
+	.unicamp-icon-view {
+		border-radius: 50%;
+	}
+}

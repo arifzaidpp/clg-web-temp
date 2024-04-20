@@ -1,0 +1,51 @@
+@import 'mixin';
+@import 'extend';
+@import 'variables';
+
+.#{$namespace}-accordion {
+  margin: 0 0 20px;
+  > .accordion-section {
+    border: 1px solid $border-color;
+    margin-bottom: 10px;
+    overflow: hidden;
+    @include box-shadow(1px, 1px, 1px, #eee);
+    &.active {
+      > .accordion-title {
+        &:after {
+          content: '\f106';
+        }
+      }
+    }
+  }
+  .accordion-title {
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    &:focus {
+      box-shadow: none;
+    }
+    &:after {
+      @extend %font-awesome;
+      font-size: 14px;
+      top: 50%;
+      @extend %translate-0-50p;
+      left: auto;
+      right: 10px;
+      content: '\f107';
+    }
+  }
+  .accordion-content {
+    padding: 20px 15px;
+    display: none;
+    border-top: 1px solid $border-color;
+  }
+  .accordion-title {
+    color: $title-color;
+    background: $bg-color;
+    &:hover{
+      background: $bg-active-color;
+    }
+  }
+}

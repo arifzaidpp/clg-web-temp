@@ -1,0 +1,152 @@
+.my-account-profile {
+	display: flex;
+	align-items: center;
+	margin: 0 0 60px;
+
+	.my-avatar {
+		flex-shrink: 0;
+		margin: 0 24px 0 0;
+
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	.welcome-text {
+		font-size: 14px;
+		font-weight: $body-font-weight-medium;
+		color: $text-lighten2-color;
+		margin-bottom: 1px;
+		line-height: 26px;
+	}
+
+	.fn {
+		font-family: $body-font-family;
+		font-weight: $body-font-weight-medium;
+		font-size: 18px;
+		margin-bottom: 0;
+		line-height: 30px;
+	}
+}
+
+.woocommerce-MyAccount-navigation {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		border: 1px solid $box-border;
+	}
+
+	li {
+		margin: -1px -1px 0;
+
+		a {
+			display: block;
+			padding: 13px 30px;
+			font-size: 16px;
+			font-weight: 500;
+			border-top: 1px solid $box-border;
+			color: inherit;
+		}
+	}
+
+	.is-active a,
+	a:hover {
+		color: #fff;
+		background: $heading-color;
+	}
+}
+
+.woocommerce-MyAccount-content {
+	padding-left: 30px;
+
+	a {
+		font-weight: 500;
+	}
+
+	.title {
+		position: relative;
+		border-bottom: 1px solid $box-border;
+		padding-bottom: 8px;
+		margin-bottom: 19px;
+
+		> h3 {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 24px;
+			font-weight: $heading-font-weight-thin;
+			line-height: 1.5;
+			margin: 0;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -1px;
+			width: 54px;
+			height: 2px;
+			background: $secondary-color;
+		}
+	}
+
+	.woocommerce-column__title,
+	form > h3 {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 20px;
+		line-height: 1.6;
+		border-bottom: 1px solid $box-border;
+		padding-bottom: 10px;
+		margin-bottom: 19px;
+	}
+
+	.woocommerce-Address-title {
+		a {
+			display: inline-block;
+			vertical-align: middle;
+			width: 24px;
+			height: 24px;
+			position: relative;
+			font-size: 0;
+			margin: 0 0 0 6px;
+			color: $primary-color;
+
+			&:before {
+				@extend %FontAwesomeRegular;
+				content: '\f303';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 15px;
+			}
+		}
+	}
+
+	address {
+		font-style: normal;
+	}
+
+	button[type=submit] {
+		min-width: 240px;
+	}
+
+	.edit-account {
+		.button {
+			margin: 30px 0 0;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.woocommerce-MyAccount-content {
+		padding: 0;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.woocommerce-MyAccount-navigation {
+		margin: 0 0 40px;
+	}
+}

@@ -1,0 +1,25 @@
+.buddypress.widget {
+	.item-options {
+		a {
+			margin: 0 0 0 20px;
+		}
+	}
+
+	ul#friends-list,
+	ul#groups-list,
+	ul#members-list {
+		li {
+			.item {
+				padding: 0 71px 0 0;
+			}
+
+			.item-avatar {
+				float: right;
+			}
+		}
+	}
+
+	&.bp-latest-activities .activity-item-avatar {
+		margin: 0 0 0 18px;
+	}
+}

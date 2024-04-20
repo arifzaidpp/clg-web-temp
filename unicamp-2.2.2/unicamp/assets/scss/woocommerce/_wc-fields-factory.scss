@@ -1,0 +1,25 @@
+.single-product {
+
+	table.wccpf_fields_table {
+		margin-bottom: 20px;
+
+		td {
+			padding: 0;
+
+			&.wccpf_label {
+				padding: 10px 15px 10px 0;
+				min-width: 85px;
+				width: auto;
+
+				label {
+					min-width: 0;
+					width: auto;
+				}
+			}
+
+			&.wccpf_value {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.rtl {
+	&.woocommerce,
+	&.woocommerce-page {
+		.col2-set {
+			.col-1 {
+				float: right;
+			}
+
+			.col-2 {
+				float: left;
+			}
+		}
+	}
+
+	.woosw-content-item--price,
+	.tr-price,
+	.price {
+		del + ins,
+		ins + del {
+			margin: 0 8px 0 0;
+		}
+	}
+}

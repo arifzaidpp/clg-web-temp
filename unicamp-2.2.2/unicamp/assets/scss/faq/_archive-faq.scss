@@ -1,0 +1,32 @@
+.unicamp-faqs {
+	padding: 0;
+	margin: 0;
+
+	.faq-post {
+		list-style-type: none;
+
+		+ .faq-post {
+			margin-top: 22px;
+			padding-top: 50px;
+			border-top: 1px solid #eee;
+		}
+	}
+
+	.post-title {
+		font-size: 20px;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.faq-excerpt {
+		margin: 13px 0 0;
+	}
+
+	.faq-read-more-btn {
+		margin: 16px 0 0;
+
+		.tm-button {
+			color: $primary-color;
+		}
+	}
+}

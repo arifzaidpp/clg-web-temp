@@ -1,0 +1,71 @@
+.tutor-icon-calendar {
+	@extend %FontAwesomeRegularImportant;
+
+	&:before {
+		content: '\f133';
+	}
+}
+
+.tutor-icon-clock {
+	@extend %FontAwesomeRegularImportant;
+
+	&:before {
+		content: '\f017';
+	}
+}
+
+.tutor-icon-lock {
+	@extend %FontAwesomeRegularImportant;
+
+	&:before {
+		content: '\f023';
+	}
+}
+
+.tutor-icon-settings-1 {
+	@extend %FontAwesomeRegularImportant;
+
+	&:before {
+		content: '\f013';
+	}
+}
+
+.tutor-icon-add-friend {
+	@extend %FontAwesomeRegularImportant;
+
+	&:before {
+		content: '\f234';
+	}
+}
+
+.tutor-icon-copy {
+	@extend %FontAwesomeRegularImportant;
+
+	&:before {
+		content: '\f0c5';
+	}
+}
+
+.tutor-icon-angle-down {
+	@extend %FontAwesomeRegularImportant;
+
+	&:before {
+		content: '\f107';
+	}
+}
+
+.tutor-icon-angle-up {
+	@extend %FontAwesomeRegularImportant;
+
+	&:before {
+		content: '\f106';
+	}
+}
+
+.tutor-icon-cart-line-filled {
+	@extend %FontAwesomeRegularImportant;
+
+	&:before {
+		content: '\f07a';
+	}
+}

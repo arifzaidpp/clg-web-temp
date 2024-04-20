@@ -1,0 +1,78 @@
+.unicamp-graphic-box {
+	text-align: center;
+}
+
+.unicamp-graphic-position-top {
+	.unicamp-graphic-element {
+		margin: 0 0 24px;
+	}
+}
+
+.unicamp-graphic-position-left {
+	.unicamp-graphic-box {
+		display: flex;
+		flex-direction: row;
+		text-align: start;
+	}
+
+	.unicamp-graphic-element {
+		display: inline-flex;
+		flex: 0 0 auto;
+		margin: 0 20px 0 0;
+	}
+
+	.heading-wrap + .description-wrap {
+		margin-top: 17px;
+	}
+}
+
+.unicamp-graphic-position-right {
+	.unicamp-graphic-box {
+		display: flex;
+		flex-direction: row-reverse;
+		text-align: end;
+	}
+
+	.unicamp-graphic-element {
+		display: inline-flex;
+		flex: 0 0 auto;
+		margin: 0 0 0 20px;
+	}
+
+	.heading-wrap + .description-wrap {
+		margin-top: 17px;
+	}
+}
+
+.unicamp-graphic-ver-align-top {
+	.unicamp-graphic-box {
+		align-items: flex-start;
+	}
+}
+
+.unicamp-graphic-ver-align-middle {
+	.unicamp-graphic-box {
+		align-items: center;
+	}
+}
+
+.unicamp-graphic-ver-align-bottom {
+	.unicamp-graphic-box {
+		align-items: flex-end;
+	}
+}
+
+@media (max-width: 767px) {
+	.unicamp-graphic-mobile-position-top-yes {
+		.unicamp-graphic-box {
+			display: block !important;
+			text-align: center;
+		}
+
+		.unicamp-graphic-element {
+			margin-left: auto !important;
+			margin-right: auto !important;
+			margin: 0 0 15px;
+		}
+	}
+}

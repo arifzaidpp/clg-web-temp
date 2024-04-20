@@ -1,0 +1,174 @@
+.tutor-zoom-meeting-content {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	background: none;
+	display: flex;
+	align-items: center;
+
+	.meeting-title {
+		font-size: 28px;
+		line-height: 1.43;
+		color: $heading-color;
+		font-weight: $heading-font-weight;
+		margin: 0 0 11px;
+	}
+
+	.meeting-summary {
+		font-size: 14px;
+	}
+
+	.meeting-details {
+		div {
+			+ div {
+				margin: 11px 0 0;
+			}
+
+			span {
+				font-size: 16px;
+				font-weight: $heading-font-weight;
+				color: $text-bit-lighten-color;
+			}
+
+			p {
+				margin: 0;
+				font-size: 16px;
+				font-weight: $heading-font-weight;
+				color: $heading-color;
+			}
+		}
+	}
+}
+
+.zoom-meeting-content-wrap {
+	max-width: 100%;
+	flex-grow: 1;
+}
+
+.tutor-zoom-meeting-countdown {
+	display: block;
+	margin: 0 -5px 10px;
+	border: 0;
+	background: none;
+
+	div {
+		height: auto;
+		width: auto;
+		border: 0;
+		margin: 0;
+		border-radius: 0;
+	}
+
+	.countdown-row {
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.countdown-section {
+		border: 0;
+		border-radius: 5px;
+		background: #fff;
+		box-shadow: 0 0 20px rgba(51, 51, 51, .1);
+		margin: 0 5px 10px;
+		padding: 21px 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: auto !important;
+	}
+
+	.countdown-amount {
+		font-size: 32px;
+		color: $primary-color;
+		font-weight: $heading-font-weight;
+		line-height: 1;
+		height: auto;
+		width: auto;
+	}
+
+	.countdown-period {
+		font-size: 12px;
+		font-weight: $heading-font-weight;
+		text-transform: uppercase;
+		letter-spacing: 0.92px;
+		color: $text-lighten-color;
+		margin: 2px 0 0;
+	}
+}
+
+.tutor-course-lessons.tutor-zoom-meeting-session .tutor-zoom-meeting-countdown {
+	margin-bottom: 20px;
+}
+
+.single-courses {
+	.tutor-zoom-meeting-countdown {
+		.countdown-row {
+			width: auto;
+			display: inline-flex;
+		}
+	}
+}
+
+.single-tutor_zoom_meeting {
+	.tutor-zoom-meeting-countdown {
+		.countdown-section {
+			min-width: 0;
+		}
+	}
+}
+
+.tutor-zoom-lesson-countdown {
+	display: flex;
+
+	.countdown-item {
+		margin: 0 0 0 5px;
+	}
+
+	.countdown-line-amount {
+		margin: 0 4px 0 0;
+	}
+}
+
+.zoom-meeting-countdown-wrap {
+	max-width: 100%;
+	width: 400px;
+	flex-shrink: 0;
+	background: $box-light-grey-background;
+	border-radius: 8px;
+	padding: 32px 40px 22px;
+}
+
+.tutor-zoom-join-button-wrap {
+	display: block;
+	margin: 0;
+
+	.zoom-meeting-join-in-app {
+		background: $secondary-color;
+		color: $third-color;
+	}
+
+	a {
+		display: block;
+		margin: 0 0 10px;
+		width: 100%;
+		border: 0;
+		line-height: 56px;
+
+		&:hover {
+			box-shadow: 0 6px 25px rgba(0, 0, 0, .1);
+			background: #fff !important;
+			color: $primary-color !important;
+		}
+	}
+
+}
+
+@include media-breakpoint-up(lg) {
+	.zoom-meeting-countdown-wrap {
+		order: 2;
+	}
+}

@@ -1,0 +1,27 @@
+.page-title-bar-02 {
+	.page-title-bar-heading {
+		min-height: 128px;
+		display: flex;
+		align-items: center;
+		margin-top: 36px;
+	}
+
+	.heading {
+		text-align: center;
+		position: relative;
+		padding: 0 0 12px;
+		max-width: 970px;
+		margin: 0 auto;
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translate(-50%, 0);
+			width: 66px;
+			height: 3px;
+			background: $primary-color;
+		}
+	}
+}

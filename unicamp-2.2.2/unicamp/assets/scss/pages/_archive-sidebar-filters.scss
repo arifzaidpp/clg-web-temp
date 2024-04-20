@@ -1,0 +1,147 @@
+.page-sidebar {
+
+	&.style-01 {
+		.archive-sidebar-filter {
+			margin: 44px 0 0;
+
+			.archive-sidebar-filter-heading {
+				margin-bottom: 34px;
+			}
+
+			.widget.widget {
+				background: none;
+				box-shadow: none;
+				padding: 0;
+				border: 0;
+				border-radius: 0;
+
+				+ .widget {
+					border-top: 1px solid #eee;
+					padding-top: 24px;
+					margin-top: 27px !important;
+				}
+
+				.widget-title {
+					font-family: $body-font-family;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 24px;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					margin-bottom: 14px;
+					border: 0;
+					padding: 0;
+
+					span {
+						padding: 0;
+
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style-02 {
+		.archive-sidebar-filter {
+			margin-top: 10px;
+			background: $box-white-background;
+			box-shadow: 0 0 10px rgba(51, 51, 51, .1);
+			padding: 24px 30px 30px;
+
+			.archive-sidebar-filter-heading {
+				margin-bottom: 34px;
+			}
+
+			.widget.widget {
+				background: none;
+				box-shadow: none;
+				padding: 0;
+				border: 0;
+				border-radius: 0;
+
+				+ .widget {
+					border-top: 1px solid #eee;
+					padding-top: 24px;
+					margin-top: 27px !important;
+				}
+
+				.widget-title {
+					font-family: $body-font-family;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 24px;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					margin-bottom: 14px;
+					border: 0;
+					padding: 0;
+
+					span {
+						padding: 0;
+
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.style-03 {
+		.archive-sidebar-filter {
+			margin-top: 10px;
+			background: $box-light-grey-background;
+			padding: 24px 30px 30px;
+
+			.archive-sidebar-filter-heading {
+				margin-bottom: 34px;
+			}
+
+			.widget.widget {
+				background: none;
+				box-shadow: none;
+				padding: 0;
+				border: 0;
+				border-radius: 0;
+
+				+ .widget {
+					border-top: 1px solid #eee;
+					padding-top: 24px;
+					margin-top: 27px !important;
+				}
+
+				.widget-title {
+					font-family: $body-font-family;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 24px;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					margin-bottom: 14px;
+					border: 0;
+					padding: 0;
+
+					span {
+						padding: 0;
+
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.site-background-grey .page-sidebar {
+	&.style-02 {
+		.archive-sidebar-filter {
+			box-shadow: none;
+		}
+	}
+}

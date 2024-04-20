@@ -1,0 +1,206 @@
+.tm-google-map {
+	position: relative;
+
+	.map {
+		width: 100%;
+		height: 300px;
+		position: relative;
+		background-color: #e2e2e2;
+
+		&:before {
+			display: block;
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			transform: translateX(-100%);
+			background: -webkit-gradient(linear, left top,
+				right top, from(transparent),
+				color-stop(rgba(255, 255, 255, 0.2)),
+				to(transparent));
+			background: linear-gradient(90deg, transparent,
+				rgba(255, 255, 255, 0.2), transparent);
+			animation: skeleton-loading .8s infinite;
+		}
+
+		// remove default bg.
+		> div {
+			background: none !important;
+		}
+	}
+
+	.style-signal {
+		.animated-dot {
+			position: relative;
+			width: 20px;
+			height: 20px;
+			color: $primary-color;
+		}
+
+		.middle-dot {
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			background: currentColor;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+
+			&:after {
+				width: 100%;
+				height: 100%;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				content: ' ';
+				background: currentColor;
+				border-radius: 50%;
+				z-index: 100;
+				opacity: 0;
+				transform-origin: 50% 50%;
+			}
+		}
+
+		.signal {
+			position: absolute;
+			left: -50px;
+			top: -50px;
+			opacity: 0;
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			pointer-events: none;
+			background: currentColor;
+			animation: animationSignal cubic-bezier(0, .55, .55, 1) 2s;
+			transform-origin: 50% 50%;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+		}
+
+		.signal-1 {
+			animation-delay: .78s;
+		}
+
+		.signal-2 {
+			animation-delay: 1.1s;
+		}
+	}
+}
+
+.unicamp-map-overlay-template {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.unicamp-map-overlay-always {
+	.unicamp-map-overlay-content {
+		display: block !important;
+	}
+}
+
+.unicamp-map-overlay-content {
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	right: 50%;
+	width: 360px;
+	transform: translate(150px, 15px);
+	padding-bottom: 40px;
+	max-width: 90vw;
+}
+
+.unicamp-map-overlay-info {
+	display: flex;
+	align-items: center;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, .21);
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 27px;
+		right: 141px;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 13px solid #fff;
+	}
+
+	a:hover {
+		color: $link-hover-color;
+	}
+}
+
+.gmap-marker-wrap {
+	padding: 20px;
+	color: $text-color;
+}
+
+.map-marker-title {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.map-marker-image {
+	flex-shrink: 0;
+	margin-right: 20px;
+}
+
+.map-marker-content {
+	flex-grow: 1;
+}
+
+.map-marker-description {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.79;
+	color: $text-color;
+
+	a {
+		color: $heading-color;
+	}
+}
+
+@keyframes animationSignal {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	1% {
+		opacity: .14;
+	}
+
+	20% {
+		opacity: .14;
+	}
+
+	60% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.unicamp-map-overlay-content {
+		width: 370px !important;
+		transform: translate(50%, 15px);
+	}
+
+	.unicamp-map-overlay-info {
+		&:before {
+			right: 50%;
+			transform: translate(50%, 0);
+		}
+	}
+
+	.map-marker-image {
+		display: none;
+	}
+}

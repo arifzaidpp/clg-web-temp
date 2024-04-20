@@ -1,0 +1,85 @@
+.error404 {
+	.branding {
+		position: absolute;
+		top: 35px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		.light-logo,
+		.dark-logo {
+			display: block;
+		}
+	}
+
+	&.admin-bar {
+		.branding {
+			top: 67px;
+		}
+	}
+
+	.page-404-content {
+		text-align: center;
+
+		> .container {
+			> .row {
+				padding-top: 120px;
+				padding-bottom: 120px;
+			}
+		}
+	}
+
+	.error-image {
+		margin-bottom: 40px;
+
+		img {
+			max-width: 90%;
+		}
+	}
+
+	.error-404-title {
+		font-size: 40px;
+		margin-bottom: 22px;
+	}
+
+	.error-404-text {
+		font-size: 16px;
+		line-height: 30px;
+		max-width: 770px;
+		margin: 0 auto;
+	}
+
+	.error-buttons {
+		margin: 48px -10px 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.tm-button-wrapper {
+			padding: 10px;
+		}
+
+		.tm-button {
+			min-width: 190px;
+
+			.button-icon {
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(md) {
+	.error404 {
+		.error-404-title {
+			font-size: 34px;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.error404 {
+		.error-404-title {
+			font-size: 28px;
+		}
+	}
+}

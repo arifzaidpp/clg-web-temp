@@ -1,0 +1,194 @@
+/*!
+ * PowerTip
+ * https://stevenbenner.github.io/jquery-powertip/
+ *
+ * Stylesheet for the Unicamp theme.
+ */
+
+#powerTip {
+	cursor: default;
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #ededed;
+	filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.12));
+	color: #696969;
+	display: none;
+	padding: 10px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 2147483647;
+}
+
+#powerTip:before,
+#powerTip:after {
+	content: attr(class) " ";
+	position: absolute;
+	height: 0;
+	width: 0;
+	text-indent: 100%;
+	overflow: hidden;
+}
+
+#powerTip.n:after, #powerTip.s:after {
+	border-right: 9px solid transparent;
+	border-left: 9px solid transparent;
+	left: 50%;
+	margin-left: -9px;
+}
+
+#powerTip.e:after, #powerTip.w:after {
+	border-bottom: 9px solid transparent;
+	border-top: 9px solid transparent;
+	margin-top: -9px;
+	top: 50%;
+}
+
+#powerTip.n:after,
+#powerTip.ne:after, #powerTip.nw:after {
+	bottom: -11px;
+}
+
+#powerTip.n:after,
+#powerTip.ne:after, #powerTip.nw:after,
+#powerTip.nw-alt:after, #powerTip.ne-alt:after {
+	border-top: 11px solid #fff;
+}
+
+#powerTip.e:after {
+	border-right: 11px solid #fff;
+	left: -11px;
+}
+
+#powerTip.s:after,
+#powerTip.se:after, #powerTip.sw:after {
+	top: -11px;
+}
+
+#powerTip.s:after,
+#powerTip.se:after, #powerTip.sw:after,
+#powerTip.sw-alt:after, #powerTip.se-alt:after {
+	border-bottom: 11px solid #fff;
+}
+
+#powerTip.w:after {
+	border-left: 11px solid #fff;
+	right: -11px;
+}
+
+#powerTip.ne:after, #powerTip.se:after {
+	border-right: 11px solid transparent;
+	border-left: 0;
+	left: 11px;
+}
+
+#powerTip.nw:after, #powerTip.sw:after {
+	border-left: 11px solid transparent;
+	border-right: 0;
+	right: 11px;
+}
+
+#powerTip.nw-alt:after, #powerTip.ne-alt:after,
+#powerTip.sw-alt:after, #powerTip.se-alt:after {
+	bottom: -11px;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	left: 11px;
+}
+
+#powerTip.ne-alt:after {
+	left: auto;
+	right: 11px;
+}
+
+#powerTip.sw-alt:after, #powerTip.se-alt:after {
+	border-top: none;
+	bottom: auto;
+	top: -11px;
+}
+
+#powerTip.se-alt:after {
+	left: auto;
+	right: 11px;
+}
+
+#powerTip.n:before, #powerTip.s:before {
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	left: 50%;
+	margin-left: -10px;
+}
+
+#powerTip.e:before, #powerTip.w:before {
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+	margin-top: -10px;
+	top: 50%;
+}
+
+#powerTip.n:before,
+#powerTip.ne:before, #powerTip.nw:before {
+	bottom: -12px;
+}
+
+#powerTip.n:before,
+#powerTip.ne:before, #powerTip.nw:before,
+#powerTip.nw-alt:before, #powerTip.ne-alt:before {
+	border-top: 12px solid #ededed;
+}
+
+#powerTip.e:before {
+	border-right: 12px solid #ededed;
+	left: -12px;
+}
+
+#powerTip.s:before,
+#powerTip.se:before, #powerTip.sw:before {
+	top: -12px;
+}
+
+#powerTip.s:before,
+#powerTip.se:before, #powerTip.sw:before,
+#powerTip.sw-alt:before, #powerTip.se-alt:before {
+	border-bottom: 12px solid #ededed;
+}
+
+#powerTip.w:before {
+	border-left: 12px solid #ededed;
+	right: -12px;
+}
+
+#powerTip.ne:before, #powerTip.se:before {
+	border-right: 12px solid transparent;
+	border-left: 0;
+	left: 12px;
+}
+
+#powerTip.nw:before, #powerTip.sw:before {
+	border-left: 12px solid transparent;
+	border-right: 0;
+	right: 12px;
+}
+
+#powerTip.nw-alt:before, #powerTip.ne-alt:before,
+#powerTip.sw-alt:before, #powerTip.se-alt:before {
+	bottom: -12px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	left: 12px;
+}
+
+#powerTip.ne-alt:before {
+	left: auto;
+	right: 12px;
+}
+
+#powerTip.sw-alt:before, #powerTip.se-alt:before {
+	border-top: none;
+	bottom: auto;
+	top: -12px;
+}
+
+#powerTip.se-alt:before {
+	left: auto;
+	right: 12px;
+}

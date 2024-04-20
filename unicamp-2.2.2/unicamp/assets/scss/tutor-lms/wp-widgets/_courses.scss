@@ -1,0 +1,75 @@
+.unicamp-wp-widget-courses {
+	.course-item {
+		+ .course-item {
+			padding-top: 15px;
+			margin-top: 15px;
+		}
+	}
+
+	.unicamp-box {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.course-thumbnail {
+		position: relative;
+		flex-shrink: 0;
+		overflow: hidden;
+		margin: 0 12px 0 0;
+		max-width: 45%;
+	}
+
+	.course-title {
+		font-size: 15px;
+		line-height: 24px;
+		margin: 0;
+
+		a {
+			display: block;
+			color: inherit;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.course-category {
+		font-size: 11px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		color: $text-lighten-color;
+		margin: 0 0 3px;
+
+		a {
+			color: inherit;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.tutor-course-badge {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		z-index: 1;
+	}
+
+	.course-loop-price {
+		.price {
+			font-size: 15px;
+			line-height: 20px;
+
+			del {
+				font-size: 12px;
+			}
+
+			.decimals-separator {
+				font-size: 10px;
+			}
+		}
+	}
+}

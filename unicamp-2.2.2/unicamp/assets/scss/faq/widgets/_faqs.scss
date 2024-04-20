@@ -1,0 +1,90 @@
+.unicamp-faqs-list {
+	li {
+		margin: 0;
+		padding: 0 0 0 30px;
+
+		+ li {
+			margin-top: 10px;
+		}
+	}
+
+	.post-title {
+		font-family: $body-font-family;
+		font-size: $body-font-size;
+		font-weight: $body-font-weight;
+		line-height: 26px;
+		letter-spacing: $body-letter-spacing;
+		margin: 0;
+
+		a {
+			color: $primary-color;
+			display: block;
+			position: relative;
+			padding: 0;
+
+			&:before,
+			&:after {
+				@extend %FontAwesomeRegular;
+				@extend %NormalTransition;
+				content: '\f30b';
+				position: absolute;
+				top: 7px;
+				left: -30px;
+				font-size: 14px;
+			}
+
+			&:after {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateX(-100%);
+			}
+
+			&:hover {
+				&:before {
+					opacity: 0;
+					visibility: hidden;
+					transform: translateX(100%);
+				}
+
+				&:after {
+					opacity: 1;
+					visibility: visible;
+					transform: translateX(0);
+				}
+			}
+		}
+	}
+
+	.faq-group {
+		font-size: 0;
+
+		a {
+			display: inline-block;
+			border-radius: 3px;
+			background: $primary-color;
+			color: #fff;
+			padding: 0 10px;
+			font-size: 12px;
+			line-height: 24px;
+			margin: 0 1px 5px 0;
+		}
+	}
+
+	.post-date {
+		position: relative;
+		display: block;
+		font-size: 12px;
+		padding-left: 20px;
+		margin: 2px 0 10px;
+
+		&:before {
+			@extend %FontAwesomeLight;
+			font-size: 12px;
+			content: '\f073';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+		}
+	}
+}

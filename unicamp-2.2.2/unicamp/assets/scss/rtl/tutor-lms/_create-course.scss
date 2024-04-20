@@ -1,0 +1,110 @@
+.rtl {
+	.tutor-frontend-course-builder {
+		.page-header-inner {
+			.header-left {
+				button {
+					margin: 0 20px 0 0;
+
+					i {
+						margin: 0 0 0 14px;
+					}
+				}
+			}
+		}
+	}
+
+	.tutor-course-level-meta label {
+		margin: 0 0 0 40px;
+	}
+
+	.course-settings-tabs-container {
+		.settings-tabs-container {
+			padding-left: 30px;
+			padding-right: 10px;
+		}
+	}
+
+	.tutor-form-group {
+		span.tutor-input-prepand {
+			right: 0;
+			left: auto;
+			border-right: 0;
+			border-left: 1px solid #d3d8dd;
+
+			+ input {
+				padding-right: 67px;
+				padding-left: 20px;
+			}
+		}
+	}
+
+	.tutor-course-available-instructors {
+		.added-instructor-item {
+			.instructor-icon {
+				margin-right: 0;
+				margin-left: 15px;
+			}
+
+			.instructor-name img {
+				margin-left: 0;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.tutor-course-builder-upload-tips {
+		.tutor-course-builder-tips-title i {
+			margin-right: 0;
+			margin-left: 11px;
+		}
+
+		ul {
+			padding: 0 24px 0 0;
+
+			li:after {
+				left: auto !important;
+				right: -24px !important;
+			}
+		}
+	}
+
+	.tutor-course-builder-section-title h3 {
+		i {
+			margin: 0 0 0 4px;
+		}
+
+		span,
+		i {
+			float: right;
+		}
+	}
+
+	.tutor-zoom-create-meeting {
+		.zoom-icon {
+			div {
+				margin-left: 0;
+				margin-right: 15px;
+			}
+		}
+	}
+
+	.zoom-meetings-container .tutor-zoom-meeting-item .meeting-action a.tutor-btn img {
+		padding-right: 0;
+		padding-left: 6px;
+	}
+
+	.button.tutor-zoom-meeting-modal-open-btn:before {
+		margin: 0 0 0 6px;
+	}
+
+	.tutor-form-row.tutor-form-submit .btn-save-as-draft {
+		margin-right: 0;
+		margin-left: 20px;
+	}
+
+	.tutor-untopics-lessons .course-content-item .tutor-lesson-top i,
+	.course-contents .course-content-item .tutor-lesson-top i {
+		padding-right: 0;
+		padding-left: 7px;
+	}
+}

@@ -1,0 +1,144 @@
+.dashboard-info-cards {
+	align-items: stretch;
+}
+
+.dashboard-info-card {
+	margin: 0 0 30px;
+}
+
+.dashboard-info-card-box {
+	display: flex;
+	height: 100%;
+	border-radius: 0;
+	background: $box-white-background;
+	border: 1px solid $box-border;
+	padding: 38px 20px 38px 29px;
+}
+
+.dashboard-info-card-icon {
+	position: relative;
+	flex-shrink: 0;
+	width: 82px;
+	height: 82px;
+	border: 1px solid #d3dffe;
+	border-radius: 50%;
+	color: #4e84fa;
+	text-align: center;
+	background: #f4f7ff;
+	margin: 0 20px 0 0;
+	font-size: 36px;
+
+	> span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		line-height: 1;
+	}
+
+	.yellow-card & {
+		color: #ffc221;
+		border-color: #ffde89;
+		background: #fffcf2;
+	}
+
+	.green-card & {
+		color: #6cbd7e;
+		border-color: #daeedf;
+		background: #f6fbf7;
+	}
+
+	.pink-card & {
+		color: #fc8a89;
+		border-color: #fdc0c0;
+		background: #fff8f8;
+	}
+
+	.purple-card & {
+		color: #7f86ff;
+		border-color: #bbbeff;
+		background: #f8f8ff;
+	}
+
+	.orange-card & {
+		color: #f49263;
+		border-color: #f9c5ac;
+		background: #fff9f6;
+	}
+}
+
+.dashboard-info-card-heading {
+	display: block;
+	font-size: 14px;
+	font-weight: $body-font-weight-medium;
+	line-height: 24px;
+	margin: 11px 0 0;
+}
+
+.dashboard-info-card-value {
+	display: block;
+	font-size: 34px;
+	font-weight: $heading-font-weight;
+	line-height: 1;
+	color: $heading-color;
+}
+
+.card-total-earnings {
+	.dashboard-info-card-value {
+		.amount {
+			font-size: inherit;
+			font-weight: inherit;
+			color: inherit;
+
+			.decimals-separator {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.dashboard-info-card-icon {
+		margin: 0 48px 0 0;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.dashboard-info-card-value {
+		font-size: 40px;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.dashboard-info-card-box {
+		padding: 20px;
+	}
+
+	.dashboard-info-card-icon {
+		width: 60px;
+		height: 60px;
+		font-size: 24px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.dashboard-info-card-icon {
+		width: 40px;
+		height: 40px;
+		font-size: 16px;
+	}
+
+	.dashboard-info-card-value {
+		font-size: 26px;
+	}
+
+	.dashboard-info-card-heading {
+		margin: 3px 0 0;
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.dashboard-info-card {
+		margin-bottom: 10px;
+	}
+}

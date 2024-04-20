@@ -1,0 +1,480 @@
+.popup-pre-loader {
+	@extend %NormalTransition;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999999;
+	overflow: hidden;
+	background: rgba(0, 0, 0, .5);
+	opacity: 0;
+	visibility: hidden;
+
+	&.open {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.sk-wrap {
+		width: 60px;
+		height: 60px;
+		margin: 0 auto;
+		font-size: 0;
+		color: #fff;
+
+		.sk-circle {
+			margin: 0 auto;
+		}
+	}
+
+	.popup-load-inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+	.popup-loader-wrap {
+		display: table;
+		width: 100%;
+		height: 100%;
+
+		.wrap-2 {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
+}
+
+.unicamp-popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 100001;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include LightCloseCursor();
+
+	&.open {
+		@extend %NormalTransition;
+		opacity: 1;
+		visibility: visible;
+
+		.popup-content {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.popup-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: #000;
+		opacity: .5;
+	}
+
+	.popup-content-header {
+		text-align: center;
+		margin: 0 0 19px;
+	}
+
+	.button-close-popup {
+		@extend %FontAwesomeLight;
+		@extend %NormalTransition;
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 24px;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		transform: translateY(-100%);
+		cursor: pointer;
+		text-align: center;
+		color: #fff;
+
+		&:before {
+			content: '\f00d';
+		}
+	}
+
+	.popup-form-footer {
+		text-align: center;
+		margin: 10px 0 0;
+	}
+
+	.popup-title {
+		font-size: 32px;
+		line-height: 1.5;
+		margin: 0 0 8px;
+	}
+
+	.popup-content {
+		@extend %NormalTransition;
+		position: relative;
+		opacity: 0;
+		visibility: hidden;
+		width: 470px;
+		max-width: 90%;
+		cursor: auto;
+	}
+
+	.popup-content-wrap {
+		@include NormalRounded();
+		overflow: hidden;
+		background: $box-white-background;
+		box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	}
+
+	.popup-content-inner {
+		padding: 31px 50px 27px;
+		max-height: calc(100vh - 100px);
+		overflow-y: auto;
+	}
+
+	.form-submit {
+		width: 100%;
+	}
+
+	.forgot-password {
+		font-size: 14px;
+	}
+
+	.form-response-messages {
+		display: none;
+		margin-bottom: 20px;
+		margin-top: 20px;
+
+		&.error {
+			color: $error-color;
+		}
+
+		&.success {
+			color: $success-color;
+		}
+
+		a {
+			font-weight: $heading-font-weight;
+			color: $heading-color;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.form-account {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+}
+
+.unicamp-popup.popup-user-register {
+	.popup-content {
+		width: 670px;
+	}
+}
+
+.unicamp-popup.popup-instructor-registration {
+	.form-label {
+		display: none;
+	}
+
+	.form-group {
+		margin: 0 0 20px;
+	}
+}
+
+.form-input-group {
+	position: relative;
+
+	&.form-input-password {
+		.btn-pw-toggle {
+			@extend %FontAwesomeRegular;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: auto;
+			background: none !important;
+			box-shadow: none !important;
+			padding: 0 15px !important;
+			border: 0;
+			font-size: 14px;
+			color: $text-color;
+
+			&:hover {
+				color: $primary-color;
+			}
+
+			&:before {
+				content: '\f06e';
+			}
+		}
+
+		&.show-pw {
+			.btn-pw-toggle {
+				&:before {
+					content: '\f070';
+				}
+			}
+		}
+	}
+}
+
+.oneall_social_login_label {
+	font-size: 14px;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+
+	&:before,
+	&:after {
+		content: '';
+		flex-grow: 1;
+		height: 1px;
+		background: $box-border;
+	}
+
+	label {
+		padding: 0 15px;
+	}
+}
+
+.mo-openid-app-icons.mo-openid-app-icons {
+	display: flex !important;
+	flex-wrap: wrap;
+	margin: 0 -9px;
+
+	> p {
+		font-size: 14px;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		color: $text-color !important;
+		width: 100% !important;
+		margin: 0 0 13px !important;
+		padding: 0 9px;
+
+		&:before,
+		&:after {
+			content: '';
+			flex-grow: 1;
+			height: 1px;
+			background: $box-border;
+		}
+
+		&:before {
+			margin: 0 15px 0 0;
+		}
+
+		&:after {
+			margin: 0 0 0 15px;
+		}
+	}
+
+	br,
+	+ br {
+		display: none;
+	}
+
+	.mo_btn-social {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 20px !important;
+		height: 52px;
+		line-height: 48px;
+		flex-basis: calc(50% - 18px);
+		max-width: calc(50% - 18px);
+		font-weight: $body-font-weight-medium;
+		margin: 0 9px 18px !important;
+		border: 2px solid $box-border;
+		border-radius: 0;
+		background: $box-white-background !important;
+		color: $heading-color !important;
+		box-shadow: none !important;
+		cursor: pointer;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+
+		&:before {
+			@extend %FontAwesomeBrands;
+			display: inline-block !important;
+			position: relative;
+			top: 2px;
+			font-size: 18px;
+			color: $primary-color;
+			margin: 0 8px 0 0;
+		}
+
+		> :first-child {
+			display: none !important;
+		}
+
+		> i,
+		> svg {
+			display: none !important;
+		}
+
+		> span {
+			color: inherit !important;
+		}
+
+		&:hover {
+			border-color: $heading-color !important;
+		}
+
+		&.mo_btn-facebook {
+			svg {
+				background: #fff !important;
+
+				* {
+					fill: #2e58b2 !important;
+				}
+			}
+
+			&:before {
+				content: '\f082';
+				color: #2e58b2;
+			}
+		}
+
+		&.mo_btn-twitter {
+			&:before {
+				content: '\f099';
+				color: #4a76a8;
+			}
+		}
+
+		&.mo_btn-google {
+			&:before {
+				content: '\f1a0';
+				color: #ea4335;
+			}
+		}
+
+		&.mo_btn-instagram {
+			&:before {
+				content: '\f16d';
+				color: #c32aa3;
+			}
+		}
+
+		&.mo_btn-linkedin {
+			&:before {
+				content: '\f08c';
+				color: #007bb5;
+			}
+		}
+
+		&.mo_btn-vk {
+			&:before {
+				content: '\f189';
+				color: #4a76a8;
+			}
+		}
+
+		/* Amazon */
+		&.mo_btn-soundcloud {
+			&:before {
+				content: '\f270';
+				color: #f90;
+			}
+		}
+
+		&.mo_btn-microsoft {
+			&:before {
+				content: '\f3ca';
+				color: #f35022;
+			}
+		}
+
+		&.mo_btn-yahoo {
+			&:before {
+				content: '\f19e';
+				color: #6001d2;
+			}
+		}
+
+		&.mo_btn-apple {
+			&:before {
+				content: '\f179';
+				color: #a6b1b7;
+			}
+		}
+
+		&.mo_btn-paypal {
+			&:before {
+				content: '\f1ed';
+				color: #0070ba;
+			}
+		}
+
+		&.mo_btn-wordpress {
+			&:before {
+				content: '\f19a';
+				color: #346da6;
+			}
+		}
+	}
+}
+
+.mo_image_id,
+.mo_image_id + br {
+	display: none;
+}
+
+@include media-breakpoint-down(md) {
+	.unicamp-popup {
+		.popup-title {
+			font-size: 28px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.unicamp-popup {
+		.popup-title {
+			font-size: 24px;
+		}
+
+		.popup-content-inner {
+			padding: 21px 20px 17px;
+
+			.row {
+				margin-left: -10px;
+				margin-right: -10px;
+			}
+
+			[class*='col-'] {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+
+		.form-submit {
+			padding: 0 20px;
+		}
+	}
+}

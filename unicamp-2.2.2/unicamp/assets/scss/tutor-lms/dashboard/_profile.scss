@@ -1,0 +1,47 @@
+.dashboard-profile-info {
+	border-radius: 5px;
+	border: 1px solid $box-white-border;
+	background: $box-white-background;
+	padding: 30px;
+	margin: 0 0 30px;
+}
+
+.dashboard-profile-info-item {
+	display: flex;
+	margin: 0 0 6px;
+
+	&:last-child {
+		margin: 0;
+	}
+
+	.heading {
+		font-family: $body-font-family;
+		font-weight: $body-font-weight-medium;
+		color: $text-lighten-color;
+		min-width: 180px;
+		padding: 0 10px 0 0;
+		line-height: 26px;
+	}
+
+	.content {
+		flex-grow: 1;
+		font-weight: 500;
+	}
+
+	&.profile-bio {
+		.content {
+			font-weight: 400;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.dashboard-profile-info-item {
+		display: block;
+		margin: 0 0 15px;
+	}
+
+	.dashboard-profile-info {
+		margin: 0 0 10px;
+	}
+}

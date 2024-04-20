@@ -1,0 +1,34 @@
+.rtl {
+	.widget_product_categories {
+		li {
+			@extend %clearfix;
+
+			a {
+				padding: 0 30px 0 0;
+
+				&:before,
+				&:after {
+					left: auto;
+					right: 0;
+				}
+
+				&:after {
+					right: 2px;
+				}
+			}
+		}
+
+		.count {
+			float: left;
+			margin: 0 5px 0 0;
+		}
+	}
+
+	.product_list_widget {
+		li {
+			img {
+				margin: 0 0 0 15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,245 @@
+.tm-modern-heading {
+	max-width: 100%;
+
+	.heading-primary-wrap,
+	.heading-secondary-wrap {
+		line-height: 1;
+	}
+
+	.heading-primary,
+	.heading-secondary,
+	.heading-description {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+
+	// Fix elementor override line height.
+	h1, h2, h3, h4, h5, h6 {
+		&.heading-primary,
+		&.heading-secondary {
+			line-height: $heading-line-height;
+		}
+	}
+
+	div, p, span {
+		&.heading-primary,
+		&.heading-secondary {
+			line-height: $body-line-height;
+		}
+	}
+
+	a {
+		display: block;
+		color: inherit;
+		font-size: inherit;
+
+		&:hover {
+			color: inherit;
+			font-size: inherit;
+		}
+	}
+
+	mark {
+		span {
+			margin-left: 5px;
+		}
+	}
+
+	.heading-description-wrap {
+		margin: 21px 0 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.heading-secondary-wrap {
+		margin: 0 0 10px;
+	}
+
+	.heading-divider {
+		margin: 11px 0 0;
+		font-size: 0;
+		line-height: 1;
+
+		&:before {
+			display: inline-block;
+			content: '';
+			width: 66px;
+			height: 3px;
+			background: $primary-color;
+		}
+	}
+}
+
+.unicamp-modern-heading-style-01 {
+	.heading-primary {
+		mark {
+			position: relative;
+			z-index: 0;
+			padding: 0 0 10px;
+			color: inherit;
+
+			&:after {
+				content: '';
+				position: absolute;
+				width: 66px;
+				height: 3px;
+				bottom: 0;
+				left: 50%;
+				z-index: -1;
+				transform: translate(-33px, 0);
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+.unicamp-modern-heading-style-02 {
+	.heading-primary {
+		mark {
+			border-bottom: 2px solid currentColor;
+		}
+	}
+}
+
+.unicamp-modern-heading-style-04 {
+	.heading-primary {
+		mark {
+			border-bottom: 3px solid currentColor;
+		}
+	}
+}
+
+.unicamp-modern-heading-style-03 {
+	.heading-primary {
+		mark {
+			position: relative;
+			z-index: 0;
+			padding: 0 0 10px;
+			color: inherit;
+
+			&:after {
+				content: '';
+				position: absolute;
+				width: 93px;
+				height: 13px;
+				bottom: 0;
+				left: 50%;
+				z-index: -1;
+				transform: translate(-45px, 0);
+				background-color: $secondary-color;
+				-webkit-repeat: no-repeat;
+				mask-repeat: no-repeat;
+				-webkit-mask-size: contain;
+				mask-size: contain;
+				-webkit-mask-image: url(assets/svg/headline-underline-zigzag.svg);
+				mask-image: url(assets/svg/headline-underline-zigzag.svg);
+			}
+		}
+	}
+}
+
+.unicamp-link-animate-border {
+	.heading-primary {
+		a {
+			&:hover {
+				mark {
+					&:before {
+						transform: scaleX(0) translateZ(0);
+						transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+					}
+
+					&:after {
+						transform: scaleX(1) translateZ(0);
+						transition: transform .6s cubic-bezier(.165, .84, .44, 1) .3s, -webkit-transform .6s cubic-bezier(.165, .84, .44, 1) .3s;
+					}
+				}
+			}
+
+			mark {
+				position: relative;
+				display: inline-block;
+				line-height: 1;
+				padding: 3px 0;
+
+				&:before,
+				&:after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background: #e0e0e0;
+					transform-origin: right;
+					transform: scaleX(1) translateZ(0);
+					transition: transform .6s cubic-bezier(.165, .84, .44, 1) .3s, -webkit-transform .6s cubic-bezier(.165, .84, .44, 1) .3s;
+				}
+
+				&:after {
+					background: $primary-color;
+					transform-origin: left;
+				}
+
+				&:after {
+					transform: scaleX(0) translateZ(0);
+					transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+				}
+			}
+		}
+	}
+}
+
+.unicamp-link-animate-border-02 {
+	.heading-primary {
+		a {
+			&:hover {
+				mark {
+					&:before {
+						width: 100%;
+						left: 0;
+						right: auto;
+					}
+				}
+			}
+
+			mark {
+				position: relative;
+				display: inline-block;
+				line-height: 1;
+				padding: 3px 0;
+
+				&:before {
+					content: '';
+					width: 0;
+					height: 1px;
+					position: absolute;
+					left: auto;
+					right: 0;
+					bottom: 0;
+					transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+					background: #e0e0e0;
+				}
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.unicamp-modern-heading-style-02 {
+		.heading-primary {
+			mark {
+				border-bottom-width: 1px;
+			}
+		}
+	}
+
+	.unicamp-modern-heading-style-04 {
+		.heading-primary {
+			mark {
+				border-bottom-width: 2px;
+			}
+		}
+	}
+}

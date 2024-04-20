@@ -1,0 +1,256 @@
+.unicamp-wp-widget-filter {
+	.filter-pseudo-link {
+		display: none;
+	}
+
+	ul {
+		a {
+			display: inline-block;
+			font-size: 14px;
+			font-weight: $body-font-weight-medium;
+			line-height: 26px;
+		}
+
+		.count {
+			font-weight: 400;
+			color: $text-lighten2-color;
+		}
+
+		> li:not(.disabled) {
+			a {
+				&:hover:before {
+					border-color: $primary-color;
+				}
+			}
+		}
+
+		> li.disabled {
+			a {
+				cursor: auto;
+				color: $link-color;
+
+				&:before {
+					opacity: .5;
+				}
+			}
+		}
+
+		&.filter-checkbox-list {
+			a {
+				position: relative;
+				padding-left: 30px;
+
+				&:before,
+				&:after {
+					@extend %NormalTransition;
+					content: '';
+					position: absolute;
+					width: 18px;
+					height: 18px;
+					border-radius: 0;
+					top: 4px;
+					left: 0;
+				}
+
+				&:before {
+					border: 1px solid #cacaca;
+					background: #fff;
+				}
+
+				&:after {
+					@extend %FontAwesomeRegular;
+					content: '\f00c';
+					font-size: 14px;
+					line-height: 18px;
+					text-align: center;
+					transform: scale(0, 0);
+					color: #fff;
+					background: $primary-color;
+				}
+			}
+
+			.chosen {
+				> a {
+					&:before {
+						border-color: transparent;
+					}
+
+					&:after {
+						transform: scale(1, 1);
+					}
+				}
+			}
+		}
+
+		.term-item-swatch {
+			display: inline-block;
+		}
+
+		&.filter-radio-list {
+			a {
+				position: relative;
+				padding-left: 30px;
+
+				&:before,
+				&:after {
+					@extend %NormalTransition;
+					content: '';
+					position: absolute;
+					top: 4px;
+					left: 0;
+					width: 18px;
+					height: 18px;
+					border-radius: 50%;
+				}
+
+				&:before {
+					border: 1px solid #cacaca;
+					background: #fff;
+				}
+
+				&:after {
+					opacity: 0;
+					width: 10px;
+					height: 10px;
+					background: $primary-color;
+					transform: translate(4px, 4px);
+				}
+			}
+
+			.chosen {
+				> a {
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		&.filter-color-list {
+			margin-left: -9px;
+			margin-right: -9px;
+
+			.term-item-swatch {
+				vertical-align: top;
+				margin: 3px 10px 0 3px;
+			}
+
+			li {
+				padding-left: 9px;
+				padding-right: 9px;
+				margin: 0 0 8px;
+
+				&.chosen {
+					.filter-swatch:before {
+						opacity: 1;
+						visibility: visible;
+						transform: translate(-50%, -50%) scale(1, 1);
+					}
+				}
+			}
+
+			.filter-swatch {
+				display: block;
+				position: relative;
+				border-radius: 50%;
+				box-shadow: none;
+				vertical-align: middle;
+				width: 22px;
+				height: 22px;
+				line-height: 22px;
+				border: 1px solid #ededed;
+
+				&:before {
+					@extend %NormalTransition;
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 28px;
+					height: 28px;
+					border: 1px solid $heading-color;
+					border-radius: 50%;
+					transform: translate(-50%, -50%) scale(0.8, 0.8);
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		}
+
+		&.filter-image-list {
+			margin-left: -9px;
+			margin-right: -9px;
+
+			.term-item-swatch {
+				margin: 0 10px 0 0;
+			}
+
+			li {
+				padding-left: 9px;
+				padding-right: 9px;
+
+				&.chosen {
+					.filter-swatch:before {
+						opacity: 1;
+						visibility: visible;
+						transform: translate(-50%, -50%) scale(1, 1);
+					}
+				}
+			}
+
+			.filter-swatch {
+				position: relative;
+				border-radius: 50%;
+				box-shadow: none;
+				vertical-align: middle;
+				width: 22px;
+				height: 22px;
+				line-height: 22px;
+				border: 1px solid #ededed;
+
+				img {
+					border-radius: 50%;
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+
+				&:before {
+					@extend %NormalTransition;
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 28px;
+					height: 28px;
+					border: 1px solid $heading-color;
+					border-radius: 50%;
+					transform: translate(-50%, -50%) scale(0.8, 0.8);
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		}
+
+		&.show-display-inline {
+			li {
+				display: inline-block;
+				margin: 0 20px 10px 0;
+			}
+		}
+
+		&.show-display-list {
+			li {
+				+ li {
+					margin: 12px 0 0;
+				}
+			}
+		}
+
+		&.show-items-count-off {
+			.count {
+				display: none;
+			}
+		}
+	}
+}

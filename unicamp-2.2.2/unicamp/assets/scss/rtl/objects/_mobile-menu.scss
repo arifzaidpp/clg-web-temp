@@ -1,0 +1,27 @@
+.page-mobile-menu-header {
+	padding: 0 30px 0 15px;
+}
+
+.page-mobile-menu-logo {
+	text-align: right;
+}
+
+.page-mobile-main-menu {
+	.menu__container {
+		text-align: right;
+	}
+
+	.toggle-sub-menu {
+		left: 0;
+		right: auto;
+	}
+}
+
+.mobile-menu-push-to-right,
+.mobile-menu-slide-to-right {
+	.page-mobile-main-menu {
+		> .inner {
+			float: left;
+		}
+	}
+}

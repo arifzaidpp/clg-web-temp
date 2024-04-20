@@ -1,0 +1,110 @@
+.tm-counter {
+	@extend %NormalTransition;
+	width: 100%;
+
+	.icon {
+		font-size: 48px;
+		line-height: 1;
+	}
+
+	.counter-number-wrap {
+		display: inline-flex;
+		font-size: 20px;
+		line-height: 1;
+		font-weight: 700;
+		color: $primary-color;
+	}
+
+	.heading-wrap {
+		margin: 5px 0 0;
+	}
+
+	.counter-heading {
+		font-size: 14px;
+		line-height: 24px;
+		color: $heading-color;
+		margin: 0;
+	}
+}
+
+.unicamp-counter-style-01 {
+	.tm-counter {
+		margin: 0 0 30px;
+
+		.counter-number-wrap {
+			font-family: $heading-font-family;
+			font-weight: $heading-font-weight;
+			font-size: 72px;
+		}
+
+		.heading-wrap {
+			margin: -2px 0 0;
+		}
+
+		.counter-heading {
+			font-family: $body-font-family;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+}
+
+.unicamp-counter-style-02 {
+	.tm-counter {
+		margin: 0 0 30px;
+
+		.counter-number-wrap {
+			font-family: $heading-font-family;
+			font-weight: $heading-font-weight;
+			font-size: 72px;
+		}
+
+		.heading-wrap {
+			margin: -2px 0 0;
+		}
+
+		.counter-heading {
+			font-family: $body-font-family;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 30px;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(md) {
+	.unicamp-counter-style-01 {
+		.tm-counter {
+			.counter-number-wrap {
+				font-size: 57px;
+			}
+		}
+	}
+
+	.unicamp-counter-style-02 {
+		.tm-counter {
+			.counter-number-wrap {
+				font-size: 57px;
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.unicamp-counter-style-01 {
+		.tm-counter {
+			.counter-number-wrap {
+				font-size: 42px;
+			}
+		}
+	}
+
+	.unicamp-counter-style-02 {
+		.tm-counter {
+			.counter-number-wrap {
+				font-size: 42px;
+			}
+		}
+	}
+}

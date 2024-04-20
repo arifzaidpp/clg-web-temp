@@ -1,0 +1,92 @@
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	border: 0;
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+.wp-caption {
+	margin: 0 0 30px;
+	max-width: 100%;
+}
+
+.alignnone {
+	margin: 0 0 30px;
+}
+
+p {
+	.alignnone {
+		&:first-child {
+			margin-top: 7px;
+		}
+
+		&:last-child {
+			margin-bottom: 8px;
+		}
+	}
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 0 30px 30px 0;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 0 0 30px 30px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 30px;
+	clear: both;
+}
+
+.alignfull,
+.alignwide {
+	margin: 0 0 30px;
+}
+
+/**
+ * Add margin top for media only.
+ */
+img,
+.wp-caption {
+	&.alignleft {
+		margin: 30px 30px 30px 0;
+	}
+
+	&.alignright {
+		margin: 30px 0 30px 30px;
+	}
+
+	&.aligncenter {
+		margin: 30px auto;
+	}
+}
+
+article.hentry {
+	p:last-child {
+		img.alignright {
+			clear: both;
+		}
+	}
+}
+
+.mejs-controls {
+	button {
+		&:hover {
+			background-color: transparent;
+		}
+	}
+}

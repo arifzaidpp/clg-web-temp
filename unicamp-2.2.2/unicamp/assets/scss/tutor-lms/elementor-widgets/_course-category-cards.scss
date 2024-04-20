@@ -1,0 +1,163 @@
+.unicamp-course-category-cards {
+	.category-icon {
+		@extend %NormalTransition;
+		font-size: 40px;
+		line-height: 0;
+		margin: 0 10px 0 0;
+
+		svg {
+			width: 1em;
+			height: auto;
+		}
+	}
+
+	.category-name {
+		@extend %NormalTransition;
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: $heading-font-weight;
+		margin: 0;
+	}
+
+	.category-description {
+		margin: 2px 0 0;
+	}
+
+	&.style-01 {
+		.unicamp-box {
+			display: flex;
+			align-items: center;
+			background: #f1f3f8;
+			border-radius: 5px;
+			padding: 10px 30px;
+			height: 100%;
+			min-height: 70px;
+
+			&:hover {
+				color: #fff;
+				background: $primary-color;
+
+				.category-name {
+					color: #fff;
+
+					&:after {
+						transform: translateY(-50%) scale(1, 1);
+					}
+				}
+
+				.category-icon {
+					color: #fff;
+
+					svg {
+						color: #fff;
+
+						.text-fill-color {
+							fill: #fff;
+						}
+
+						.text-lighten-fill-color {
+							fill: #fff;
+							fill-opacity: 0.2;
+						}
+					}
+				}
+			}
+		}
+
+		.category-icon {
+			min-width: 60px;
+			color: $primary-color;
+
+			svg {
+				color: $primary-color;
+
+				*[fill] {
+					@extend %NormalTransition;
+					fill: currentColor;
+				}
+
+				/**
+				 * Special class for adjust color.
+				 */
+				.text-lighten-fill-color {
+					color: #d4e1f4;
+				}
+
+				.text-fill-color {
+					color: #47586d;
+				}
+			}
+		}
+
+		.category-name {
+			position: relative;
+			display: inline-block;
+
+			&:after {
+				@extend %NormalTransition;
+				@extend %FontAwesomeRegular;
+				content: '\f105';
+				position: absolute;
+				right: -15px;
+				top: 50%;
+				transform: translateY(-50%) scale(0, 0);
+				color: #fff;
+				font-size: 16px;
+			}
+		}
+	}
+
+	&.style-02 {
+		.unicamp-box {
+			display: flex;
+			align-items: center;
+			border: 2px solid #eee;
+			border-radius: 8px;
+			padding: 10px 30px 10px 30px;
+			height: 100%;
+			min-height: 94px;
+
+			&:hover {
+				background: #fff;
+				border-color: #fff;
+				box-shadow: 0 10px 20px rgba(0, 0, 0, .05);
+
+				.category-name {
+					color: $primary-color;
+
+					&:after {
+						transform: translateY(-50%) scale(1, 1);
+					}
+				}
+			}
+		}
+
+		.category-icon {
+			min-width: 58px;
+			font-size: 48px;
+			flex-shrink: 0;
+			color: $primary-color;;
+		}
+
+		.category-info {
+			flex-grow: 1;
+		}
+
+		.category-name {
+			position: relative;
+			display: inline-block;
+
+			&:after {
+				@extend %NormalTransition;
+				@extend %FontAwesomeRegular;
+				content: '\f105';
+				position: absolute;
+				right: -15px;
+				top: 50%;
+				transform: translateY(-50%) scale(0, 0);
+				color: $primary-color;
+				font-size: 16px;
+			}
+		}
+	}
+}

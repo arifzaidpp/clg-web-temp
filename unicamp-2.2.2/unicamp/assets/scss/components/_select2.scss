@@ -1,0 +1,152 @@
+.select2 {
+	min-height: $form-input-height;
+}
+
+// Late enqueue can override this css. so need wrap to make strong selector.
+.select2-container {
+	.select2-search--dropdown {
+		position: relative;
+		padding: 5px 20px;
+
+		&:after {
+			@extend %FontAwesomeSolid;
+			content: '\f002';
+			font-size: 14px;
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			right: 40px;
+		}
+
+		.select2-search__field {
+			padding: 3px 20px;
+			min-height: 40px;
+		}
+	}
+
+	.select2-results {
+		padding: 0;
+	}
+
+	.select2-dropdown {
+		border-color: #eee;
+		border-radius: $form-input-radius;
+		overflow: hidden;
+		top: -1px;
+	}
+
+	.select2-results__option {
+		margin: 0;
+		outline: 0;
+		padding: 6px 20px;
+		font-size: 13px;
+		line-height: 26px;
+		color: $text-color;
+	}
+
+	&.select2-container--open {
+		.select2-dropdown--below {
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+	}
+}
+
+.select2.select2-container {
+	.select2-selection--single {
+		height: $form-input-height;
+		border-radius: $form-input-radius;
+	}
+
+	.select2-selection__rendered {
+		padding: 0 35px 0 20px !important;
+		outline: 0;
+	}
+
+	.select2-selection__clear {
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+.select2-drop-active {
+	border: 0 !important;
+}
+
+.select2-container.select2-container.select2-container--default {
+	.select2-selection--single {
+		outline: 0;
+		background-color: $form-background;
+		border: 1px solid $form-border;
+		color: $form-text;
+
+		.select2-selection__arrow {
+			top: 50%;
+			right: 15px;
+			transform: translate(0, -50%);
+		}
+
+		.select2-selection__rendered {
+			font-size: 14px;
+			font-weight: 500;
+			line-height: $form-input-height - 2;
+			color: inherit;
+			border: 0 !important;
+			background: none !important;
+		}
+	}
+
+	.select2-search--dropdown {
+		.select2-search__field {
+			color: $form-text;
+			border-color: $form-border;
+			background-color: $form-background;
+
+			&:focus {
+				color: $form-focus-text;
+				border-color: $form-focus-border;
+				background-color: $form-focus-background;
+			}
+		}
+	}
+
+	.select2-selection--multiple {
+		@extend %NormalTransition;
+		outline: 0;
+		background-color: $form-background;
+		border: 1px solid $form-border;
+		border-radius: 0;
+
+		.select2-selection__choice__remove:hover {
+			color: $primary-color;
+		}
+
+		.select2-selection__rendered {
+			padding: 10px 15px 0 15px !important;
+		}
+	}
+
+	&.select2-container--open {
+		.select2-selection--single,
+		.select2-dropdown {
+			color: $form-focus-text;
+			border-color: $form-focus-border;
+			background-color: $form-focus-background;
+		}
+	}
+
+	&.select2-container--focus {
+		.select2-selection--multiple {
+			border-color: $form-focus-border;
+			border-radius: 0;
+		}
+	}
+
+	.select2-results__option--highlighted[aria-selected],
+	&.select2-container--open .select2-results__option[aria-selected=true],
+	&.select2-container--open .select2-results__option[data-selected=true] {
+		color: #fff;
+		background: $primary-color;
+	}
+}

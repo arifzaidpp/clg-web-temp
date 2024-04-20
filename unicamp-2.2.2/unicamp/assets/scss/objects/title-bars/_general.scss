@@ -1,0 +1,98 @@
+.page-title-bar {
+	position: relative;
+
+	.heading {
+		margin-bottom: 0;
+	}
+}
+
+.page-title-bar-bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.page-title-bar-inner {
+	position: relative;
+	z-index: 1;
+	border-bottom-style: solid;
+}
+
+.insight_core_breadcrumb {
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		margin: 0 5px 0 0;
+
+		+ li {
+			position: relative;
+			padding-left: 13px;
+
+			&:before {
+				content: '/';
+				position: absolute;
+				left: -1px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+
+		&:last-child {
+			margin: 0 !important;
+		}
+
+		&.current:before {
+			color: inherit !important;
+		}
+	}
+
+	a {
+		@extend %LinkTransition;
+		display: block;
+	}
+}
+
+// Hide entry title if title bar also has post title.
+.title-bar-has-post-title {
+	.entry-title {
+		display: none;
+	}
+}
+
+.page-title-bar-fixed {
+	position: relative;
+	/**
+	 * Fix top Slider overlay title bar.
+	 */
+	z-index: 2;
+
+	.page-title-bar-inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+}
+
+.elementor-editor-active {
+	.page-title-bar-fixed {
+		pointer-events: none;
+	}
+}
+

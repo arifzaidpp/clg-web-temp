@@ -1,0 +1,1707 @@
+# Copyright (C) 2021 Insight Core
+# This file is distributed under the same license as the Insight Core package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Insight Core\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/insight-core/insight-core.php:119
+msgid "Email Address"
+msgstr ""
+
+#: src/insight-core/insight-core.php:123, src/insight-core/includes/share.php:20
+msgid "Facebook"
+msgstr ""
+
+#: src/insight-core/insight-core.php:127, src/insight-core/includes/share.php:28
+msgid "Twitter"
+msgstr ""
+
+#: src/insight-core/insight-core.php:131
+msgid "Instagram"
+msgstr ""
+
+#: src/insight-core/insight-core.php:135, src/insight-core/includes/share.php:53
+msgid "Linkedin"
+msgstr ""
+
+#: src/insight-core/insight-core.php:139
+msgid "Pinterest"
+msgstr ""
+
+#: src/insight-core/includes/better-menu-widget.php:20
+msgid "[Insight] Navigation Menu"
+msgstr ""
+
+#: src/insight-core/includes/better-menu-widget.php:66
+msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
+msgstr ""
+
+#: src/insight-core/includes/better-menu-widget.php:72
+msgid "Title:"
+msgstr ""
+
+#: src/insight-core/includes/better-menu-widget.php:77
+msgid "Select Menu:"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:9
+msgid "Home"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:10
+msgid "Search Result of \"%s\""
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:11
+msgid "404 Not Found"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:12
+msgctxt "category label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:13
+msgctxt "tag label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:14
+msgctxt "taxonomy label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:15
+msgctxt "author label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:16
+msgctxt "attachment label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:17
+msgctxt "year label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:18
+msgctxt "month label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:19
+msgctxt "day label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:20
+msgctxt "post type label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:21
+msgid " &gt; "
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:41
+msgid "The URL of your site's homepage."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:42
+msgid "Home URL"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:46
+msgid "The root URL of your site."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:47
+msgid "Site URL"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:51
+msgid "The version of WordPress installed on your site."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:52
+msgid "WP Version"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:56
+msgid "Whether or not you have WordPress Multisite enabled."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:57
+msgid "WP Multisite"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:65
+msgid "The maximum amount of memory (RAM) that your site can use at one time."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:66
+msgid "WP Memory Limit"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:76
+msgid "%s - We recommend setting memory to at least 128MB. See: <a href=\"%s\" target=\"_blank\">Increasing memory allocated to PHP</a>"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:83
+msgid "Displays whether or not WordPress is in Debug Mode."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:84
+msgid "WP Debug Mode"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:92
+msgid "The current language used by WordPress. Default = English"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:93
+msgid "Language"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:97
+msgid "The current theme name"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:98
+msgid "Theme Name"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:102
+msgid "The current theme version"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:103
+msgid "Theme Version"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:107
+msgid "Installed plugins"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:108
+msgid "Activated Plugins"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:132
+msgid "Information about the web server that is currently hosting your site."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:133
+msgid "Server Info"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:137
+msgid "The version of PHP installed on your hosting server."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:138
+msgid "PHP Version"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:143, src/insight-core/includes/import/import-page.php:15
+msgid "Insight Core requires PHP version 5.6 or greater. Please contact your hosting provider to upgrade PHP version."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:152
+msgid "The largest filesize that can be contained in one post."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:153
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:157
+msgid "The amount of time (in seconds) that your site will spend on a single operation before timing out (to avoid server lockups)"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:158
+msgid "PHP Time Limit"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:163
+msgid "%s - We recommend setting max execution time to at least 180. See: <a href=\"%s\" target=\"_blank\">Increasing max execution to PHP</a>"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:170
+msgid "The maximum number of variables your server can use for a single function to avoid overloads."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:171
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:176
+msgid "%s - Max input vars limitation will truncate POST data such as menus. Required >= 5000"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:184
+msgid "The version of MySQL installed on your hosting server."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:185
+msgid "MySQL Version"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:194
+msgid "The largest filesize that can be uploaded to your WordPress installation."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:195
+msgid "Max Upload Size"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:199
+msgid "The default timezone for your server."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:200
+msgid "Default Timezone is UTC"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:204
+msgid "Default timezone is %s - it should be UTC"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:214
+msgid "Plugins may use it when communicating with remote services."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:219, src/insight-core/includes/import/import-page.php:21
+msgid "Your server does not have fsockopen or cURL enabled. Please contact your hosting provider to enable it."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:223
+msgid "WordPress Importer use DOMDocument."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:228, src/insight-core/includes/import/import-page.php:26
+msgid "Your server does not have <a href=\"%s\">the DOM extension</a> class enabled. Please contact your hosting provider to enable it."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:232
+msgid "WordPress Importer use XMLReader."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:237, src/insight-core/includes/import/import-page.php:31
+msgid "Your server does not have <a href=\"%s\">the XMLReader extension</a> class enabled. Please contact your hosting provider to enable it."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:240
+msgid "Remote Get"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:241
+msgid "Retrieve the raw response from the HTTP request using the GET method."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:246
+msgid " WordPress function <a href=\"https://codex.wordpress.org/Function_Reference/wp_remote_get\">wp_remote_get()</a> test failed. Please contact your hosting provider to enable it."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:248
+msgid "Error: %s"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:250
+msgid "Status code: %s"
+msgstr ""
+
+#: src/insight-core/includes/pages-update.php:9
+msgid "Sorry, you are not allowed to update this site."
+msgstr ""
+
+#: src/insight-core/includes/pages-update.php:37, src/insight-core/includes/pages-welcome.php:144
+msgid "Update %s now"
+msgstr ""
+
+#: src/insight-core/includes/pages-update.php:41
+msgid "There is a new version of %1$s available. <a href=\"%2$s\" %3$s>Update now</a>."
+msgstr ""
+
+#: src/insight-core/includes/pages-update.php:48
+msgid "There is a new version of %1$s available. Please <a href=\"%2$s\">click here</a> to enter your purchase code to update the theme."
+msgstr ""
+
+#: src/insight-core/includes/pages-welcome.php:281, src/insight-core/includes/import/import-page.php:183
+msgid "Our demo data import lets you have the whole data package in minutes, delivering all kinds of essential things quickly and simply. You may not have enough time for a coffee as the import is too fast!"
+msgstr ""
+
+#: src/insight-core/includes/pages-welcome.php:285, src/insight-core/includes/import/import-page.php:187
+msgid "Notice: Before import, Make sure your website data is empty (posts, pages, menus...etc...)"
+msgstr ""
+
+#: src/insight-core/includes/pages-welcome.php:287, src/insight-core/includes/import/import-page.php:189
+msgid "We suggest you use the plugin"
+msgstr ""
+
+#: src/insight-core/includes/pages-welcome.php:290, src/insight-core/includes/import/import-page.php:192
+msgid "to reset your website before import."
+msgstr ""
+
+#: src/insight-core/includes/pages-welcome.php:296, src/insight-core/includes/import/import-page.php:227, src/insight-core/includes/import/import-page.php:242
+msgid "%s time"
+msgid_plural "%s times"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/pages-welcome.php:309
+msgid "Changelog"
+msgstr ""
+
+#: src/insight-core/includes/pages-welcome.php:313
+msgid "View Changelogs"
+msgstr ""
+
+#: src/insight-core/includes/share.php:37
+msgid "Google+"
+msgstr ""
+
+#: src/insight-core/includes/share.php:45
+msgid "Tumblr"
+msgstr ""
+
+#: src/insight-core/includes/share.php:61
+msgid "Email"
+msgstr ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:30
+msgid "Install Required Plugins"
+msgstr ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:31
+msgid "Plugins"
+msgstr ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:32
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:34
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:35
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:37
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:39
+msgid "Sorry, but you do not have the correct permissions to install the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %1$s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:41
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:43
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:45
+msgid "Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %1$s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:47
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:49
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:51
+msgid "Sorry, but you do not have the correct permissions to activate the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %1$s plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:53
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:54
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:55
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:56
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:57
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:58
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:59
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:61
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:63
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: src/insight-core/includes/tgm-plugin-registration.php:65
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: src/insight-core/includes/customizer/import.php:55, src/insight-core/includes/import/import.php:216
+msgid "Import is successful!"
+msgstr ""
+
+#: src/insight-core/includes/customizer/io-control.php:20, src/insight-core/includes/customizer/io-control.php:26, src/insight-core/includes/export/export-page.php:23, src/insight-core/includes/export/export-page.php:36, src/insight-core/includes/export/export-page.php:49, src/insight-core/includes/export/export-page.php:62, src/insight-core/includes/export/export-page.php:75, src/insight-core/includes/export/export-page.php:87, src/insight-core/includes/export/export-page.php:100, src/insight-core/includes/export/export-page.php:115, src/insight-core/includes/export/export-page.php:130, src/insight-core/includes/export/export-page.php:143, src/insight-core/includes/export/export-page.php:158, src/insight-core/includes/export/export-page.php:171, src/insight-core/includes/export/export-page.php:185, src/insight-core/includes/export/export-page.php:198, src/insight-core/includes/export/export-page.php:211
+msgid "Export"
+msgstr ""
+
+#: src/insight-core/includes/customizer/io-control.php:23
+msgid "Click the button below to export the customization settings for this theme."
+msgstr ""
+
+#: src/insight-core/includes/customizer/io-control.php:29, src/insight-core/includes/customizer/io-control.php:34
+msgid "Import"
+msgstr ""
+
+#: src/insight-core/includes/customizer/io-control.php:32
+msgid "Upload a file to import customization settings for this theme."
+msgstr ""
+
+#: src/insight-core/includes/customizer/io.php:17
+msgid "Import / Export"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:24
+msgctxt "Post Type General Name"
+msgid "Footers"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:25
+msgctxt "Post Type Singular Name"
+msgid "Footer"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:26, src/insight-core/includes/footer/footer.php:27
+msgid "Footer"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:28
+msgid "Parent Footer:"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:29
+msgid "All Footers"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:30
+msgid "Add New Footer"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:31, src/insight-core/includes/mega-menu/mega-menu.php:56, src/insight-core/includes/popup/popup.php:85, src/insight-core/libs/kungfu/inc/class.case-study.php:19, src/insight-core/libs/kungfu/inc/class.portfolio.php:21, src/insight-core/libs/kungfu/inc/class.service.php:18
+msgid "Add New"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:32
+msgid "New Footer"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:33
+msgid "Edit Footer"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:34
+msgid "Update Footer"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:35
+msgid "View Footer"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:36
+msgid "Search Footer"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:37, src/insight-core/includes/mega-menu/mega-menu.php:62, src/insight-core/includes/popup/popup.php:91
+msgid "Not found"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:38, src/insight-core/includes/mega-menu/mega-menu.php:63, src/insight-core/includes/popup/popup.php:92
+msgid "Not found in Trash"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:42
+msgid "Footers"
+msgstr ""
+
+#: src/insight-core/includes/footer/footer.php:43
+msgid "Insight Footer"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:37
+msgid ""
+"Your server does not meet the importer requirements. The PHP max execution time currently is %s. We recommend setting PHP max execution time to at least 180. See: <a href=\"%s\" target=\"_blank\">Increasing max execution to PHP</a>.\n"
+"<p>If you are on shared hosting you can try adding following this line to wp-config.php : <strong>set_time_limit(300);</strong> <br />( <strong>Notice:</strong> addding this before line: /* That's all, stop editing! Happy blogging. */)</p>  \n"
+"<p>If you are unsure of how to make these changes, you should contact your hosting provider and ask them to increase your maximum execution time.</p>"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:70
+msgid "The importer is working"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:75
+msgid "Preparing to connect to server"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:87
+msgid "Please do not navigate away while importing. It may take up to 10 minutes to download resources."
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:135
+msgid "The importer is running. Please don't navigate away from this page."
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:149, src/insight-core/includes/import/import-page.php:155
+msgid "Import has completed"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:162
+msgid "Import is successful! Now customization is as easy as pie. Enjoy it!"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:260
+msgid "You can import pages optionally. This way is suitable if you want to get new homepages after updating."
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:269
+msgid "Choose page to import"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:343
+msgid "Total time: %s"
+msgstr ""
+
+#: src/insight-core/includes/import/import.php:148, src/insight-core/includes/import/import.php:219
+msgid "Wrong dummy name"
+msgstr ""
+
+#: src/insight-core/includes/import/import.php:157, src/insight-core/includes/import/v1/class-importer.php:103, src/insight-core/includes/import/v2/class-importer.php:156
+msgid "Could not write files into directory: <strong>%swp-content</strong>"
+msgstr ""
+
+#: src/insight-core/includes/import/import.php:238
+msgid "Can't find InsightCore_Importer class"
+msgstr ""
+
+#: src/insight-core/includes/import/import.php:246
+msgid "File does not exist: <strong>%s/content.xml</strong>"
+msgstr ""
+
+#: src/insight-core/includes/import/import.php:254
+msgid "Error while importing"
+msgstr ""
+
+#: src/insight-core/includes/import/run.importer.php:32
+msgid "Initializing Data"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:49
+msgctxt "Post Type General Name"
+msgid "Mega Menus"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:50
+msgctxt "Post Type Singular Name"
+msgid "Mega Menu"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:51, src/insight-core/includes/mega-menu/mega-menu.php:52
+msgid "Mega Menu"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:53
+msgid "Parent Menu:"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:54
+msgid "All Menus"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:55
+msgid "Add New Menu"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:57
+msgid "New Menu"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:58
+msgid "Edit Menu"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:59
+msgid "Update Menu"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:60
+msgid "View Menu"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:61
+msgid "Search Menu"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:67
+msgid "Mega Menus"
+msgstr ""
+
+#: src/insight-core/includes/mega-menu/mega-menu.php:68
+msgid "Insight Mega Menu"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup-template.php:48
+msgid "Never see this message again"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:78
+msgctxt "Post Type General Name"
+msgid "Popups"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:79
+msgctxt "Post Type Singular Name"
+msgid "Popup"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:80, src/insight-core/includes/popup/popup.php:81
+msgid "Popup"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:82
+msgid "Parent Popup:"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:83
+msgid "All Popups"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:84
+msgid "Add New Popup"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:86
+msgid "New Popup"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:87
+msgid "Edit Popup"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:88
+msgid "Update Popup"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:89
+msgid "View Popup"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:90
+msgid "Search Popup"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:96
+msgid "INSIGHT_POPUP_POST_TYPE"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:97
+msgid "Insight Popup"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:238
+msgid "Active"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:239
+msgid "Check this box to active the popup"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:246
+msgid "Appearance"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:251
+msgid "Max Width"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:253
+msgid "Enter the max width of your popup. The height of your popup will be calculated automatically."
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:263
+msgid "Display Animation"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:266, src/insight-core/includes/popup/popup.php:277
+msgid "See Animate.css demos <a href=\"%s\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:274
+msgid "Closing Animation"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:287
+msgid "Displaying Options"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:292
+msgid "Show in"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:298
+msgid "Show on selected pages and selected posts:"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:310
+msgid "Exclude Archive pages"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:315
+msgid "When to show the popup:"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:320
+msgid "Shows the PopUp if the user is"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:324
+msgid "Everyone"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:325
+msgid "Logged in to your site"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:326
+msgid "Not logged in to your site"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:330
+msgid "Display Mode"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:334
+msgid "All devices"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:335
+msgid "Only on mobile devices"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:336
+msgid "Only on a normal computer or laptop (i.e. not a Phone or Tablet)."
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:342
+msgid "\"Never see this messeage again\" settings"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:348
+msgid "Add \"Never see this message again\" checkbox"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:354
+msgid "Close button acts as \"Never see this message again\""
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:360
+msgid "Upon expiry, user will see this popup again"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:366
+msgid "Expiry time"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:374
+msgid "Popup Settings"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:386
+msgid "All posts, pages and products"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:386
+msgid "All posts and pages"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:387
+msgid "All posts"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:388
+msgid "All pages"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:392
+msgid "All products"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:394
+msgid "Custom"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:407
+msgid "Attention Seekers"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:418
+msgid "Bouncing Entrances"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:425
+msgid "Fading Entrances"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:436, src/insight-core/includes/popup/popup.php:525
+msgid "Flippers"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:441, src/insight-core/includes/popup/popup.php:529
+msgid "Lightspeed"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:444
+msgid "Rotating Entrances"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:451
+msgid "Sliding Entrances"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:457
+msgid "Zoom Entrances"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:464, src/insight-core/includes/popup/popup.php:552
+msgid "Specials"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:507
+msgid "Bouncing Exits"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:514
+msgid "Fading Exits"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:532
+msgid "Rotating Exits"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:539
+msgid "Sliding Exits"
+msgstr ""
+
+#: src/insight-core/includes/popup/popup.php:545
+msgid "Zoom Exits"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:107, src/insight-core/includes/import/v2/class-importer.php:160
+msgid "Writable Passed: <strong>%s</strong>wp-content"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:112, src/insight-core/includes/import/v2/class-importer.php:165
+msgid "Tips: Try to change Chmode of folder to 755 or 777"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:112, src/insight-core/includes/import/v2/class-importer.php:165
+msgid "Click to Retry"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:148, src/insight-core/includes/import/v2/class-importer.php:201
+msgid "Downloading package..."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:175, src/insight-core/includes/import/v2/class-importer.php:226
+msgid "<strong>ERROR %s:</strong> Could not extract demo media package. Please contact our support staff."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:222, src/insight-core/includes/import/v2/class-importer.php:271
+msgid "<strong>ERROR %s:</strong> Could not download demo media package. Please use <a href=\"%s\" target=\"_blank\">this direct link</a> or contact our support staff."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:280, src/insight-core/includes/import/v2/class-importer.php:331
+msgid "<strong>ERROR %s:</strong> Could not found temporary folder. Please contact our support staff."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:460, src/insight-core/includes/import/v2/class-importer.php:638
+msgid "Adding <b>Sidebars</b>"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:487, src/insight-core/includes/import/v2/class-importer.php:665
+msgid "<strong>ERROR %s:</strong> Could not read the widget sample data file. Please contact our support staff."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:649, src/insight-core/includes/import/v2/class-importer.php:827
+msgid "Adding <b>Customizer Options</b>"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1024, src/insight-core/includes/import/v2/class-importer.php:1220
+msgid "<strong>ERROR %s:</strong> Could not download demo media package. Please contact our support staff."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1110, src/insight-core/includes/import/v2/class-importer.php:1304
+msgid "Preparing for add media..."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1163, src/insight-core/includes/import/v2/class-importer.php:1601
+msgid "Get author mapping"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1206, src/insight-core/includes/import/v2/class-importer.php:1713
+msgid "Updating incorrect/missing infomation in the database..."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1226, src/insight-core/includes/import/v1/class-importer.php:1235, src/insight-core/includes/import/v1/class-importer.php:1283, src/insight-core/includes/import/v1/class-importer.php:1288, src/insight-core/includes/import/v1/class-importer.php:1298
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1227, src/insight-core/includes/import/v2/class-importer.php:1762
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1289
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1307
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1358
+msgid "Assign Authors"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1359
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1361
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1371
+msgid "Import Attachments"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1375
+msgid "Download and import file attachments"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1380
+msgid "Submit"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1393
+msgid "Import author:"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1407
+msgid "or create new user with login name:"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1410
+msgid "as a new user:"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1418
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1420
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1425
+msgid "- Select -"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1480
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1756, src/insight-core/includes/import/v2/class-importer.php:2139
+msgid "Adding Page <b>%s</b>"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1764, src/insight-core/includes/import/v2/class-importer.php:2156
+msgid "Adding Custom Post Type <b>%s</b>"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2022
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2030
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2114, src/insight-core/includes/import/v2/class-importer.php:2351
+msgid "Adding Media %s"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2120
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2156, src/insight-core/includes/import/v2/class-importer.php:2408
+msgid "Invalid file type"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2230, src/insight-core/includes/import/v2/class-importer.php:3259
+msgid "Remote server returned %1$d %2$s for %3$s"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2239, src/insight-core/includes/import/v2/class-importer.php:3273
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2245, src/insight-core/includes/import/v2/class-importer.php:3279
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2252, src/insight-core/includes/import/v2/class-importer.php:3285
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2378
+msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2379
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:1377
+msgid "Could not open the file for parsing"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:1416, src/insight-core/includes/import/v2/class-importer.php:1557
+msgid "This WXR file (version %s) is newer than the importer (version %s) and may not be supported. Please consider updating."
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:1841
+msgid "Invalid author mapping"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2031
+msgid "Failed to import \"%s\": Invalid post type %s"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2045
+msgid "%s \"%s\" already exists."
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2148
+msgid "Adding Post <b>%s</b>"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2168
+msgid "Failed to import \"%s\" (%s)"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2203, src/insight-core/includes/import/v2/class-importer.php:3148
+msgid "Imported \"%s\" (%s)"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2208
+msgid "Post %d remapped to %d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2901
+msgid "Failed to import user \"%s\""
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2925
+msgid "Imported user \"%s\""
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2929
+msgid "User %d remapped to %d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3088
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3153
+msgid "Term %d remapped to %d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3313
+msgid "Running post-processing for post %d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3328
+msgid "Could not find the post parent for \"%s\" (post #%d)"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3333
+msgid "Post %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3350
+msgid "Could not find the author for \"%s\" (post #%d)"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3355
+msgid "Post %d was imported with author \"%s\", but could not be found"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3383
+msgid "Post %d was marked for post-processing, but none was required."
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3396
+msgid "Could not update \"%s\" (post #%d) with mapped data"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3443
+msgid "Could not find the menu object for \"%s\" (post #%d)"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3448
+msgid "Post %d was imported with object \"%d\" of type \"%s\", but could not be found"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3581
+msgid "Could not find the comment parent for comment #%d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3585
+msgid "Comment %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3601
+msgid "Could not find the author for comment #%d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3605
+msgid "Comment %d was imported with author %d, but could not be found"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3624
+msgid "Could not update comment #%d with mapped data"
+msgstr ""
+
+#: src/insight-core/includes/popup/includes/CMB2_Type_Popup_Display.php:36, src/insight-core/includes/popup/includes/CMB2_Type_Popup_Display.php:52
+msgid "Appear after"
+msgstr ""
+
+#: src/insight-core/includes/popup/includes/CMB2_Type_Popup_Display.php:43
+msgid "Seconds"
+msgstr ""
+
+#: src/insight-core/includes/popup/includes/CMB2_Type_Popup_Display.php:65
+msgid "of the page has been scrolled."
+msgstr ""
+
+#: src/insight-core/includes/popup/includes/CMB2_Type_Popup_Display.php:74
+msgid "Appear after user scrolled until CSS selector"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:15
+msgctxt "post type general name"
+msgid "Case Studies"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:16
+msgid "Case Study"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:17
+msgid "All Case Studies"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:18
+msgctxt "Admin menu name"
+msgid "Case Studies"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:20
+msgid "Add new case study"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:21, src/insight-core/libs/kungfu/inc/class.portfolio.php:23, src/insight-core/libs/kungfu/inc/class.service.php:20
+msgid "Edit"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:22
+msgid "Edit case study"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:23
+msgid "New case study"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:24, src/insight-core/libs/kungfu/inc/class.case-study.php:25
+msgid "View case study"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:26
+msgid "Search case studies"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:27
+msgid "No case studies found"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:28
+msgid "No case studies found in trash"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:29
+msgid "Parent case study"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:30
+msgid "Case Study image"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:31
+msgid "Set case study image"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:32
+msgid "Remove case study image"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:33
+msgid "Use as case study image"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:34
+msgid "Uploaded to this case study"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:35
+msgid "Filter case studies"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:36
+msgid "Case studies navigation"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:37
+msgid "Case study list"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:71, src/insight-core/libs/kungfu/inc/class.portfolio.php:78, src/insight-core/libs/kungfu/inc/class.project.php:76, src/insight-core/libs/kungfu/inc/class.service.php:84, src/insight-core/libs/kungfu/inc/class.testimonial.php:77
+msgid "Categories"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:73
+msgctxt "taxonomy general name"
+msgid "Case Study Categories"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:74, src/insight-core/libs/kungfu/inc/class.service.php:87
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:75, src/insight-core/libs/kungfu/inc/class.service.php:88
+msgctxt "Admin menu name"
+msgid "Categories"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:76, src/insight-core/libs/kungfu/inc/class.service.php:89
+msgid "Search categories"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:77, src/insight-core/libs/kungfu/inc/class.service.php:90
+msgid "All categories"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:78, src/insight-core/libs/kungfu/inc/class.service.php:91
+msgid "Parent category"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:79, src/insight-core/libs/kungfu/inc/class.service.php:92
+msgid "Parent category:"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:80, src/insight-core/libs/kungfu/inc/class.service.php:93
+msgid "Edit category"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:81, src/insight-core/libs/kungfu/inc/class.service.php:94
+msgid "Update category"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:82, src/insight-core/libs/kungfu/inc/class.service.php:95
+msgid "Add new category"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:83, src/insight-core/libs/kungfu/inc/class.service.php:96
+msgid "New category name"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:84, src/insight-core/libs/kungfu/inc/class.service.php:97
+msgid "No categories found"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:95, src/insight-core/libs/kungfu/inc/class.portfolio.php:89
+msgid "Tags"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.case-study.php:97
+msgctxt "taxonomy general name"
+msgid "Case Study Tags"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:17
+msgctxt "post type general name"
+msgid "Portfolios"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:18
+msgid "Portfolio"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:19
+msgid "All Portfolios"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:20
+msgctxt "Admin menu name"
+msgid "Portfolios"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:22
+msgid "Add new portfolio"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:24
+msgid "Edit portfolio"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:25
+msgid "New portfolio"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:26, src/insight-core/libs/kungfu/inc/class.portfolio.php:27
+msgid "View portfolio"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:28
+msgid "Search portfolios"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:29
+msgid "No portfolios found"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:30
+msgid "No portfolios found in trash"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:31
+msgid "Parent portfolio"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:32
+msgid "Filter portfolios"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:33
+msgid "Portfolios navigation"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:34
+msgid "Portfolio list"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:80
+msgctxt "taxonomy general name"
+msgid "Portfolio Categories"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.portfolio.php:91
+msgctxt "taxonomy general name"
+msgid "Portfolio Tags"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:16
+msgctxt "post type general name"
+msgid "Projects"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:17
+msgid "Project Item"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:18
+msgid "View Projects"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:19
+msgid "Add New Project"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:20
+msgctxt "project"
+msgid "Add New"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:21
+msgid "Add New Project Item"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:22
+msgid "Edit Project Item"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:23
+msgid "Update Project"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:24
+msgid "All Projects"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:25
+msgid "Parent Project Item:"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:26
+msgid "Search Project"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:27
+msgid "No project items found"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.project.php:28
+msgid "No project items found in trash"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:14
+msgctxt "post type general name"
+msgid "Services"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:15
+msgid "Service"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:16
+msgid "All Services"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:17
+msgctxt "Admin menu name"
+msgid "Services"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:19
+msgid "Add new service"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:21
+msgid "Edit service"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:22
+msgid "New service"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:23, src/insight-core/libs/kungfu/inc/class.service.php:24
+msgid "View service"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:25
+msgid "Search services"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:26
+msgid "No services found"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:27
+msgid "No services found in trash"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:28
+msgid "Parent service"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:29
+msgid "Service image"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:30
+msgid "Set service image"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:31
+msgid "Remove service image"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:32
+msgid "Use as service image"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:33
+msgid "Uploaded to this service"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:34
+msgid "Filter services"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:35
+msgid "Services navigation"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:36
+msgid "Service list"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.service.php:86
+msgctxt "taxonomy general name"
+msgid "Service Categories"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:16
+msgctxt "post type general name"
+msgid "Testimonials"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:17
+msgid "Testimonial Item"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:18
+msgid "View Testimonials"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:19
+msgid "Add New Testimonial"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:20
+msgctxt "testimonial"
+msgid "Add New"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:21
+msgid "Add New Testimonial Item"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:22
+msgid "Edit Testimonial Item"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:23
+msgid "Update Testimonial"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:24
+msgid "All Testimonials"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:25
+msgid "Parent Testimonial Item:"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:26
+msgid "Search Testimonial"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:27
+msgid "No testimonial items found"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/class.testimonial.php:28
+msgid "No testimonial items found in trash"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/fields/attach.php:38, src/insight-core/libs/kungfu/inc/fields/audio.php:31, src/insight-core/libs/kungfu/inc/fields/gallery.php:54, src/insight-core/libs/kungfu/inc/fields/media.php:38
+msgid "Upload"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/fields/attach.php:40, src/insight-core/libs/kungfu/inc/fields/audio.php:33, src/insight-core/libs/kungfu/inc/fields/media.php:40, src/insight-core/libs/kungfu/inc/sidebars/class.sidebars.php:113, src/insight-core/libs/kungfu/inc/sidebars/class.sidebars.php:127
+msgid "Remove"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/fields/gallery.php:56
+msgid "Clear"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/sidebars/class.sidebars.php:48, src/insight-core/libs/kungfu/inc/sidebars/class.sidebars.php:48, src/insight-core/libs/kungfu/inc/sidebars/class.sidebars.php:106
+msgid "Sidebars"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/sidebars/class.sidebars.php:111, src/insight-core/libs/kungfu/inc/sidebars/class.sidebars.php:142
+msgid "Sidebar Name"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/sidebars/class.sidebars.php:112
+msgid "CSS Class"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/sidebars/class.sidebars.php:134
+msgid "No Sidebars defined"
+msgstr ""
+
+#: src/insight-core/libs/kungfu/inc/sidebars/class.sidebars.php:146
+msgid "Add New Sidebar"
+msgstr ""

@@ -1,0 +1,81 @@
+.unicamp-wp-widget-posts {
+	.post-item {
+		@extend %clearfix;
+		display: flex;
+		align-items: flex-start;
+
+		+ .post-item {
+			margin-top: 20px;
+			padding-top: 20px;
+			border-top: 1px solid $box-border;
+		}
+	}
+
+	.post-widget-thumbnail {
+		flex-shrink: 0;
+		margin: 0 17px 0 0;
+		width: 100px;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.post-widget-overlay-categories {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, .4);
+		color: #fff;
+		text-align: center;
+		font-size: 10px;
+		line-height: 22px;
+		font-weight: $heading-font-weight-thin;
+		text-transform: uppercase;
+		letter-spacing: 0.3px;
+		padding: 1px 5px;
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.post-widget-info {
+		flex-grow: 1;
+	}
+
+	.post-widget-categories {
+		font-size: 12px;
+		font-weight: $heading-font-weight-thin;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		line-height: 1.4;
+		margin-bottom: 10px;
+		color: #ababab;
+
+		a {
+			color: inherit;
+			display: inline-block;
+		}
+	}
+
+	.post-widget-title {
+		font-size: 15px;
+		font-weight: $heading-font-weight;
+		line-height: 1.74;
+		margin-bottom: 0;
+
+		a {
+			display: block;
+		}
+	}
+
+	.post-date {
+		display: block;
+		margin: 6px 0 0;
+		font-size: 14px;
+	}
+}

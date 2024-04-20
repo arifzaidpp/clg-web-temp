@@ -1,0 +1,97 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+--
+-- Database: `unicamp_thememove_com`
+--
+
+
+
+
+CREATE TABLE IF NOT EXISTS `wp_2_tutor_quiz_attempt_answers` (
+  `attempt_answer_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `quiz_id` int(11) DEFAULT NULL,
+  `question_id` int(11) DEFAULT NULL,
+  `quiz_attempt_id` int(11) DEFAULT NULL,
+  `given_answer` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `question_mark` decimal(8,2) DEFAULT NULL,
+  `achieved_mark` decimal(8,2) DEFAULT NULL,
+  `minus_mark` decimal(8,2) DEFAULT NULL,
+  `is_correct` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`attempt_answer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS `wp_2_tutor_quiz_attempts` (
+  `attempt_id` int(11) NOT NULL AUTO_INCREMENT,
+  `course_id` int(11) DEFAULT NULL,
+  `quiz_id` int(11) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `total_questions` int(11) DEFAULT NULL,
+  `total_answered_questions` int(11) DEFAULT NULL,
+  `total_marks` decimal(9,2) DEFAULT NULL,
+  `earned_marks` decimal(9,2) DEFAULT NULL,
+  `attempt_info` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `attempt_status` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `attempt_ip` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `attempt_started_at` datetime DEFAULT NULL,
+  `attempt_ended_at` datetime DEFAULT NULL,
+  `is_manually_reviewed` int(1) DEFAULT NULL,
+  `manually_reviewed_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`attempt_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS `wp_2_tutor_quiz_question_answers` (
+  `answer_id` int(11) NOT NULL AUTO_INCREMENT,
+  `belongs_question_id` int(11) DEFAULT NULL,
+  `belongs_question_type` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `answer_title` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `is_correct` tinyint(4) DEFAULT NULL,
+  `image_id` int(11) DEFAULT NULL,
+  `answer_two_gap_match` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `answer_view_format` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `answer_settings` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `answer_order` int(11) DEFAULT 0,
+  PRIMARY KEY (`answer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS `wp_2_tutor_quiz_questions` (
+  `question_id` int(11) NOT NULL AUTO_INCREMENT,
+  `quiz_id` int(11) DEFAULT NULL,
+  `question_title` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `question_description` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `question_type` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `question_mark` decimal(9,2) DEFAULT NULL,
+  `question_settings` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `question_order` int(11) DEFAULT NULL,
+  PRIMARY KEY (`question_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+
+
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

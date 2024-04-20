@@ -1,0 +1,83 @@
+/**
+ * Dynamic Variables
+ */
+$primary-color: var(--unicamp-color-primary);
+$secondary-color: var(--unicamp-color-secondary);
+$third-color: var(--unicamp-color-third);
+$text-color: var(--unicamp-color-text);
+$text-bit-lighten-color: var(--unicamp-color-text-bit-lighten);
+$text-lighten-color: var(--unicamp-color-text-lighten);
+$text-lighten2-color: #9b9b9b;
+$heading-color: var(--unicamp-color-heading);
+$link-color: var(--unicamp-color-link);
+$link-hover-color: var(--unicamp-color-link-hover);
+
+$body-font-family: var(--unicamp-typography-body-font-family);
+$body-font-weight: var(--unicamp-typography-body-font-weight);
+$body-font-size: var(--unicamp-typography-body-font-size);
+$body-line-height: var(--unicamp-typography-body-line-height);
+$body-letter-spacing: var(--unicamp-typography-body-letter-spacing);
+
+$heading-font-family: var(--unicamp-typography-headings-font-family);
+$heading-font-weight: var(--unicamp-typography-headings-font-weight);
+$heading-line-height: var(--unicamp-typography-headings-line-height);
+$heading-letter-spacing: var(--unicamp-typography-headings-letter-spacing);
+
+$heading-font-weight-thin: 500;
+$body-font-weight-medium: 500;
+$body-font-weight-bold: 700;
+
+// Form Colors
+$form-text: var(--unicamp-color-form-text);
+$form-border: var(--unicamp-color-form-border);
+$form-background: var(--unicamp-color-form-background);
+$form-focus-text: var(--unicamp-color-form-focus-text);
+$form-focus-border: var(--unicamp-color-form-focus-border);
+$form-focus-background: var(--unicamp-color-form-focus-background);
+
+// Form Colors
+$button-text: var(--unicamp-color-button-text);
+$button-border: var(--unicamp-color-button-border);
+$button-background: var(--unicamp-color-button-background);
+$button-hover-text: var(--unicamp-color-button-hover-text);
+$button-hover-border: var(--unicamp-color-button-hover-border);
+$button-hover-background: var(--unicamp-color-button-hover-background);
+
+// Sub menu
+$sub-menu-background: var(--unicamp-color-sub-menu-background);
+$sub-menu-border: var(--unicamp-color-sub-menu-border);
+
+// Box
+$box-white-background: var(--unicamp-color-box-white-background);
+$box-white-border: var(--unicamp-color-box-white-border);
+$box-separator: var(--unicamp-color-box-fill-separator);
+
+$box-grey-background: var(--unicamp-color-box-grey-background);
+$box-dark-grey-background: #f5f5f5;
+$box-light-grey-background: var(--unicamp-color-box-light-grey-background);
+
+$box-border: var(--unicamp-color-box-border);
+$box-border-lighten: var(--unicamp-color-box-border-lighten);
+
+// Alert
+$success-color: #6cbd7e;
+$error-color: #d9534f;
+$warning-color: #ff9800;
+$info-color: #2196f3;
+
+// Star
+$star-full-color: #f7c04d;
+
+// Form
+$form-input-height: 52px;
+$form-input-radius: 0;
+$form-input-font-size: 14px;
+$form-input-font-weight: 500;
+$form-input-padding: 15px;
+
+$button-radius: 0;
+
+// Set false to disable rounded.
+$box-small-rounded: false; // 5px;
+$box-rounded: false; // 5px;
+$box-semi-rounded: false; // 8px;

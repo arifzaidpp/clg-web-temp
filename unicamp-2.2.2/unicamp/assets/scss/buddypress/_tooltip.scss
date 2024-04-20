@@ -1,0 +1,71 @@
+[data-bp-tooltip] {
+	position: relative;
+
+	&:before,
+	&:after {
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		transform: translate3d(0, 0, 0);
+		transition: all 1.5s ease;
+		pointer-events: none;
+	}
+
+	&:before {
+		content: '';
+		border: 7px solid transparent;
+		border-top-color: $primary-color;
+		z-index: 1000001;
+	}
+
+	&:after {
+		border: 0;
+		border-radius: 3px;
+		color: #fff;
+		background: $primary-color;
+		content: attr(data-bp-tooltip);
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 24px;
+		max-width: 200px;
+		padding: 4px 10px;
+
+		white-space: nowrap;
+		word-wrap: break-word;
+		z-index: 100000;
+	}
+
+	&:hover {
+		&:before,
+		&:after {
+			display: block;
+			opacity: 1;
+			overflow: visible;
+			visibility: visible;
+		}
+	}
+}
+
+[data-bp-tooltip=""] {
+	&:before,
+	&:after {
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.bp-tooltip {
+	&:before {
+		left: 50%;
+		bottom: 100%;
+		transform: translate(-50%, 100%) translateY(-10px);
+	}
+
+	&:after {
+		left: 50%;
+		bottom: 100%;
+		transform: translate(-50%, -10px);
+	}
+}

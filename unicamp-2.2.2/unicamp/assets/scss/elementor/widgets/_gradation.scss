@@ -1,0 +1,243 @@
+.unicamp-gradation {
+	.item {
+		position: relative;
+	}
+
+	.graphic {
+		position: relative;
+		z-index: 1;
+	}
+
+	.unicamp-icon {
+		font-size: inherit;
+
+		i {
+			background: none;
+		}
+	}
+
+	.title {
+		font-size: 18px;
+		font-weight: $heading-font-weight-thin;
+		line-height: 1.67;
+		margin: 0;
+	}
+
+	.description {
+		margin: 10px 0 0;
+	}
+}
+
+.unicamp-gradation-layout-block {
+	.unicamp-gradation {
+		.item {
+			display: flex;
+
+			&:last-child {
+				.line {
+					display: none;
+				}
+
+				.content-wrap {
+					padding: 0 !important;
+				}
+			}
+		}
+
+		.graphic-wrap {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.graphic-wrap {
+			flex-shrink: 0;
+			margin: 0 27px 0 0;
+		}
+
+		.line {
+			width: 3px;
+			flex-grow: 1;
+			background: $box-border;
+		}
+
+		.content-wrap {
+			flex-grow: 1;
+			padding: 0 0 30px;
+		}
+	}
+}
+
+.unicamp-gradation-layout-inline {
+	.unicamp-gradation {
+		display: flex;
+
+		.item {
+			// px is required to support Internet Explorer.
+			flex: 1 1 0px;
+			padding: 0 15px 0;
+
+			&:last-child {
+				.line {
+					display: none;
+				}
+			}
+		}
+
+		.graphic-wrap {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 0 12px 0;
+		}
+
+		.line {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-1px);
+			width: 100%;
+			height: 3px;
+			background: $box-border;
+		}
+	}
+}
+
+.unicamp-gradation-style-01 {
+	.unicamp-gradation {
+		.item {
+			text-align: center;
+
+			&:hover {
+				.graphic-element {
+					&:before {
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+				.graphic {
+					color: #fff;
+					background: $secondary-color;
+				}
+			}
+		}
+
+		.graphic-element {
+			@extend %NormalTransition;
+			position: relative;
+			z-index: 1;
+			font-size: 28px;
+			font-weight: 500;
+			height: 112px;
+			line-height: 106px;
+			min-width: 112px;
+			padding: 0 5px;
+			text-align: center;
+			color: $heading-color;
+
+			&:before {
+				@include NormalTransition();
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				border: 3px solid $box-border;
+				border-radius: 50%;
+				background: #fff;
+				width: 92px;
+				height: 92px;
+			}
+		}
+
+		.graphic {
+			@extend %NormalTransition;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 92px;
+			width: 92px;
+			line-height: 92px;
+			border-radius: 50%;
+			color: $heading-color;
+
+			> svg,
+			> i {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			*[fill^='#'] {
+				fill: currentColor;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.unicamp-gradation-layout-inline {
+		.unicamp-gradation {
+			display: block;
+
+			.item {
+				display: flex;
+				padding: 15px 0;
+
+				&:last-child {
+					.line {
+						display: none;
+					}
+
+					.content-wrap {
+						padding: 0 !important;
+					}
+				}
+			}
+
+			.graphic-wrap {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.graphic-wrap {
+				flex-shrink: 0;
+				margin: 0 27px 0 0;
+			}
+
+			.line {
+				width: 4px;
+				height: 100%;
+				flex-grow: 1;
+				transform: translateX(-1px);
+			}
+
+			.content-wrap {
+				flex-grow: 1;
+			}
+		}
+	}
+
+	.unicamp-gradation-style-01 {
+		&.unicamp-gradation-layout-inline {
+			.unicamp-gradation {
+				.item {
+					align-items: center;
+					text-align: start;
+				}
+
+				.graphic-wrap {
+					margin: 0 20px 0 0;
+				}
+			}
+		}
+
+	}
+}

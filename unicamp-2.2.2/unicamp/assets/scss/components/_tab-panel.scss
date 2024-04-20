@@ -1,0 +1,123 @@
+.unicamp-tabpanel {
+	margin-bottom: 20px;
+
+	&.unicamp-tabpanel-horizontal {
+		> .unicamp-nav-tabs {
+			@extend %clearfix;
+			text-align: center;
+			border-bottom: 2px solid $box-border;
+
+			li {
+				display: inline-block;
+				margin-bottom: -2px;
+
+				a {
+					border-bottom: 2px solid transparent;
+				}
+
+				&.active {
+					a {
+						border-bottom-color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+
+	&.unicamp-tabpanel-vertical {
+		display: flex;
+		align-items: flex-start;
+
+		.unicamp-nav-tabs {
+			width: 25%;
+			flex-shrink: 0;
+		}
+
+		.unicamp-tab-content {
+			flex-grow: 1;
+		}
+	}
+
+	&.unicamp-tabpanel-nav-reversed {
+		flex-direction: row-reverse;
+	}
+
+	> .unicamp-nav-tabs {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			position: relative;
+			margin: 0;
+
+			a {
+				display: block;
+				text-decoration: none;
+				font-size: 20px;
+				font-weight: $body-font-weight-medium;
+				padding: 4px 10px;
+				position: relative;
+				color: #ccc;
+				min-height: 38px;
+				box-sizing: border-box;
+				box-shadow: none;
+			}
+
+			&.active {
+				z-index: 2;
+			}
+
+			&.active a,
+			a:hover {
+				color: $heading-color;
+			}
+		}
+	}
+
+	.tab-mobile-heading {
+		@extend %NormalTransition;
+		cursor: pointer;
+		text-decoration: none;
+		font-size: 20px;
+		font-weight: $body-font-weight-medium;
+		padding: 10px 0;
+		position: relative;
+		color: $text-lighten-color;
+		border-bottom: 2px solid $box-border;
+
+		&:hover {
+			color: $heading-color;
+		}
+	}
+
+	.tab-content {
+		display: none;
+		padding: 20px;
+	}
+
+	.tab-panel {
+		&.active {
+			.tab-mobile-heading {
+				color: $heading-color;
+				border-color: $primary-color;
+			}
+
+			.tab-content {
+				display: block;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.unicamp-tabpanel .tab-mobile-heading {
+		display: none !important;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.unicamp-nav-tabs {
+		display: none !important;
+	}
+}

@@ -1,0 +1,33 @@
+.unicamp-slider-buttons {
+	&.style-01 {
+		.button-wrap {
+			@extend %clearfix;
+			display: inline-block;
+		}
+
+		.slider-btn {
+			@extend %NormalTransition;
+			border: 2px solid #dfdfdf;
+			border-radius: 50%;
+			cursor: pointer;
+			width: 52px;
+			height: 52px;
+			line-height: 48px;
+			float: left;
+			text-align: center;
+			font-size: 18px;
+			color: $heading-color;
+			outline: none;
+
+			&:hover {
+				color: #fff;
+				background: $heading-color;
+				border-color: $heading-color;
+			}
+		}
+
+		.slider-prev-btn {
+			margin-right: 20px;
+		}
+	}
+}

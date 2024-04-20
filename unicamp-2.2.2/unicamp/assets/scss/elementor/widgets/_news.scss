@@ -1,0 +1,176 @@
+.unicamp-news {
+	.item {
+		@extend %clearfix;
+		display: flex;
+		align-items: flex-start;
+		padding-right: 30px;
+
+		+ .item {
+			margin-top: 30px;
+			padding-top: 30px;
+			border-top: 1px solid $box-border;
+		}
+	}
+
+	.news-image {
+		flex-shrink: 0;
+		margin: 0 28px 0 0;
+		width: 200px;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.news-caption {
+		flex-grow: 1;
+	}
+
+	.news-sub-title {
+		font-size: 12px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		line-height: 20px;
+		margin: -3px 0 10px;
+		color: $primary-color;
+	}
+
+	.news-title {
+		font-size: 20px;
+		font-weight: $heading-font-weight-thin;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.news-description {
+		margin: 3px 0 0;
+	}
+
+	.news-date {
+		position: relative;
+		font-size: 14px;
+		line-height: 26px;
+		margin: 5px 0 0;
+		padding: 0 0 0 35px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 12px;
+			left: 0;
+			width: 20px;
+			height: 1px;
+			background: #ccc;
+		}
+	}
+
+	.tm-button-wrapper {
+		margin: 7px 0 0;
+	}
+
+	.tm-button {
+		font-size: 13px;
+
+		&.icon-left {
+			.button-icon {
+				margin: 0 6px 0 0;
+			}
+		}
+
+		&.icon-right {
+			.button-icon {
+				margin: 0 0 0 6px;
+			}
+		}
+
+		&.style-text {
+			color: $primary-color;
+
+			&:hover {
+				color: $heading-color;
+			}
+		}
+	}
+}
+
+.unicamp-news-style-02 {
+	.tm-button-wrapper {
+		@extend %NormalTransition;
+		margin: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		transform: translateY(100%);
+	}
+
+	.unicamp-box {
+		&:hover {
+			.tm-button-wrapper {
+				transform: none;
+			}
+		}
+	}
+
+	.news-date {
+		margin: 12px 0 0;
+	}
+
+	.tm-button {
+		width: 100%;
+		padding: 0 10px;
+		min-height: 32px;
+
+		&.style-flat {
+			&:after {
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(md) {
+	.unicamp-news {
+		.item {
+			padding-right: 0 !important;
+			padding-left: 0 !important;
+
+			+ .item {
+				margin-top: 20px;
+				padding-top: 20px;
+			}
+		}
+
+		.news-image {
+			margin: 0 18px 0 0;
+		}
+
+		.news-title {
+			font-size: 18px;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.unicamp-news {
+		.news-title {
+			font-size: 16px;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.unicamp-news-style-02 {
+		.unicamp-box {
+			display: block;
+		}
+
+		.news-image {
+			margin: 0 0 24px;
+			width: 100% !important;
+		}
+	}
+}

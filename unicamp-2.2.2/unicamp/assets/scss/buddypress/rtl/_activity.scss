@@ -1,0 +1,68 @@
+.activity-list {
+	.activity-item {
+		.activity-header {
+			.activity-avatar {
+				margin: 0 0 0 19px !important;
+			}
+		}
+	}
+}
+
+.activity-meta.action {
+	.generic-button {
+		margin: 0 0 0 20px !important;
+	}
+
+	.button,
+	.icon {
+		&:before {
+			margin: 0 0 0 9px;
+		}
+	}
+}
+
+.activity-update-form-wrap {
+	#whats-new-avatar {
+		float: right;
+	}
+
+	#whats-new-content {
+		margin: 0 65px 0 0;
+	}
+
+	#whats-new-options {
+		padding: 0 65px 0 0;
+	}
+
+	#aw-whats-new-submit {
+		float: left;
+	}
+
+	#whats-new-submit {
+		input {
+			margin: 0 10px 0 0;
+		}
+	}
+}
+
+.buddypress-wrap {
+	.activity-comments {
+		div.acomment-avatar {
+			margin: 0 0 0 14px;
+		}
+
+		.activity-meta.action {
+			.generic-button {
+				+ .generic-button:before {
+					left: auto;
+					right: -14px;
+				}
+			}
+		}
+	}
+}
+
+.ac-reply-avatar {
+	float: right;
+	margin: 8px 0 0 14px;
+}

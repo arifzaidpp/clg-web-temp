@@ -1,0 +1,51 @@
+.user-form-wrap {
+	background: #fff;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 29px 50px 48px;
+	width: 470px;
+	margin: 0 auto;
+	max-width: 100%;
+
+	&.form-register-wrap {
+		width: 670px;
+	}
+
+	.form-title {
+		font-size: 20px;
+		line-height: 1.6;
+		margin: 0 0 18px;
+	}
+
+	.form-row {
+		label {
+			display: inline-block;
+			font-size: 13px;
+			font-weight: $heading-font-weight;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin: 0 0 7px;
+
+			&.form-label-checkbox {
+				font-size: 14px;
+				font-weight: 400;
+				text-transform: none;
+				letter-spacing: 0;
+			}
+		}
+	}
+
+	.form-row {
+		margin-bottom: 21px;
+	}
+
+	.lost-password-link {
+		display: inline-block;
+		margin: 0 0 7px;
+	}
+
+	.form-submit {
+		width: 100%;
+	}
+}

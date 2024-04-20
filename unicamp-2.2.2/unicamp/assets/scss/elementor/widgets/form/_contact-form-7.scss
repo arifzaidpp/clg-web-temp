@@ -1,0 +1,92 @@
+.wpcf7 {
+	form div.wpcf7-response-output {
+		margin: 20px 0 0;
+		padding: 15px 20px;
+		border: 1px solid $warning-color;
+		color: $text-color;
+	}
+
+	.wpcf7-validation-errors {
+		background: $error-color;
+	}
+
+	.wpcf7-mail-sent-ok {
+		background: $success-color;
+	}
+
+	.wpcf7-not-valid-tip {
+		margin-top: 5px;
+		color: $error-color;
+		font-size: 12px;
+	}
+}
+
+.unicamp-contact-form-7 {
+	.wpcf7-form {
+		br {
+			display: none;
+		}
+	}
+
+	span.wpcf7-list-item {
+		margin: 0;
+	}
+
+	.form-group {
+		margin: 0 0 15px;
+
+		&.has-icon {
+			&.left-icon {
+				.form-input {
+					padding-left: 40px;
+				}
+			}
+
+			&.right-icon {
+				.form-input {
+					padding-right: 40px;
+				}
+			}
+		}
+	}
+
+	.form-input-group {
+		position: relative;
+	}
+
+	.form-icon {
+		position: absolute;
+		top: 13px;
+		left: 15px;
+		font-size: 14px;
+		color: #9b9b9b;
+		min-width: 20px;
+		z-index: 1;
+	}
+
+	.wpcf7-textarea {
+		height: 150px;
+	}
+
+	.ajax-loader {
+		display: none !important;
+	}
+
+	.form-submit {
+		text-align: center;
+		display: flex;
+		margin: 25px 0 0;
+	}
+
+	.button-text {
+		~ .button-icon {
+			margin: 0 0 0 8px;
+		}
+	}
+
+	.button-icon {
+		~ .button-text {
+			margin: 0 0 0 8px;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+@media (min-width: 1200px) {
+	.page-template-boxed {
+		.container {
+			padding-left: 15px;
+			padding-right: 15px;
+			max-width: 1200px;
+		}
+
+		.elementor-section.elementor-top-section.elementor-section-boxed > .elementor-container {
+			max-width: 1230px;
+		}
+
+		.elementor-section.elementor-top-section.elementor-section-boxed > .elementor-container {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.elementor-section.elementor-top-section.elementor-section-full_width .elementor-inner-section > .elementor-container {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.elementor-section.elementor-section-boxed > .elementor-container {
+			max-width: 1200px;
+		}
+	}
+}

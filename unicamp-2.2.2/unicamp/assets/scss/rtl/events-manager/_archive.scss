@@ -1,0 +1,40 @@
+.rtl .unicamp-event {
+
+	.event-location {
+		span {
+			margin: 0 0 0 5px;
+		}
+	}
+
+	.event-meta {
+		.meta-label-icon {
+			margin: 0 0 0 6px;
+		}
+	}
+
+	&.style-grid-01 {
+		.event-start-date {
+			left: auto;
+			right: 10px;
+		}
+	}
+
+	&.style-list {
+		.unicamp-image {
+			margin: 0 0 0 30px;
+		}
+
+		.event-caption-right {
+			padding: 0 30px 0 0;
+		}
+	}
+}
+
+.rtl {
+	.unicamp-wp-widget-event-filtering {
+		.form-icon {
+			right: auto;
+			left: 0;
+		}
+	}
+}

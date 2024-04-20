@@ -1,0 +1,251 @@
+.unicamp-pricing {
+	.unicamp-pricing-features {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style-type: none;
+		}
+	}
+
+	.unicamp-pricing-ribbon {
+		position: absolute;
+		top: -2px;
+		right: -2px;
+		width: 88px;
+		height: 88px;
+		line-height: 88px;
+		text-align: center;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			content: '';
+			width: 0;
+			height: 0;
+			border-top: 88px solid #2dd4de;
+			border-bottom: 88px solid transparent;
+			border-left: 88px solid transparent;
+		}
+
+		span {
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			height: 50%;
+
+			font-size: 10px;
+			font-weight: 700;
+			line-height: 14px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			display: block;
+			color: #fff;
+			transform: rotate(45deg) translate(20%, 15%);
+			transform-origin: center;
+		}
+	}
+
+	.heading-wrap {
+		margin: 0 0 19px;
+	}
+
+	.title {
+		margin: 0;
+	}
+}
+
+.unicamp-pricing-style-01 {
+	.unicamp-pricing {
+		text-align: center;
+		border-radius: 5px;
+		overflow: hidden;
+		width: 100%;
+
+		&.has-ribbon {
+			.inner {
+				border-top-right-radius: 7px;
+			}
+		}
+	}
+
+	.inner {
+		position: relative;
+		height: 100%;
+		margin: 0 auto;
+		background-color: #fff;
+		padding: 52px 25px 36px;
+		border: 2px solid #eee;
+		border-radius: inherit;
+	}
+
+	.unicamp-pricing-header {
+		z-index: 1;
+		position: relative;
+		margin-bottom: 34px;
+	}
+
+	.tm-button {
+		width: 180px;
+		max-width: 100%;
+	}
+
+	.price-wrap-inner {
+		display: inline-flex;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.unicamp-pricing-price {
+		font-size: 56px;
+		line-height: .8;
+		margin: 0;
+		color: $primary-color;
+	}
+
+	.unicamp-pricing-currency {
+		margin: 0;
+		align-self: flex-start;
+		margin-right: 3px;
+		line-height: 1;
+		font-size: 14px;
+		font-weight: 500;
+		color: $text-lighten-color;
+	}
+
+	.unicamp-pricing-period {
+		margin: 0;
+		align-self: flex-end;
+		line-height: 1;
+		font-size: 14px;
+		font-weight: 500;
+		color: $text-lighten-color;
+	}
+
+	.title {
+		font-size: 24px;
+		line-height: 1.5;
+	}
+
+	.unicamp-pricing-features {
+		font-size: 13px;
+		margin: 16px auto 0;
+
+		li {
+			position: relative;
+			display: block;
+			padding: 6px 0;
+
+			+ li {
+				margin: 0;
+			}
+
+			i {
+				font-size: 14px;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.unicamp-pricing-footer {
+		padding: 42px 0 0;
+	}
+}
+
+.unicamp-pricing-style-02 {
+	.unicamp-pricing {
+		text-align: center;
+		border-radius: 5px;
+		overflow: hidden;
+		width: 100%;
+
+		&.has-ribbon {
+			.inner {
+				border-top-right-radius: 7px;
+			}
+		}
+	}
+
+	.inner {
+		position: relative;
+		height: 100%;
+		margin: 0 auto;
+		background-color: #fff;
+		padding: 22px 25px 36px;
+		border: 2px solid transparent;
+		border-radius: inherit;
+	}
+
+	.unicamp-pricing-header {
+		z-index: 1;
+		position: relative;
+		margin-bottom: 10px;
+	}
+
+	.tm-button {
+		width: 180px;
+		max-width: 100%;
+	}
+
+	.price-wrap-inner {
+		display: inline-flex;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.unicamp-pricing-price {
+		font-size: 48px;
+		line-height: .8;
+		margin: 0;
+		color: $heading-color;
+	}
+
+	.unicamp-pricing-currency {
+		margin: 0;
+		align-self: flex-start;
+		margin-right: 3px;
+		line-height: 1;
+		font-size: 14px;
+		font-weight: 500;
+		color: $text-lighten-color;
+	}
+
+	.unicamp-pricing-period {
+		margin: 0;
+		align-self: flex-end;
+		line-height: 1;
+		font-size: 14px;
+		font-weight: 500;
+		color: $text-lighten-color;
+	}
+
+	.title {
+		font-size: 24px;
+		line-height: 1.5;
+	}
+
+	.unicamp-pricing-features {
+		font-size: 13px;
+		margin: 16px auto 0;
+
+		li {
+			position: relative;
+			display: block;
+			padding: 6px 0;
+
+			+ li {
+				margin: 0;
+			}
+
+			i {
+				font-size: 14px;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.unicamp-pricing-footer {
+		padding: 35px 0 0;
+	}
+}

@@ -1,0 +1,114 @@
+.unicamp-widget-nice-select,
+.unicamp-nice-select {
+	display: none;
+}
+
+.unicamp-nice-select-wrap {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	width: 100%;
+
+	.unicamp-nice-select-current {
+		@extend %NormalTransition;
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		background: $form-background;
+		border: 1px solid $form-border;
+		color: $text-lighten-color;
+		padding: 3px 34px 3px 14px;
+		min-height: 52px;
+		max-width: 100%;
+		border-radius: $form-input-radius;
+		cursor: default;
+
+		&:after {
+			@extend %FontAwesomeRegular;
+			content: '\f107';
+			color: $heading-color;
+			font-size: 15px;
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			transform: translateY(-50%);
+		}
+
+		.label {
+			margin-right: 4px;
+
+			&:before {
+				margin-right: 10px;
+			}
+		}
+
+		.value {
+			color: $heading-color;
+			font-weight: 500;
+		}
+	}
+
+	.unicamp-nice-select {
+		@extend %NormalTransition;
+		@include NormalRounded();
+		display: block;
+		position: absolute;
+		top: 20px;
+		left: 0;
+		z-index: 9999;
+		list-style-type: none;
+		margin: 0;
+		padding: 5px 0;
+		background: $box-grey-background;
+		color: $heading-color;
+		border: 0;
+		visibility: hidden;
+		opacity: 0;
+		min-width: 100%;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+		font-weight: 500;
+
+		li {
+			position: relative;
+			cursor: pointer;
+			user-select: none;
+			padding: 5px 30px;
+			margin: 0;
+
+			&:hover {
+				color: #fff;
+				background: $primary-color;
+
+				&:before {
+					color: #fff !important;
+				}
+			}
+
+			&.selected {
+				&:before {
+					@extend %FontAwesomeSolid;
+					content: '\f00c';
+					position: absolute;
+					top: 12px;
+					left: 10px;
+					font-size: 12px;
+					color: $primary-color;
+				}
+			}
+		}
+	}
+
+	&.focused {
+		.unicamp-nice-select {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	&.focused .unicamp-nice-select-current,
+	.unicamp-nice-select-current:hover {
+		color: $form-focus-text;
+		border-color: $form-focus-border;
+		background: $form-focus-background;
+	}
+}

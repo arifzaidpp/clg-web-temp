@@ -1,0 +1,42 @@
+.insight-label {
+	display: inline-block;
+	padding: .4em .8em;
+	margin: 0 10px 2px 0;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+}
+
+.insight-label-info {
+	background-color: #337ab7;
+}
+
+.insight-label-success {
+	background-color: #5cb85c;
+}
+
+.insight-label-warning {
+	background-color: #f0ad4e;
+}
+
+.insight-label-error {
+	background-color: #d9534f;
+}
+
+#customize-control-logo_light {
+	.thumbnail-image {
+		background: #000;
+		padding: 15px;
+	}
+}
+
+#customize-control-mobile_menu_logo,
+#customize-control-logo_dark {
+	.thumbnail-image {
+		background: #f5f5f5;
+		padding: 15px;
+	}
+}

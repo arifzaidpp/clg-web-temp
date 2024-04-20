@@ -1,0 +1,44 @@
+.widget-search-form {
+	form {
+		position: relative;
+	}
+
+	.search-field {
+		width: 100%;
+		padding-right: 62px;
+	}
+
+	.search-submit {
+		@extend %NormalTransition;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0;
+		border: 0;
+		width: 52px;
+		height: 52px;
+		line-height: 52px;
+		text-align: center;
+		box-shadow: none;
+		transform: none;
+		background: transparent;
+		color: $primary-color;
+
+		&:hover {
+			background: $primary-color;
+			color: #fff;
+		}
+	}
+
+	.search-btn-text {
+		display: none;
+	}
+
+	.search-btn-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 20px;
+	}
+}

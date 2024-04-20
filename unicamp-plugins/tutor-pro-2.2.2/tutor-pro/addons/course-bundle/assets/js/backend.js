@@ -1,0 +1,1 @@
+jQuery("document").ready(function(i){i(".tutor-admin-bundle-delete").click(function(){var n=i(this).data("id"),t=i("#tutor-common-confirmation-form");t&&(t.find('input[name="action"]').val("tutor_bundle_delete"),t.find('input[name="id"]').val(n))})});

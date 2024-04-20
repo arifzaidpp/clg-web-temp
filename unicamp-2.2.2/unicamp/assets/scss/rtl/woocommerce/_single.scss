@@ -1,0 +1,77 @@
+.rtl {
+	.entry-meta-review-rating {
+		.inner {
+			> div {
+				+ div {
+					&:before {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.review-rating-average {
+		margin: 0 0 0 8px;
+	}
+
+	.woocommerce-review-link {
+		margin: 0 8px 0 0;
+	}
+
+	.woocommerce-tabs {
+		.tabs {
+			li {
+				margin: 0 0 0 44px;
+			}
+		}
+	}
+
+	&.single-product {
+		.woocommerce-variation-price {
+			margin: 0 0 0 10px;
+		}
+
+		form.cart {
+			.variations {
+				.label {
+					padding: 10px 0 10px 15px;
+				}
+			}
+
+			.quantity-button-wrapper {
+				> label {
+					padding: 0 0 0 15px;
+				}
+			}
+
+			.single_add_to_cart_button,
+			.product-action {
+				margin-right: 0;
+				margin-left: 11px;
+			}
+
+			div.quantity {
+				margin: 0 0 0 18px;
+			}
+		}
+
+		.reset_variations:before {
+			margin: 0 0 0 6px;
+		}
+	}
+
+	.woocommerce-product-attributes {
+		th, td {
+			padding: 5px 11px 5px 20px;
+		}
+
+		th {
+			&:before {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,90 @@
+.unicamp-widget-search-form {
+	.search-btn-icon {
+		+ .search-btn-text {
+			margin: 0 0 0 5px;
+		}
+	}
+
+	.form-group {
+		position: relative;
+	}
+
+	&.style-01 {
+		form {
+			display: flex;
+			align-items: center;
+		}
+
+		.form-group {
+			flex-grow: 1;
+			margin: 0;
+		}
+
+		.search-field {
+			background: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+		}
+
+		.search-submit {
+			flex-shrink: 0;
+			padding: 0 15px;
+			border: 0;
+			min-width: 52px;
+			text-align: center;
+			box-shadow: none;
+			transform: none;
+		}
+	}
+
+	&.style-02 {
+		form {
+			display: flex;
+			align-items: center;
+		}
+
+		.form-group {
+			flex-grow: 1;
+			margin: 0 45px 0 0;
+
+			&:before {
+				@extend %FontAwesomeLight;
+				position: absolute;
+				top: 3px;
+				left: 0;
+				content: '\f002';
+				font-size: 20px;
+				//transform: translateY(-50%);
+				color: $heading-color;
+			}
+		}
+
+		.search-field {
+			font-size: 18px;
+			border: 0;
+			border-bottom: 2px solid #eee;
+			background: none !important;
+			padding: 0 0 6px 37px !important;
+			min-height: 32px;
+		}
+
+		.search-submit {
+			flex-shrink: 0;
+			padding: 0 15px;
+			border: 0;
+			min-width: 52px;
+			text-align: center;
+			box-shadow: none;
+			transform: none;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.unicamp-widget-search-form {
+		&.style-02 {
+			.form-group {
+				margin: 0 15px 0 0;
+			}
+		}
+	}
+}

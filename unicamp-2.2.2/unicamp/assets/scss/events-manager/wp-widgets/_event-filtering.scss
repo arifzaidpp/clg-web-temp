@@ -1,0 +1,33 @@
+.unicamp-wp-widget-event-filtering {
+	.form-group {
+		position: relative;
+		margin: 0 0 20px;
+	}
+
+	.form-icon {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: $form-input-padding;
+		line-height: 1;
+		font-size: 14px;
+		color: $heading-color;
+		text-align: end;
+		pointer-events: none;
+	}
+
+	.form-has-icon {
+		.form-input {
+			padding-right: 30px;
+		}
+	}
+
+	.form-submit {
+		margin: 20px 0 0;
+	}
+
+	.search-submit {
+		padding: 0 20px;
+		width: 100%;
+	}
+}

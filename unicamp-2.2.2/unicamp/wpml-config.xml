@@ -1,0 +1,84 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_mods_unicamp">
+			<key name="top_bar_style_01_text"/>
+			<key name="top_bar_style_02_text"/>
+			<key name="top_bar_style_03_text"/>
+			<key name="top_bar_style_04_text"/>
+			<key name="header_style_01_button_text"/>
+			<key name="header_style_01_button_link"/>
+			<key name="header_style_02_button_text"/>
+			<key name="header_style_02_button_link"/>
+			<key name="header_style_05_button_text"/>
+			<key name="header_style_05_button_link"/>
+			<key name="header_style_06_button_text"/>
+			<key name="header_style_06_button_link"/>
+			<key name="header_style_07_button_text"/>
+			<key name="header_style_07_button_link"/>
+			<key name="navigation_minimal_01_menu_title"/>
+			<key name="title_bar_search_title"/>
+			<key name="title_bar_home_title"/>
+			<key name="title_bar_archive_category_title"/>
+			<key name="title_bar_archive_tag_title"/>
+			<key name="title_bar_archive_author_title"/>
+			<key name="title_bar_archive_year_title"/>
+			<key name="title_bar_archive_month_title"/>
+			<key name="title_bar_archive_day_title"/>
+			<key name="footer_copyright_text"/>
+			<key name="notice_cookie_messages"/>
+			<key name="notice_cookie_button_text"/>
+			<key name="custom_login_redirect"/>
+			<key name="error404_page_title"/>
+			<key name="error404_page_text"/>
+			<key name="blog_single_title_bar_title"/>
+			<key name="event_archive_title_bar_title"/>
+			<key name="single_event_speaker_text"/>
+			<key name="product_archive_title_bar_title"/>
+			<key name="product_single_title_bar_title"/>
+			<key name="search_page_no_results_text"/>
+			<key name="contact_info_phone"/>
+			<key name="contact_info_email"/>
+		</key>
+	</admin-texts>
+	<admin-texts>
+		<key name="theme_mods_unicamp-child">
+			<key name="top_bar_style_01_text"/>
+			<key name="top_bar_style_02_text"/>
+			<key name="top_bar_style_03_text"/>
+			<key name="top_bar_style_04_text"/>
+			<key name="header_style_01_button_text"/>
+			<key name="header_style_01_button_link"/>
+			<key name="header_style_02_button_text"/>
+			<key name="header_style_02_button_link"/>
+			<key name="header_style_05_button_text"/>
+			<key name="header_style_05_button_link"/>
+			<key name="header_style_06_button_text"/>
+			<key name="header_style_06_button_link"/>
+			<key name="header_style_07_button_text"/>
+			<key name="header_style_07_button_link"/>
+			<key name="navigation_minimal_01_menu_title"/>
+			<key name="title_bar_search_title"/>
+			<key name="title_bar_home_title"/>
+			<key name="title_bar_archive_category_title"/>
+			<key name="title_bar_archive_tag_title"/>
+			<key name="title_bar_archive_author_title"/>
+			<key name="title_bar_archive_year_title"/>
+			<key name="title_bar_archive_month_title"/>
+			<key name="title_bar_archive_day_title"/>
+			<key name="footer_copyright_text"/>
+			<key name="notice_cookie_messages"/>
+			<key name="notice_cookie_button_text"/>
+			<key name="custom_login_redirect"/>
+			<key name="error404_page_title"/>
+			<key name="error404_page_text"/>
+			<key name="blog_single_title_bar_title"/>
+			<key name="event_archive_title_bar_title"/>
+			<key name="single_event_speaker_text"/>
+			<key name="product_archive_title_bar_title"/>
+			<key name="product_single_title_bar_title"/>
+			<key name="search_page_no_results_text"/>
+			<key name="contact_info_phone"/>
+			<key name="contact_info_email"/>
+		</key>
+	</admin-texts>
+</wpml-config>

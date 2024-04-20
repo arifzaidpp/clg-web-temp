@@ -1,0 +1,588 @@
+/**
+ * Button Style
+ * Style support: flat, border, thick-border, bottom-line, left-line, text
+ * Skin support: button-grey, button-grey-white, button-white, button-danger
+ */
+
+.tm-swiper {
+	.tm-button {
+		display: inline-flex;
+	}
+}
+
+.tm-button-inline {
+	display: inline-flex;
+}
+
+.tm-button {
+	transition: all .25s cubic-bezier(.645, .045, .355, 1), color 0s linear;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: start;
+	line-height: 1.3;
+	// Long text break
+	/*white-space: nowrap;*/
+	cursor: pointer;
+	border-width: 0;
+	border-style: solid;
+	border-radius: 0;
+	max-width: 100%;
+
+	&.tm-button-full-wide {
+		width: 100% !important;
+	}
+
+	.button-content-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	.button-text {
+		@extend %NormalTransition;
+	}
+
+	.button-icon {
+		@extend %NormalTransition;
+		flex-shrink: 0;
+		position: relative;
+		/*font-size: 16px;*/
+		line-height: 1;
+
+		i {
+			background: inherit;
+		}
+	}
+
+	&.icon-left {
+		.button-icon {
+			margin-right: 14px;
+		}
+
+		&.tm-button-xs {
+			.button-icon {
+				margin-right: 7px;
+			}
+		}
+	}
+
+	&.icon-right {
+		.button-icon {
+			margin-left: 14px;
+		}
+
+		&.tm-button-xs {
+			.button-icon {
+				margin-left: 7px;
+			}
+		}
+	}
+
+	&.icon-effect-scale-up {
+		.button-icon {
+			transform: scale(0);
+		}
+
+		&:hover {
+			.button-icon {
+				transform: scale(1);
+			}
+		}
+	}
+
+	.button-badge {
+		position: absolute;
+		top: -15px;
+		right: -15px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 31px;
+		min-width: 31px;
+		padding: 4px;
+		border-radius: 50%;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 0;
+		background: #dc3131;
+		color: #fff;
+
+		.badge-text {
+			line-height: 1;
+		}
+	}
+
+	&.button-thin {
+		.button-text {
+			font-size: 14px !important;
+			font-weight: $heading-font-weight !important;
+		}
+	}
+
+	&.style-flat,
+	&.style-border,
+	&.style-thick-border {
+		padding: 0 36px;
+		min-height: 52px;
+
+		.button-content-wrapper {
+			padding: 5px 0;
+		}
+
+		&.tm-button-xl {
+			padding: 0 42px;
+			min-height: 60px;
+
+			.button-text {
+				font-size: 16px;
+			}
+
+			.button-icon {
+				font-size: 16px;
+			}
+		}
+
+		&.tm-button-lg {
+			padding: 0 42px;
+			min-height: 56px;
+		}
+
+		&.tm-button-sm {
+			padding: 0 28px;
+			min-height: 48px;
+		}
+
+		&.tm-button-xs {
+			padding: 0 16px;
+			min-height: 40px;
+
+			.button-text {
+				font-size: 14px;
+			}
+
+			.button-icon {
+				font-size: 14px;
+			}
+		}
+
+		&.tm-button-xxs {
+			padding: 0 14px;
+			min-height: 32px;
+
+			.button-text {
+				font-size: 14px;
+			}
+
+			.button-icon {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&.style-border {
+		border-width: 1px;
+	}
+
+	&.style-thick-border {
+		border-width: 2px;
+	}
+
+	&.style-text {
+		padding: 5px 0;
+
+		&.tm-button-xl {
+			.button-text {
+				font-size: 1.14em;
+			}
+		}
+
+		&.tm-button-lg {
+			.button-text {
+				font-size: 1.067em;
+			}
+		}
+
+		&.tm-button-sm {
+			.button-text {
+				font-size: .934em;
+			}
+
+			.button-icon {
+				font-size: 14px;
+			}
+		}
+
+		&.tm-button-xs {
+			.button-text {
+				font-size: .87em;
+			}
+		}
+	}
+
+	&.style-bottom-line,
+	&.style-bottom-line-alt,
+	&.style-left-line {
+		.button-icon {
+			font-size: 11px;
+		}
+
+		&.tm-button-xl {
+			font-size: 1.2em;
+		}
+
+		&.tm-button-lg {
+			font-size: 1.1em;
+		}
+
+		&.tm-button-sm {
+			font-size: .9em;
+		}
+
+		&.tm-button-xs {
+			font-size: .8em;
+		}
+	}
+
+	&.style-bottom-line {
+		.button-content-wrapper {
+			position: relative;
+			padding: 5px 0;
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				height: 1px;
+				background: #ddd;
+				transform-origin: right;
+				transform: scaleX(1) translateZ(0);
+				transition: transform .6s cubic-bezier(.165, .84, .44, 1) .3s, -webkit-transform .6s cubic-bezier(.165, .84, .44, 1) .3s;
+				bottom: 0;
+				width: 100%;
+			}
+
+			&:after {
+				transform-origin: left;
+				transform: scaleX(0) translateZ(0);
+				transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+			}
+		}
+	}
+
+	&.style-bottom-line-alt {
+		.button-content-wrapper {
+			position: relative;
+			padding: 5px 0;
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				height: 1px;
+				background: #ddd;
+				bottom: 0;
+				width: 100%;
+				transform-origin: right;
+				transform: scaleX(0) translateZ(0);
+				transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+			}
+		}
+	}
+
+	&.style-left-line {
+		.button-content-wrapper {
+			position: relative;
+			padding: 0 0 0 62px;
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 1px;
+				background: #ddd;
+				transform-origin: right;
+				transform: scaleX(1) translateZ(0);
+				transition: transform .6s cubic-bezier(.165, .84, .44, 1) .3s, -webkit-transform .6s cubic-bezier(.165, .84, .44, 1) .3s;
+				width: 50px;
+				top: 50%;
+				margin-top: -1px;
+			}
+
+			&:after {
+				transform-origin: left;
+				transform: scaleX(0) translateZ(0);
+				transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+			}
+		}
+	}
+
+	// Animate.
+
+	&.style-flat,
+	&.style-border,
+	&.style-thick-border {
+		position: relative;
+		// Badge cropped with overflow hidden.
+		//overflow: hidden;
+		transform: perspective(1px) translateZ(0);
+
+		&:before,
+		&:after {
+			@extend %NormalTransition;
+			content: "";
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: inherit;
+		}
+
+		&:after {
+			opacity: 0;
+		}
+	}
+
+	&.style-border {
+		&:before,
+		&:after {
+			top: -1px;
+			left: -1px;
+			right: -1px;
+			bottom: -1px;
+		}
+	}
+
+	&.style-thick-border {
+		&:before,
+		&:after {
+			top: -2px;
+			left: -2px;
+			right: -2px;
+			bottom: -2px;
+		}
+	}
+
+	&.button-grey {
+		&.style-flat {
+			color: $primary-color;
+			border-color: #f5f5f5;
+
+			&:before {
+				background-color: #f5f5f5;
+			}
+
+			&:after {
+				background-color: $primary-color;
+			}
+
+			&:hover {
+				color: #fff;
+				border-color: $primary-color;
+			}
+		}
+
+		&.style-border,
+		&.style-thick-border {
+			border-color: #eee;
+
+			&:hover {
+				border-color: $primary-color;
+			}
+		}
+	}
+
+	&.button-grey-white {
+		&.style-flat {
+			color: $primary-color;
+			border-color: #f5f5f5;
+
+			&:before {
+				background-color: #f5f5f5;
+			}
+
+			&:after {
+				background-color: #fff;
+			}
+
+			&:hover {
+				color: $primary-color;
+				border-color: #fff;
+				box-shadow: 0 6px 25px rgba(0, 0, 0, .1);
+			}
+		}
+
+		&.style-border,
+		&.style-thick-border {
+			border-color: #eee;
+
+			&:after {
+				background-color: #fff;
+			}
+
+			&:hover {
+				color: $primary-color;
+				border-color: #fff;
+				box-shadow: 0 6px 25px rgba(0, 0, 0, .1);
+			}
+		}
+	}
+
+	&.button-white {
+		&.style-flat {
+			color: $primary-color;
+			border-color: #fff;
+			box-shadow: 0 0 4px rgba(0, 0, 0, .08);
+
+			&:before {
+				background-color: #fff;
+			}
+
+			&:after {
+				background-color: $primary-color;
+			}
+
+			&:hover {
+				color: #fff;
+				border-color: $primary-color;
+			}
+		}
+
+		&.style-border {
+			border-color: #fff;
+			color: #fff;
+
+			&:hover {
+				color: $primary-color;
+			}
+
+			&:after {
+				background: #fff;
+			}
+		}
+	}
+
+	&.button-danger {
+		&.style-flat {
+			color: #fff;
+			border-color: #e53935;
+
+			&:hover {
+				color: #fff;
+				border-color: #ce0905;
+			}
+
+			&:before {
+				background-color: #e53935;
+			}
+
+			&:after {
+				background-color: #ce0905;
+			}
+		}
+	}
+
+	&.button-light-primary {
+		&.style-flat {
+			color: $primary-color;
+			border-color: #fff;
+			background: #fff;
+
+			&:before {
+				background-color: #{'rgba(var(--unicamp-color-primary-rgb), 0.1)'};
+			}
+
+			&:after {
+				background-color: $primary-color;
+			}
+
+			&:hover {
+				color: #fff;
+				border-color: $primary-color;
+			}
+		}
+	}
+
+	&.button-secondary-white {
+		&.style-flat {
+			color: #fff;
+			border-color: $secondary-color;
+
+			&:before {
+				background: $secondary-color;
+			}
+
+			&:after {
+				background-color: #fff;
+			}
+
+			&:hover {
+				color: $primary-color;
+				border-color: #fff;
+			}
+		}
+	}
+}
+
+/**
+ * Animate for style bottom line.
+ */
+.unicamp-box:hover div.tm-button.style-bottom-line .button-content-wrapper:before,
+a.tm-button.style-bottom-line:hover .button-content-wrapper:before {
+	transform: scaleX(0) translateZ(0);
+	transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.unicamp-box:hover div.tm-button.style-bottom-line .button-content-wrapper:after,
+a.tm-button.style-bottom-line:hover .button-content-wrapper:after {
+	transform: scaleX(1) translateZ(0);
+	transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s, -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+}
+
+/**
+ * Bottom Line Alt
+ */
+.unicamp-box:hover div.tm-button.style-bottom-line-alt .button-content-wrapper:before,
+a.tm-button.style-bottom-line-alt:hover .button-content-wrapper:before {
+	transform-origin: left;
+	transform: scaleX(1) translateZ(0);
+	transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s, -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+}
+
+/**
+ * Animate for style left line.
+ */
+.unicamp-box:hover div.tm-button.style-left-line .button-content-wrapper:before,
+a.tm-button.style-left-line:hover .button-content-wrapper:before {
+	transform: scaleX(0) translateZ(0);
+	transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.unicamp-box:hover div.tm-button.style-left-line .button-content-wrapper:after,
+a.tm-button.style-left-line:hover .button-content-wrapper:after {
+	transform: scaleX(1) translateZ(0);
+	transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s, -webkit-transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+}
+
+/**
+ * Animate for style flat, border, thick border.
+ */
+.unicamp-box:hover div.tm-button.style-flat,
+.unicamp-box:hover div.tm-button.style-border,
+.unicamp-box:hover div.tm-button.style-thick-border,
+a.tm-button.style-flat:hover,
+a.tm-button.style-border:hover,
+a.tm-button.style-thick-border:hover {
+	&:before {
+		opacity: 0;
+	}
+
+	&:after {
+		opacity: 1;
+	}
+}

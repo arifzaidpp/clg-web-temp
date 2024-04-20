@@ -1,0 +1,31 @@
+.unicamp-light-gallery {
+	.unicamp-box {
+		&:hover {
+			.unicamp-overlay {
+				visibility: visible;
+				opacity: .9;
+			}
+		}
+	}
+
+	.unicamp-overlay {
+		@extend %NormalTransition;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		visibility: hidden;
+		background: $primary-color;
+
+		> div {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 36px;
+			color: #fff;
+		}
+	}
+}

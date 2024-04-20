@@ -1,0 +1,51 @@
+.tutor-announcement-big-icon {
+	background: #f1f3f8;
+	color: $primary-color;
+	line-height: 76px;
+	font-size: 32px;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 15px 0 0;
+}
+
+.new-announcement-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.new-announcement-content {
+	display: flex;
+	align-items: center;
+}
+
+.announcement-content-info {
+	h4 {
+		font-size: 18px;
+		margin: 0 0 5px;
+	}
+}
+
+.tutor-announcement-datepicker {
+	.input-group {
+		position: relative;
+	}
+
+	input {
+		position: static;
+	}
+
+	i {
+		color: $primary-color;
+		transform: translateY(-50%);
+	}
+}
+
+.tutor-dropdown-menu {
+	z-index: 2;
+}

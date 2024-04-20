@@ -1,0 +1,27 @@
+.widget_calendar {
+
+	td, th {
+		padding: 5px;
+	}
+
+	.calendar_wrap {
+		overflow-x: auto;
+	}
+
+	caption {
+		font-weight: 700;
+		margin-bottom: 10px;
+		font-size: 14px;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+	}
+
+	#today {
+		color: #fff;
+		background: $primary-color;
+
+		a {
+			color: inherit;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.rtl .unicamp-course-category-cards {
+	&.style-01,
+	&.style-02 {
+		.category-icon {
+			margin: 0 0 0 10px;
+		}
+
+		.category-name {
+			&:after {
+				content: '\f104';
+				right: auto;
+				left: -15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+.unicamp-social-news {
+	.unicamp-box {
+		display: flex;
+		position: relative;
+		background: $secondary-color;
+		padding: 34px 30px 64px;
+		min-height: 370px;
+		color: #fff;
+		align-items: flex-end;
+	}
+
+	.social-brand {
+		@extend %FontAwesomeBrands;
+		position: absolute;
+		top: 41px;
+		right: 30px;
+		font-size: 24px;
+		line-height: 1;
+		color: #fff;
+	}
+
+	.social-content {
+		position: relative;
+		z-index: 1;
+		margin: 0 0 17px;
+	}
+
+	.social-heading {
+		font-size: 24px;
+		line-height: 1.5;
+		font-weight: $heading-font-weight-thin;
+		color: #fff;
+		margin: 0 0 20px;
+	}
+
+	.social-text {
+		color: #fff;
+
+		mark {
+			color: #fff;
+			font-weight: 500;
+		}
+	}
+
+	.social-date {
+		flex-grow: 1;
+		font-size: 13px;
+		font-weight: 500;
+		color: rgba(255, 255, 255, .6)
+	}
+
+	.social-footer {
+		position: absolute;
+		bottom: 34px;
+		left: 0;
+		right: 0;
+		display: flex;
+		width: 100%;
+		padding: 0 30px;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.social-meta {
+		font-size: 14px;
+		flex-shrink: 0;
+		display: flex;
+	}
+
+	.social-meta-item {
+		+ .social-meta-item {
+			margin: 0 0 0 20px;
+		}
+	}
+
+	.style-facebook {
+		.social-brand:before {
+			content: '\f39e';
+		}
+	}
+
+	.style-twitter {
+		.unicamp-box {
+			align-items: flex-start;
+		}
+
+		.social-brand:before {
+			content: '\f099';
+		}
+
+		.social-heading,
+		.social-text {
+			padding: 0 30px 0 0;
+		}
+
+		.social-heading + .social-text {
+			padding: 0;
+		}
+	}
+}

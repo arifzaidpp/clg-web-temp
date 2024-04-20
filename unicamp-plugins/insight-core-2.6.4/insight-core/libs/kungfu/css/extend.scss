@@ -1,0 +1,217 @@
+%clearfix {
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+%opacity-0 {
+  @include opacity(0);
+}
+
+%opacity-01 {
+  @include opacity(0.1);
+}
+
+%opacity-02 {
+  @include opacity(0.2);
+}
+
+%opacity-03 {
+  @include opacity(0.3);
+}
+
+%opacity-04 {
+  @include opacity(0.4);
+}
+
+%opacity-05 {
+  @include opacity(0.5);
+}
+
+%opacity-06 {
+  @include opacity(0.6);
+}
+
+%opacity-07 {
+  @include opacity(0.7);
+}
+
+%opacity-08 {
+  @include opacity(0.8);
+}
+
+%opacity-09 {
+  @include opacity(0.9);
+}
+
+%opacity-1 {
+  @include opacity(1);
+}
+
+%transition03s {
+  @include transition('all', '0.3s');
+}
+
+%transition05s {
+  @include transition('all', '0.5s');
+}
+
+%transition1s {
+  @include transition('all', '1s');
+}
+
+%translate-0-50p {
+  @include transform(translate(0, -50%));
+}
+
+%user-select {
+  @include user-select;
+}
+
+%border-radius-0 {
+  @include border-radius(0);
+}
+
+%border-radius-5px {
+  @include border-radius(5px);
+}
+
+%border-radius-10px {
+  @include border-radius(10px);
+}
+
+%border-radius-15px {
+  @include border-radius(15px);
+}
+
+%border-radius-20px {
+  @include border-radius(20px);
+}
+
+%border-radius-25px {
+  @include border-radius(25px);
+}
+
+%border-radius-50p {
+  @include border-radius(50%);
+}
+
+%font-awesome {
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+%bg-over-border {
+  /* Prevent background color leak outs */
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+%scale-1-1 {
+  @include scale(1.1);
+}
+
+%scale-2 {
+  @include scale(2);
+}
+
+%rgba-white-0 {
+  @include box-rgba(255, 255, 255, 0, #fff);
+}
+
+%rgba-white-01 {
+  @include box-rgba(255, 255, 255, 0.1, #fff);
+}
+
+%rgba-white-02 {
+  @include box-rgba(255, 255, 255, 0.2, #fff);
+}
+
+%rgba-white-03 {
+  @include box-rgba(255, 255, 255, 0.3, #fff);
+}
+
+%rgba-white-04 {
+  @include box-rgba(255, 255, 255, 0.4, #fff);
+}
+
+%rgba-white-05 {
+  @include box-rgba(255, 255, 255, 0.5, #fff);
+}
+
+%rgba-white-06 {
+  @include box-rgba(255, 255, 255, 0.6, #fff);
+}
+
+%rgba-white-07 {
+  @include box-rgba(255, 255, 255, 0.7, #fff);
+}
+
+%rgba-white-08 {
+  @include box-rgba(255, 255, 255, 0.8, #fff);
+}
+
+%rgba-white-09 {
+  @include box-rgba(255, 255, 255, 0.9, #fff);
+}
+
+%rgba-white-1 {
+  @include box-rgba(255, 255, 255, 1, #fff);
+}
+
+%rgba-black-0 {
+  @include box-rgba(0, 0, 0, 0, #000);
+}
+
+%rgba-black-01 {
+  @include box-rgba(0, 0, 0, 0.1, #000);
+}
+
+%rgba-black-02 {
+  @include box-rgba(0, 0, 0, 0.2, #000);
+}
+
+%rgba-black-03 {
+  @include box-rgba(0, 0, 0, 0.3, #000);
+}
+
+%rgba-black-04 {
+  @include box-rgba(0, 0, 0, 0.4, #000);
+}
+
+%rgba-black-05 {
+  @include box-rgba(0, 0, 0, 0.5, #000);
+}
+
+%rgba-black-06 {
+  @include box-rgba(0, 0, 0, 0.6, #000);
+}
+
+%rgba-black-07 {
+  @include box-rgba(0, 0, 0, 0.7, #000);
+}
+
+%rgba-black-08 {
+  @include box-rgba(0, 0, 0, 0.8, #000);
+}
+
+%rgba-black-09 {
+  @include box-rgba(0, 0, 0, 0.9, #000);
+}
+
+%rgba-black-1 {
+  @include box-rgba(0, 0, 0, 1, #000);
+}
+
+%box-shadow-none {
+  @include box-shadow-none('none');
+}
+
+%box-shadow-none-important {
+  @include box-shadow-none('none !important');
+}

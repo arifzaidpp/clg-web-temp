@@ -1,0 +1,72 @@
+.mpp-lightbox-content {
+	width: 1170px;
+	border-radius: 8px;
+	overflow: hidden;
+	cursor: auto;
+}
+
+#mpp-whats-new-options {
+	height: auto !important;
+	overflow: visible;
+}
+
+#mpp-aw-whats-new-submit {
+	height: 40px;
+	line-height: 38px;
+	padding: 0 25px;
+}
+
+form#mpp-whats-new-form {
+	textarea {
+		border: 1px solid #f5f5f5;
+		background: #f5f5f5;
+		color: $text-bit-lighten-color;
+		height: 70px;
+		padding: 12px 15px;
+		width: 100%;
+
+		&:focus {
+			border-color: $primary-color;
+			background: #fff;
+			color: $heading-color;
+		}
+	}
+
+	#mpp-whats-new-content {
+		margin-left: 65px;
+		padding: 0 0 20px 0;
+	}
+}
+
+.mpp-lightbox-media-uploader-avatar {
+	img {
+		width: 48px;
+		border-radius: 50%;
+	}
+}
+
+.mpp-lightbox-uploader-link {
+	a {
+		font-size: 15px;
+		color: $heading-color;
+		font-weight: $heading-font-weight;
+	}
+}
+
+.mpp-lightbox-media-uploader-meta {
+	border-bottom: 1px solid #eee;
+	padding: 0 0 10px;
+}
+
+#mpp-whats-new-avatar {
+	img {
+		width: 48px;
+		border-radius: 50%;
+	}
+}
+
+#mpp-whats-new {
+	&:focus {
+		border-color: $primary-color !important;
+	}
+}

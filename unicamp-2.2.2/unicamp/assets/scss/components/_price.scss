@@ -1,0 +1,28 @@
+// Woo + tutor price style
+
+// Regular Price
+.price,
+.amount,
+.tr-price,
+.woosw-content-item--price {
+	color: #111;
+}
+
+// Old Price
+.price del,
+del .amount,
+.tr-price del,
+.woosw-content-item--price del {
+	color: #ababab;
+}
+
+// Sale Price
+ins .amount {
+	color: #111;
+}
+
+// On sale
+.product.sale ins, .product.sale ins .amount,
+.single-product .product.sale .entry-summary > .price ins .amount {
+	color: $primary-color;
+}

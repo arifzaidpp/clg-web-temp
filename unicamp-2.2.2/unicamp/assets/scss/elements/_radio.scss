@@ -1,0 +1,55 @@
+input[type='radio'] {
+	position: relative;
+	padding: 5px;
+	margin: 0 10px 0 3px;
+	cursor: pointer;
+
+	&:before {
+		content: '';
+		display: block;
+		width: 18px;
+		height: 18px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: #fff;
+		border: 1px solid #cacaca;
+		border-radius: 50%;
+		transition: border-color .3s ease;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background: $primary-color;
+		border-radius: 50%;
+		transform: translate(-50%, -50%) scale(0);
+		transition: transform .3s ease;
+	}
+
+	&:hover {
+		&:before {
+			border-color: $primary-color;
+		}
+	}
+
+	&:checked {
+		cursor: auto;
+
+		&:hover {
+			&:before {
+				border-color: #cacaca;
+			}
+		}
+
+		&:after {
+			transform: translate(-50%, -50%) scale(1);
+		}
+	}
+}

@@ -1,0 +1,23 @@
+/**
+Inherit style from course.
+ */
+.unicamp-course.tm-swiper {
+	// Fix shadow cut.
+	.swiper-inner {
+		margin: -30px;
+	}
+
+	.swiper-container {
+		padding: 30px;
+	}
+}
+
+.course-caption-style-01 {
+	.unicamp-course.tm-swiper {
+		.course-wrapper {
+			&:hover {
+				box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+			}
+		}
+	}
+}

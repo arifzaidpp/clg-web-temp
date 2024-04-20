@@ -1,0 +1,33 @@
+.faq-page-title-wrap {
+	border-bottom: 1px solid $box-border;
+	padding: 43px 0;
+	margin: 0 0 50px;
+
+	.entry-title {
+		margin: 0;
+		font-size: 28px;
+		line-height: 1.43;
+	}
+}
+
+.archive-faq,
+.single-faq {
+	.page-title-bar {
+		margin: 0 !important;
+	}
+
+	.page-content {
+		.container {
+			max-width: 1200px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	.page-sidebar.style-02,
+	.page-sidebar.style-03 {
+		.widget {
+			padding: 23px 30px 30px;
+		}
+	}
+}

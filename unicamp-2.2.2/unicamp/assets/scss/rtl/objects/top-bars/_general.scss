@@ -1,0 +1,32 @@
+.rtl {
+	.top-bar-info {
+		.info-item {
+			margin: 0 0 0 15px;
+
+			+ .info-item {
+				padding-left: 0;
+				padding-right: 15px;
+
+				&:before {
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+
+		.info-icon {
+			margin: 0 0 0 5px;
+		}
+	}
+
+	.top-bar-user-links {
+		a {
+			+ a {
+				&:before {
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+	}
+}

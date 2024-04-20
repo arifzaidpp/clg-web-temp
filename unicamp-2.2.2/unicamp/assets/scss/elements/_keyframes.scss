@@ -1,0 +1,11 @@
+@keyframes adding-spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes adding-spin-center {
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}

@@ -1,0 +1,51 @@
+.hint--primary {
+	&:after {
+		background-color: $primary-color;
+	}
+
+	&.hint--top-left:before,
+	&.hint--top-right:before,
+	&.hint--top:before {
+		border-top-color: $primary-color;
+	}
+
+	&.hint--bottom-left:before,
+	&.hint--bottom-right:before,
+	&.hint--bottom:before {
+		border-bottom-color: $primary-color;
+	}
+
+	&.hint--left:before {
+		border-left-color: $primary-color;
+	}
+
+	&.hint--right:before {
+		border-right-color: $primary-color;
+	}
+}
+
+.hint--secondary {
+	&:after {
+		background-color: $secondary-color;
+	}
+
+	&.hint--top-left:before,
+	&.hint--top-right:before,
+	&.hint--top:before {
+		border-top-color: $secondary-color;
+	}
+
+	&.hint--bottom-left:before,
+	&.hint--bottom-right:before,
+	&.hint--bottom:before {
+		border-bottom-color: $secondary-color;
+	}
+
+	&.hint--left:before {
+		border-left-color: $secondary-color;
+	}
+
+	&.hint--right:before {
+		border-right-color: $secondary-color;
+	}
+}

@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "classmap": [
+            "vendor/elfsight",
+            "api-options.php"
+        ]
+    }
+}

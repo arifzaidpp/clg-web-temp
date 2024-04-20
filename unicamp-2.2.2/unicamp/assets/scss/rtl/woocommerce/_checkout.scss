@@ -1,0 +1,50 @@
+.rtl {
+	&.woocommerce-checkout {
+		.shop_table {
+			.coupon {
+				.button,
+				.input-text {
+					margin: 0 0 10px 10px;
+				}
+			}
+		}
+
+		.checkout_coupon .form-row {
+			float: right !important;
+			padding-right: 0;
+			padding-left: 10px;
+		}
+	}
+
+	.woocommerce-order-details {
+		margin: 0 30px 0 0;
+
+		.shop_table {
+			th, td {
+				text-align: right;
+				padding: 11px 0 11px 10px;
+			}
+
+			tbody {
+				td {
+					padding: 20px 0 20px 10px;
+				}
+			}
+
+			td {
+				&:last-child {
+					padding-right: 10px;
+					padding-left: 0;
+				}
+			}
+
+			.product-thumbnail {
+				margin: 0 0 0 20px;
+			}
+
+			.product-total {
+				text-align: left;
+			}
+		}
+	}
+}

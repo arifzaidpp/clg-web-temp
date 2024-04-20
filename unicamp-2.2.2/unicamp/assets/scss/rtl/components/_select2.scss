@@ -1,0 +1,23 @@
+.rtl {
+	.select2.select2-container {
+		.select2-selection__rendered {
+			padding: 0 20px 0 35px !important;
+		}
+
+		&.select2-container--default {
+			.select2-selection--single {
+				.select2-selection__arrow {
+					right: auto;
+					left: 15px;
+				}
+			}
+		}
+	}
+
+	.select2-container .select2-search--dropdown {
+		&:after {
+			left: 40px;
+			right: auto;
+		}
+	}
+}

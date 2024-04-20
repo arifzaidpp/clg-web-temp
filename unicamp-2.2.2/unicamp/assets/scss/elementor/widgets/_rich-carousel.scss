@@ -1,0 +1,109 @@
+.unicamp-rich-carousel {
+	.swiper-slide {
+		// Fix elementor override style.
+		overflow: visible !important;
+	}
+
+	.title {
+		margin: 0;
+		font-size: 20px;
+	}
+
+	.description-wrap {
+		margin: 10px 0 0;
+	}
+
+	.slide-button {
+		&.left-icon {
+			.button-icon {
+				margin-right: 5px;
+			}
+		}
+
+		&.right-icon {
+			.button-icon {
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+.unicamp-rich-carousel-style-01 {
+	.unicamp-box {
+		position: relative;
+		display: block;
+		padding: 0 0 25px;
+
+		&:hover {
+			.slide-caption {
+				max-height: 200px;
+				transition: max-height 0.5s ease-in;
+			}
+
+			.title {
+				color: $heading-color;
+			}
+
+			.slide-content {
+				background: #fff;
+				padding: 17px 10px 11px;
+
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.slide-image {
+		img {
+			@include NormalRounded();
+		}
+	}
+
+	.title {
+		@extend %NormalTransition;
+		font-size: 16px;
+		line-height: 30px;
+		color: #fff;
+	}
+
+	.slide-content {
+		@extend %NormalTransition;
+		position: absolute;
+		bottom: 0;
+		left: 45px;
+		right: 45px;
+		z-index: 1;
+		padding: 11px 10px;
+		text-align: center;
+		background: $primary-color;
+		/*margin: 0 45px;*/
+
+		&:after {
+			@extend %NormalTransition;
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			height: 3px;
+			background: $primary-color;
+			opacity: 0;
+		}
+	}
+
+	.slide-caption {
+		max-height: 0;
+		transition: max-height 0.15s ease-out;
+		overflow: hidden;
+	}
+
+	.tm-button {
+		color: $primary-color;
+	}
+
+	.button-wrap {
+		margin: 2px 0 0;
+	}
+}

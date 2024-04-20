@@ -1,0 +1,95 @@
+.archive-filtering-form-bar {
+	@include NormalRounded();
+	padding: 16px 20px 2px;
+	background: $box-white-background;
+	border-bottom: 3px solid $primary-color;
+	margin: -44px 0 55px;
+	position: relative;
+	z-index: 1;
+
+	form {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-end;
+
+		.form-group,
+		.form-submit {
+			padding: 0 10px;
+			margin: 0 0 15px;
+		}
+
+		.form-input {
+			background-color: transparent !important;
+			border: 0;
+			padding: 3px 0;
+			border-bottom: 2px solid $box-border;
+			min-height: 40px;
+			line-height: 26px;
+		}
+
+		.form-has-icon {
+			.form-input {
+				padding: 3px 0 3px 20px;
+			}
+		}
+
+		.form-input-select {
+			background-position: 100% center;
+		}
+
+		.form-icon {
+			top: 50%;
+			transform: translateY(-50%);
+			right: auto;
+			left: 10px;
+			height: auto;
+			line-height: 1;
+			text-align: start;
+			width: 24px;
+			font-size: 14px;
+			color: $heading-color;
+		}
+
+		.form-group {
+			flex: 1 1 0;
+			min-width: 170px;
+
+			&.filter-keyword {
+				flex: 2 1 0;
+			}
+		}
+
+		.form-submit {
+			flex-shrink: 0;
+			width: 175px;
+		}
+	}
+}
+
+// Disable title bar margin when filter bar showing.
+.page-has-filtering-bar {
+	.page-title-bar {
+		margin: 0 !important;
+
+		.page-title-bar-inner {
+			padding-bottom: 101px !important;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.archive-filtering-form-bar {
+		padding: 20px 10px 5px;
+
+		form {
+			.form-submit {
+				width: 100%;
+			}
+
+			.form-group.filter-keyword {
+				flex: 1 1 0;
+			}
+		}
+	}
+}

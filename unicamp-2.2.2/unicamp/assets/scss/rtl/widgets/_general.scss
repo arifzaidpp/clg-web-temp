@@ -1,0 +1,24 @@
+.widget_recent_entries {
+	li {
+		a {
+			padding: 16px 30px 15px 0;
+
+			&:before,
+			&:after {
+				content: '\f30a';
+				left: auto;
+				right: 0;
+			}
+
+			&:after {
+				transform: translateX(100%);
+			}
+
+			&:hover {
+				&:before {
+					transform: translateX(-100%);
+				}
+			}
+		}
+	}
+}

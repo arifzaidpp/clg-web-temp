@@ -1,0 +1,45 @@
+.tm-client-logo {
+	.image {
+		transition: all .3s linear;
+	}
+
+	&.hover-grayscale {
+		.image {
+			filter: grayscale(100%);
+			opacity: .3;
+		}
+
+		.item {
+			&:hover {
+				.image {
+					filter: none;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&.hover-opacity {
+		.image {
+			opacity: .5;
+		}
+
+		.item {
+			&:hover {
+				.image {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&.hover-faded {
+		.item {
+			&:hover {
+				.image {
+					opacity: .5;
+				}
+			}
+		}
+	}
+}

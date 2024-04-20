@@ -1,0 +1,58 @@
+.carousel-vertical-3d {
+	.carousel-items {
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-perspective: 1200px;
+		perspective: 1200px
+	}
+
+	.carousel-item {
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		will-change: transform;
+
+		* {
+			user-select: none
+		}
+	}
+
+	.is-top,
+	.is-bottom {
+		cursor: pointer;
+	}
+
+	&.carousel-initialized {
+		.carousel-item {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+
+			&.is-top,
+			&.is-active,
+			&.is-bottom {
+				opacity: 1;
+			}
+
+			> :only-child {
+				margin-bottom: 0
+			}
+
+			&.is-active {
+				position: relative;
+				top: auto;
+				left: auto;
+			}
+
+			&.is-moving {
+				&.was-top,
+				&.was-bottom {
+					opacity: 1;
+					transition: opacity .1s linear;
+				}
+			}
+		}
+	}
+}

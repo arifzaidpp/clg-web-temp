@@ -1,0 +1,74 @@
+.dashboard-my-students-table {
+	.student-info {
+		display: flex;
+		align-items: center;
+	}
+
+	.student-avatar {
+		width: 70px;
+		border-radius: 50%;
+		flex-shrink: 0;
+		margin: 0 15px 0 0;
+
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	.student-name {
+		font-size: 15px;
+		line-height: 26px;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	.td-student-actions {
+		a {
+			margin: 10px 5px 0;
+			display: inline-block;
+			border: 1px solid var(--unicamp-color-box-fill-separator);
+			border-radius: 4px;
+			padding: 2px 16px;
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 26px;
+			color: var(--unicamp-color-text-bit-lighten);
+
+			i {
+				margin: 0 5px 0 0;
+			}
+
+			&:hover {
+				color: #fff;
+				border-color: $primary-color;
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+.dashboard-my-student-courses-table {
+	.col-course-info {
+		width: 470px;
+	}
+
+	.course-info {
+		display: flex;
+		align-items: center;
+	}
+
+	.course-thumbnail {
+		width: 70px;
+		flex-shrink: 0;
+		margin: 0 15px 0 0;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.course-title {
+		font-size: 15px;
+		line-height: 26px;
+		font-weight: 500;
+		margin: 0;
+	}
+}

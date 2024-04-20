@@ -1,0 +1,97 @@
+.archive-zoom-meetings {
+	&.page-has-no-sidebar {
+		.page-content {
+			> .container {
+				max-width: 1200px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+	}
+
+	.page-content {
+		margin-bottom: 50px;
+	}
+
+	.unicamp-grid-pagination {
+		padding: 0;
+	}
+
+	.archive-pagination-wrap {
+		margin: 20px 0 30px;
+	}
+}
+
+.unicamp-zoom-meetings {
+	.unicamp-box {
+		height: 100%;
+		display: block;
+		background: #f8f8f8;
+		border-radius: 0;
+
+		&:hover {
+			background: #fff;
+			box-shadow: 0 14px 59px rgba(0, 0, 0, .12);
+		}
+	}
+
+	.unicamp-image {
+		border-radius: 0;
+	}
+
+	.zvc-caption {
+		padding: 25px 30px;
+	}
+
+	.zvc-loop-title {
+		font-size: 20px;
+		font-weight: $heading-font-weight-thin;
+		line-height: 1.5;
+		margin: 0;
+	}
+
+	.zvc-loop-zoom-id {
+		display: flex;
+		align-items: center;
+		margin: 9px 0 0;
+		line-height: 24px;
+
+		.label {
+			font-size: 13px;
+			font-weight: $body-font-weight-medium;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: $text-lighten2-color;
+			margin: 0 4px 0 0;
+		}
+
+		.value {
+			font-size: 16px;
+			font-weight: $body-font-weight-bold;
+			letter-spacing: 1px;
+		}
+	}
+
+	.zvc-loop-meta {
+		margin: 10px 0 0;
+		font-size: 14px;
+		color: $text-bit-lighten-color;
+
+		.meta-icon {
+			margin-right: 4px;
+			color: $text-color;
+		}
+	}
+
+	.zvc-meta {
+		display: inline-block;
+		padding: 3px 0;
+		margin-right: 20px;
+	}
+
+	.zvc-loop-start-time {
+		.start-time {
+			font-weight: $body-font-weight-medium;
+		}
+	}
+}

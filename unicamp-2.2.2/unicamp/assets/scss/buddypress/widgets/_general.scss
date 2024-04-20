@@ -1,0 +1,173 @@
+.buddypress.widget {
+	@include SemiRounded();
+	background: $box-white-background;
+	padding: 20px 30px;
+	border: 1px solid #efefef;
+
+	+ .widget {
+		margin: 20px 0 0 !important;
+	}
+
+	&.widget_bp_groups_widget,
+	&.widget_bp_core_members_widget {
+		.widget-title {
+			margin: 0 0 11px;
+		}
+	}
+
+	.item-options {
+		border-bottom: 1px solid $box-separator;
+		padding: 0;
+		margin: 0 0 20px;
+
+		a {
+			display: inline-block;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 26px;
+			margin: 0 20px 0 0;
+			padding: 0 0 7px;
+			border-bottom: 2px solid transparent;
+			margin-bottom: -1px;
+			box-shadow: none !important;
+
+			&.loading,
+			&.selected {
+				color: $primary-color;
+				border-color: $primary-color;
+			}
+		}
+
+		.bp-separator {
+			display: none;
+		}
+	}
+
+	.activity-list {
+		padding: 0;
+	}
+
+	.bp-feedback {
+		background-color: #f8f8f8;
+		box-shadow: none;
+	}
+}
+
+.buddypress.widget {
+	ul#friends-list,
+	ul#groups-list,
+	ul#members-list {
+		margin: 0 !important;
+
+		.bp-tooltip {
+			&:after {
+				display: none;
+			}
+		}
+
+		li {
+			@extend %clearfix;
+			margin: 0;
+			border: 0;
+			padding: 0;
+			width: 100%;
+
+			+ li {
+				margin: 20px 0 0;
+			}
+
+			.item-avatar {
+				float: left;
+				padding: 0;
+				width: 56px;
+
+				img {
+					width: 56px;
+					height: 56px;
+					border-radius: 50%;
+				}
+			}
+
+			.item {
+				padding: 0 0 0 71px;
+				margin-left: 0;
+				width: 100%;
+			}
+
+			.item-title {
+				a {
+					font-size: 16px;
+					line-height: 28px;
+					font-weight: $heading-font-weight;
+					color: $heading-color;
+				}
+			}
+		}
+	}
+
+	ul#groups-list {
+		li {
+			.item-avatar {
+				img {
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+
+	&.bp-latest-activities {
+		.bp-tooltip {
+			&:after {
+				display: none;
+			}
+		}
+
+		.activity-item {
+			display: flex;
+			align-items: flex-start;
+			padding: 0;
+			margin: 0;
+
+			+ .activity-item {
+				margin: 20px 0 0;
+			}
+		}
+
+		.activity-item-avatar {
+			flex-shrink: 0;
+			margin: 0 18px 0 0;
+		}
+
+		.avatar {
+			border-radius: 50%;
+			margin: 0;
+		}
+
+		.activity-item-body {
+			flex-grow: 1;
+		}
+
+		.activity-item-action {
+			font-size: 15px;
+			line-height: 24px;
+			font-weight: $heading-font-weight;
+			color: #9b9b9b;
+
+			a {
+				color: $heading-color;
+
+				&:hover {
+					color: $primary-color;
+				}
+			}
+
+			.activity-time-since {
+				display: block;
+				color: inherit;
+				font-size: 13px;
+				font-weight: 400;
+				margin: 5px 0 0;
+			}
+		}
+	}
+}

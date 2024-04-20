@@ -1,0 +1,131 @@
+.unicamp-mailchimp-form {
+	input[type='email'] {
+		&::-webkit-input-placeholder {
+			color: inherit;
+		}
+
+		&:-moz-placeholder {
+			color: inherit;
+		}
+
+		&::-moz-placeholder {
+			color: inherit;
+		}
+
+		&:-ms-input-placeholder {
+			color: inherit;
+		}
+	}
+
+	.button-icon {
+		@extend %FontAwesomeSolid;
+
+		&:before {
+			content: '\f178';
+		}
+	}
+}
+
+.unicamp-mailchimp-form-style-01 {
+	form {
+		position: relative;
+	}
+
+	.form-group {
+		margin: 0;
+	}
+
+	.button-submit {
+		border: 0 !important;
+		padding: 0 10px;
+		box-shadow: none;
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		right: 0;
+		min-width: 182px;
+	}
+
+	.button-text {
+		margin: 0 12px 0 0;
+	}
+
+	input[type='email'] {
+		padding-right: 182px !important;
+	}
+}
+
+.unicamp-mailchimp-form-style-02 {
+	form {
+		position: relative;
+	}
+
+	.form-group {
+		margin: 0;
+	}
+
+	.button-submit {
+		border: 0 !important;
+		padding: 0 10px;
+		box-shadow: none;
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		right: 0;
+		min-width: 130px;
+	}
+
+	.button-icon {
+		display: none;
+	}
+
+	input[type='email'] {
+		padding-right: 140px !important;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.unicamp-mailchimp-form-style-01 {
+		input[type='email'] {
+			padding-right: 150px !important;
+		}
+
+		.button-submit {
+			min-width: 140px;
+		}
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.unicamp-mailchimp-form-style-01 {
+		input[type='email'] {
+			padding-right: 62px !important;
+		}
+
+		.button-submit {
+			min-width: 52px;
+
+			.button-text {
+				display: none;
+			}
+		}
+	}
+
+	.unicamp-mailchimp-form-style-02 {
+		input[type='email'] {
+			padding-right: 62px !important;
+		}
+
+		.button-submit {
+			min-width: 52px;
+
+			.button-text {
+				display: none;
+			}
+
+			.button-icon {
+				display: block;
+			}
+		}
+	}
+}

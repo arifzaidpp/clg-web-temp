@@ -1,0 +1,282 @@
+.xdebug-var-dump {
+  margin-left: 170px; }
+
+.button i {
+  margin-right: 5px; }
+
+.form-field-checkbox .description {
+  display: inline-block; }
+
+.form-field-select select {
+  width: 95%; }
+
+.kungfu-form-wrapper:after, .kungfu-page-header:after {
+  display: table;
+  content: "";
+  clear: both; }
+
+.select2-selection,
+.select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--single {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
+.kungfu-form-wrapper {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5; }
+  .kungfu-form-wrapper:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none; }
+
+.kungfu-form-title {
+  display: inline-block;
+  width: 25%;
+  float: left;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.kungfu-form-sub-title {
+  margin: 0;
+  font-size: 12px; }
+
+.kungfu-form-label {
+  font-weight: 600; }
+
+.kungfu-form-control {
+  width: 75%;
+  float: left;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#postbox-container-1 .kungfu-form-title,
+.kungfu-form-full .kungfu-form-title {
+  float: none;
+  display: block;
+  margin: 0 0 5px;
+  width: auto; }
+#postbox-container-1 .kungfu-form-control,
+.kungfu-form-full .kungfu-form-control {
+  width: 100%;
+  float: none; }
+
+.kungfu-form-description {
+  font-size: 12px;
+  margin: 0;
+  font-style: italic; }
+
+.kungfu-form-required {
+  font-size: 12px;
+  color: #b3312f; }
+
+.kungfu-form-select,
+.kungfu-form-text {
+  width: 100%; }
+
+.kungfu-button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 26px;
+  height: 28px;
+  margin: 0 6px 0 0;
+  padding: 0 10px 1px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #555;
+  border: 1px solid #ccc;
+  background: #f7f7f7; }
+  .kungfu-button.primary {
+    color: #fff;
+    background: #36485f;
+    border: 1px solid #2d3c4f; }
+  .kungfu-button.success {
+    color: #fff;
+    background: #27ae60;
+    border: 1px solid #229955; }
+  .kungfu-button.danger {
+    color: #fff;
+    background: #e14d43;
+    border: 1px solid #dd382d; }
+  .kungfu-button.info {
+    color: #fff;
+    background: #418bca;
+    border: 1px solid #357ebd; }
+  .kungfu-button.warning {
+    color: #fff;
+    background: #f0ad4e;
+    border: 1px solid #eea236; }
+  .kungfu-button:hover {
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    border-color: #bfbfbf; }
+    .ie8 .kungfu-button:hover {
+      zoom: 1.05; }
+    .kungfu-button:hover.primary {
+      border-color: #2d3c4f; }
+    .kungfu-button:hover.success {
+      border-color: #229955; }
+    .kungfu-button:hover.danger {
+      border-color: #dd382d; }
+    .kungfu-button:hover.info {
+      border-color: #357ebd; }
+    .kungfu-button:hover.warning {
+      border-color: #eea236; }
+  .kungfu-button i {
+    margin-right: 10px; }
+
+.kungfu-radio-field input[type=radio]:checked:before {
+  background: #36485f; }
+
+.kungfu-checkbox-field input[type=checkbox]:checked:before {
+  color: #36485f; }
+
+.form-textarea {
+  width: 100%; }
+
+.select2 {
+  max-width: 75%; }
+
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+  border-color: #e5e5e5;
+  outline: 0; }
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  margin-top: 4px; }
+.select2-container--default.select2-container--focus .select2-selection--single,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border-color: #36485f; }
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background: #36485f; }
+.select2-container--default .select2-selection__rendered li {
+  margin-bottom: 0; }
+
+.select2-container .select2-selection--multiple {
+  min-height: 28px; }
+
+.kungfu-ace-editor > pre {
+  margin: 0; }
+.kungfu-ace-editor .form-textarea {
+  display: none; }
+
+.kungfu-media-image img {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto; }
+
+.kungfu-media {
+  width: 100%; }
+
+.kungfu-gallery-images {
+  margin: 0; }
+  .kungfu-gallery-images > li {
+    display: inline-block;
+    position: relative;
+    margin: 0 8px 8px 0;
+    line-height: 0;
+    cursor: move; }
+    .kungfu-gallery-images > li:hover .actions {
+      display: block; }
+  .kungfu-gallery-images img {
+    background: #f1f1f1;
+    border: 1px solid #e5e5e5;
+    padding: 5px;
+    width: 80px;
+    height: 80px; }
+  .kungfu-gallery-images .actions {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    display: none; }
+  .kungfu-gallery-images .kungfu-gallery-remove {
+    font-size: 24px;
+    color: #36485f; }
+
+.kungfu-gallery-placeholder {
+  background: url(../images/placeholder.png) no-repeat center;
+  background-size: cover;
+  border: 2px dashed #999;
+  width: 92px;
+  height: 92px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.kungfu-checkbox-field,
+.kungfu-radio-field {
+  margin: 4px 0 0; }
+
+.kungfu-list-inline > li {
+  display: inline-block;
+  margin-right: 10px; }
+  .kungfu-list-inline > li:last-child {
+    margin-right: 0; }
+
+.kungfu-form-image-select img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 3px solid #fff; }
+  .kungfu-form-image-select img.active {
+    border-color: #36485f; }
+
+/**
+ * Theme options page
+ */
+.kungfu-page-header {
+  padding: 20px;
+  background: #36485f;
+  color: #fff;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px; }
+
+.kungfu-page-logo h2 {
+  color: #fff;
+  font-size: 24px;
+  display: inline-block;
+  margin: 0; }
+
+.kungfu-page-content > .kungfu-tabpanel {
+  margin: 0; }
+
+.kungfu-action-bar {
+  padding: 10px;
+  text-align: right;
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+  border-bottom: 0; }
+
+.kungfu-page-footer > .kungfu-action-bar {
+  border-bottom: 1px solid #e5e5e5; }
+
+@media (max-width: 460px) {
+  .kungfu-form-title {
+    width: 100%;
+    float: none;
+    margin-bottom: 5px; }
+
+  .kungfu-form-control {
+    width: 100%;
+    float: none; } }
+
+/*# sourceMappingURL=admin-style.css.map */

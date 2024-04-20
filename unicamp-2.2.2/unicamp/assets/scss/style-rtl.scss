@@ -1,0 +1,17 @@
+@import "settings/global";
+@import "settings/bootstrap";
+@import "tools/breakpoints";
+@import "tools/mixins-base";
+@import "tools/elementor-breakpoints";
+@import "vendor/bootstrap/rtl";
+/* Right To Left Styles */
+@import "rtl/elements/all";
+@import "rtl/objects/all";
+@import "rtl/components/all";
+@import "rtl/pages/all";
+@import "rtl/tutor-lms/all";
+@import "rtl/events-manager/all";
+@import "rtl/video-conferencing-zoom/all";
+@import "rtl/woocommerce/all";
+@import "rtl/widgets/all";
+@import "rtl/elementor/all";

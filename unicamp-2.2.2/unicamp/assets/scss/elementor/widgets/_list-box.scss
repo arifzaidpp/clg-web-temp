@@ -1,0 +1,79 @@
+.unicamp-list-box {
+	font-size: 0;
+	max-width: 100%;
+	background: #fff;
+	padding: 24px 30px 23px;
+
+	&:hover {
+		.list-box-title {
+			color: $primary-color;
+		}
+	}
+
+	.item {
+		font-size: 0;
+
+		+ .item {
+			margin-top: 8px;
+		}
+	}
+
+	.list-header {
+		display: flex;
+		align-items: center;
+	}
+
+	.marker {
+		color: $primary-color;
+	}
+
+	.link {
+		display: inline-block;
+		padding: 0;
+		// Use transition of children.
+		transition: none;
+	}
+
+	.icon-view {
+		@extend %NormalTransition;
+	}
+
+	.icon {
+		@extend %NormalTransition;
+		flex-shrink: 0;
+		font-size: 14px;
+		min-width: 18px;
+		margin-right: 5px;
+		line-height: 1;
+		text-align: start;
+	}
+
+	.text {
+		@extend %NormalTransition;
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+
+	.list-box-badge {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: inline-block;
+		padding: 2px 11px;
+		background: $primary-color;
+		color: #fff;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 20px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.list-box-title {
+		@extend %NormalTransition;
+		font-size: 20px;
+		font-weight: $heading-font-weight-thin;
+		line-height: 1.6;
+		margin: 0 0 15px;
+	}
+}

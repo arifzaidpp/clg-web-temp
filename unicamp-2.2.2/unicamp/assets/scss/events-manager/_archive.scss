@@ -1,0 +1,1143 @@
+.unicamp-event {
+	.event-title {
+		font-size: 20px;
+		line-height: 1.6;
+		margin: 0;
+
+		a {
+			display: block;
+		}
+	}
+
+	.event-meta {
+		display: flex;
+		flex-wrap: wrap;
+		line-height: 26px;
+		margin: 0 -11px;
+
+		.meta-item {
+			display: inline-flex;
+			align-items: center;
+			padding: 0 11px;
+			margin: 0 0 6px
+		}
+
+		.meta-label-icon {
+			margin: 0 6px 0 0;
+		}
+	}
+
+	.event-image {
+		display: block;
+	}
+
+	.event-location {
+		margin: 4px 0 0;
+		font-size: 14px;
+		line-height: 26px;
+
+		span {
+			margin: 0 5px 0 0;
+		}
+	}
+
+	.event-time {
+		font-size: 14px;
+		text-transform: uppercase;
+		line-height: 26px;
+		margin: 26px 0 0;
+	}
+
+	.event-read-more {
+		margin: 12px 0 0;
+
+		.tm-button {
+			&.style-text {
+				line-height: 18px;
+				color: $primary-color;
+			}
+		}
+	}
+
+	&.style-grid-01 {
+		.unicamp-box {
+			@extend %NormalTransition;
+			@include NormalRounded();
+			display: block;
+			background: $box-white-background;
+			text-align: center;
+		}
+
+		.event-image {
+			position: relative;
+			border-top-left-radius: inherit;
+			border-top-right-radius: inherit;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.event-caption {
+			padding: 0 20px 28px;
+		}
+
+		.event-title {
+			font-size: 20px;
+			font-weight: $heading-font-weight-thin;
+			line-height: 1.6;
+			min-height: 2 * 1.6em;
+		}
+
+		.event-start-date {
+			transform: translateY(-50%);
+			margin: 0 0 4px;
+
+			span {
+				display: inline-block;
+				background: $primary-color;
+				color: #fff;
+				line-height: 26px;
+				padding: 3px 15px;
+				font-size: 13px;
+				font-weight: $heading-font-weight-thin;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+		}
+	}
+
+	&.style-grid-02 {
+		.event-image {
+			@include NormalRounded();
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.event-caption {
+			display: flex;
+			align-items: flex-start;
+			padding: 24px 0 22px;
+		}
+
+		.event-start-date {
+			flex-shrink: 0;
+			margin: 0 10px 0 0;
+			text-align: center;
+			width: 80px;
+		}
+
+		.event-start-day {
+			display: block;
+			font-size: 40px;
+			line-height: 52px;
+			font-family: $heading-font-family;
+			font-weight: $heading-font-weight;
+			color: $primary-color;
+			margin: 0 0 -9px;
+		}
+
+		.event-start-month {
+			font-size: 13px;
+			font-weight: $heading-font-weight-thin;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: 26px;
+			color: $text-lighten2-color;
+		}
+
+		.event-title {
+			font-size: 24px;
+			font-weight: $heading-font-weight-thin;
+			line-height: 1.5;
+			min-height: 2 * 1.5em;
+		}
+
+		.event-time {
+			margin: 20px 0 0;
+		}
+	}
+
+	&.style-grid-03 {
+		.unicamp-box {
+			@extend %NormalTransition;
+			@include NormalRounded();
+			position: relative;
+			display: block;
+			background: $box-white-background;
+			box-shadow: 0 0 10px rgba(51, 51, 51, 0.1);
+			padding: 42px 30px 34px;
+
+			&:after {
+				@extend %NormalTransition;
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 3px;
+				background: $primary-color;
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			&:hover {
+				&:after {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		.event-start-date {
+			margin: 0 0 14px;
+		}
+
+		.event-start-day {
+			display: block;
+			font-size: 52px;
+			line-height: 40px;
+			font-family: $heading-font-family;
+			font-weight: $heading-font-weight;
+			color: $primary-color;
+		}
+
+		.event-start-month {
+			font-size: 13px;
+			font-weight: $heading-font-weight-thin;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: 26px;
+			color: $text-lighten2-color;
+		}
+
+		.event-title {
+			font-size: 24px;
+			line-height: 1.5;
+			min-height: 1.5 * 2em;
+		}
+	}
+
+	&.style-list {
+		.grid-item {
+			border-bottom: 1px solid $box-border;
+			margin: 0 0 30px;
+			padding: 0 0 30px;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+
+		.unicamp-box {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		.unicamp-image {
+			@include NormalRounded();
+			flex-shrink: 0;
+			width: 300px;
+			max-width: 40%;
+			margin: 0 30px 0 0;
+		}
+
+		.event-caption {
+			display: flex;
+		}
+
+		.event-category {
+			font-size: 13px;
+			line-height: 26px;
+			font-weight: $heading-font-weight-thin;
+			color: $text-lighten2-color;
+			text-transform: uppercase;
+			margin: 0 0 6px;
+
+			a {
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+
+		.event-title {
+			font-size: 24px;
+			line-height: 1.5;
+		}
+
+		.event-caption-right {
+			flex-shrink: 0;
+			width: 200px;
+			padding: 0 0 0 30px;
+		}
+
+		.event-price {
+			font-size: 18px;
+			margin: 12px 0 0;
+
+			.decimals-separator {
+				font-size: 77.666667%;
+			}
+		}
+
+		.event-excerpt {
+			margin: 16px 0 0;
+		}
+
+		.event-meta {
+			font-size: 14px;
+
+			.meta-item {
+				margin: 0 0 9px;
+			}
+		}
+
+		.event-read-more {
+			margin: 18px 0 0;
+
+			.tm-button {
+				min-width: 170px;
+				width: 100%;
+			}
+		}
+	}
+
+	&.style-list-02 {
+		.grid-item {
+			border-bottom: 1px solid $box-border;
+			margin: 0 0 30px;
+			padding: 0 0 30px;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+
+		.unicamp-box {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		.unicamp-image {
+			@include NormalRounded();
+			position: relative;
+			flex-shrink: 0;
+			width: 300px;
+			max-width: 40%;
+			margin: 0 30px 0 0;
+		}
+
+		.event-start-date {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			text-align: start;
+
+			span {
+				display: inline-block;
+				background: $primary-color;
+				color: #fff;
+				line-height: 26px;
+				padding: 3px 15px;
+				font-size: 13px;
+				font-weight: $heading-font-weight-thin;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+		}
+
+		.event-category {
+			font-size: 13px;
+			line-height: 26px;
+			font-weight: $heading-font-weight-thin;
+			color: $text-lighten2-color;
+			text-transform: uppercase;
+			margin: 0 0 6px;
+
+			a {
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+
+		.event-title {
+			font-size: 24px;
+			line-height: 1.5;
+		}
+
+		.event-price {
+			font-size: 18px;
+			margin: 12px 0 0;
+
+			.decimals-separator {
+				font-size: 77.666667%;
+			}
+		}
+
+		.event-excerpt {
+			margin: 16px 0 0;
+		}
+
+		.event-meta {
+			font-size: 14px;
+
+			.meta-item {
+				margin: 0 0 9px;
+			}
+		}
+
+		.event-time {
+			margin: 20px 0 0;
+		}
+
+		.event-read-more {
+			margin: 18px 0 0;
+
+			.tm-button {
+				min-width: 170px;
+				width: 100%;
+			}
+		}
+	}
+
+	&.style-one-left-featured {
+		.unicamp-box {
+			display: flex;
+		}
+
+		.featured-event {
+			padding-right: 20px;
+		}
+
+		.normal-events {
+			.grid-item {
+				padding-left: 20px;
+			}
+		}
+
+		.event-thumbnail {
+			width: 100%;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.event-date {
+			span {
+				display: inline-block;
+				background: $primary-color;
+				color: #fff;
+				line-height: 26px;
+				padding: 3px 15px;
+				font-size: 13px;
+				font-weight: $heading-font-weight-thin;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+		}
+
+		.event-title {
+			font-size: 24px;
+			line-height: 1.5;
+		}
+
+		.event-thumbnail {
+			position: relative;
+		}
+
+		.event-meta {
+			font-size: 14px;
+			overflow: hidden;
+			margin: 16px 0 0;
+
+			.meta-list {
+				--gap: 27px;
+				--separator: 18px;
+				display: flex;
+				flex-wrap: wrap;
+				line-height: 26px;
+				margin: 0 calc(-1 * var(--gap));
+			}
+
+			.meta-item {
+				padding: 0 var(--gap);
+				margin: 0;
+
+				+ .meta-item {
+					position: relative;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: 12px;
+						left: calc(var(--separator) / -2);
+						width: var(--separator);
+						height: 1px;
+						background: #ccc;
+					}
+				}
+			}
+		}
+
+		.featured-event {
+			.grid-item {
+				height: 100%;
+				min-height: 370px;
+			}
+
+			.unicamp-box {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				align-items: flex-end;
+			}
+
+			.event-title {
+				line-height: 1.48;
+				color: #fff !important;
+
+				span {
+					font-size: 1.25em;
+				}
+			}
+
+			.event-date {
+				margin: 0 0 10px;
+			}
+
+			.event-thumbnail {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+
+				&:after {
+					position: absolute;
+					content: '';
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 33%, #000 100%);
+				}
+			}
+
+			.event-info {
+				position: relative;
+				z-index: 1;
+				text-align: center;
+				color: #fff;
+				padding: 30px;
+				width: 100%;
+			}
+
+			.event-meta {
+				justify-content: center;
+			}
+
+			.meta-list {
+				justify-content: center;
+			}
+		}
+
+		.normal-events {
+			border-left: 1px solid #eee;
+
+			.grid-item {
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+				border-bottom: 1px solid #eee;
+
+				&:last-child {
+					margin-bottom: 0;
+					border-bottom: 0;
+				}
+			}
+
+			.event-thumbnail {
+				position: relative;
+				width: 100%;
+				flex: 0 0 200px;
+				max-width: 36%;
+				min-height: 120px;
+			}
+
+			.event-date {
+				position: absolute;
+				z-index: 1;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				text-align: center;
+			}
+
+			.event-info {
+				flex: 0 0 63.666667%;
+				max-width: 63.666667%;
+			}
+
+			.event-caption {
+				padding-left: 30px;
+			}
+		}
+	}
+
+	&.style-metro-01 {
+		.unicamp-box {
+			display: block;
+			position: relative;
+			background: #fff;
+		}
+
+		.event-title {
+			line-height: 1.6;
+			min-height: 2 * 1.6em;
+			font-weight: $heading-font-weight-thin;
+		}
+
+		.event-start-date {
+			transform: translateY(-50%);
+			margin: 0 0 4px;
+
+			span {
+				display: inline-block;
+				background: $primary-color;
+				color: #fff;
+				line-height: 26px;
+				padding: 3px 15px;
+				font-size: 13px;
+				font-weight: $heading-font-weight-thin;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+		}
+
+		.event-info {
+			text-align: center;
+			padding: 0 30px 29px;
+		}
+
+		.event-meta {
+			margin: 20px 0 0;
+			justify-content: center;
+
+			.meta-item {
+				margin: 6px 0 0;
+			}
+		}
+
+		.grid-item[data-width='2'] {
+			.unicamp-box {
+				display: flex;
+				align-items: flex-end;
+				height: 100%;
+				min-height: 300px;
+			}
+
+			.post-thumbnail {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+
+				&:after {
+					position: absolute;
+					content: '';
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 33%, #000 100%);
+				}
+			}
+
+			.event-info {
+				position: relative;
+				z-index: 1;
+				padding: 20px 35px 25px;
+				color: #fff;
+			}
+
+			.event-title {
+				font-size: 30px;
+				line-height: 1.47;
+				min-height: 0;
+				color: #fff;
+			}
+		}
+	}
+
+	&.style-carousel-01 {
+		// Fix shadow cut.
+		.swiper-inner {
+			margin: -30px;
+		}
+
+		.swiper-container {
+			padding: 30px;
+		}
+
+		.unicamp-box {
+			@extend %NormalTransition;
+			@include NormalRounded();
+			display: block;
+			background: $box-white-background;
+			text-align: center;
+		}
+
+		.event-image {
+			position: relative;
+			border-top-left-radius: inherit;
+			border-top-right-radius: inherit;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.event-caption {
+			padding: 0 20px 28px;
+		}
+
+		.event-title {
+			font-size: 20px;
+			font-weight: $heading-font-weight-thin;
+			line-height: 1.6;
+			min-height: 2 * 1.6em;
+		}
+
+		.event-start-date {
+			transform: translateY(-50%);
+			margin: 0 0 4px;
+
+			span {
+				display: inline-block;
+				background: $primary-color;
+				color: #fff;
+				line-height: 26px;
+				padding: 3px 15px;
+				font-size: 13px;
+				font-weight: $heading-font-weight-thin;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+		}
+	}
+
+	&.style-carousel-02 {
+		.event-image {
+			@include NormalRounded();
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.event-caption {
+			display: flex;
+			align-items: flex-start;
+			padding: 24px 0 22px;
+		}
+
+		.event-start-date {
+			flex-shrink: 0;
+			margin: 0 10px 0 0;
+			text-align: center;
+			width: 80px;
+		}
+
+		.event-start-day {
+			display: block;
+			font-size: 40px;
+			line-height: 52px;
+			font-family: $heading-font-family;
+			font-weight: $heading-font-weight;
+			color: $primary-color;
+			margin: 0 0 -9px;
+		}
+
+		.event-start-month {
+			font-size: 13px;
+			font-weight: $heading-font-weight-thin;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: 26px;
+			color: $text-lighten2-color;
+		}
+
+		.event-title {
+			font-size: 24px;
+			font-weight: $heading-font-weight-thin;
+			line-height: 1.5;
+			min-height: 2 * 1.5em;
+		}
+
+		.event-time {
+			margin: 20px 0 0;
+		}
+	}
+
+	&.style-carousel-03 {
+		> .swiper-inner {
+			> .swiper-container {
+				> .swiper-wrapper {
+					> .swiper-slide {
+						display: flex;
+						align-self: flex-end;
+					}
+				}
+			}
+		}
+
+		.post-item {
+			padding: 35px 0 0;
+		}
+
+		.swiper-slide-active {
+			.unicamp-box {
+				transform: translateY(-35px);
+
+				&:after {
+					opacity: 1;
+				}
+
+				.event-read-more {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		.unicamp-box {
+			@include NormalRounded();
+			transition: all .25s linear, margin 0s, padding 0s;
+			position: relative;
+			display: block;
+			background: $box-white-background;
+			box-shadow: 0 0 10px rgba(51, 51, 51, 0.1);
+			padding: 42px 30px 34px;
+			height: calc(100% + 35px);
+			transform: translateY(0);
+
+			&:after {
+				//@extend %NormalTransition;
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 3px;
+				background: $primary-color;
+				opacity: 0;
+			}
+
+			&:hover {
+				transform: translateY(-35px);
+
+				&:after {
+					opacity: 1;
+				}
+
+				.event-read-more {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		.event-start-date {
+			margin: 0 0 14px;
+		}
+
+		.event-start-day {
+			display: block;
+			font-size: 52px;
+			line-height: 40px;
+			font-family: $heading-font-family;
+			font-weight: $heading-font-weight;
+			color: $primary-color;
+		}
+
+		.event-start-month {
+			font-size: 13px;
+			font-weight: $heading-font-weight-thin;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: 26px;
+			color: $text-lighten2-color;
+		}
+
+		.event-title {
+			font-size: 24px;
+			line-height: 1.5;
+			min-height: 1.5 * 2em;
+		}
+
+		.event-read-more {
+			@extend %NormalTransition;
+			position: absolute;
+			margin: 27px 0 0;
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+}
+
+.site-background-grey {
+	.unicamp-event {
+		&.style-grid-03 .unicamp-box {
+			box-shadow: none;
+		}
+	}
+}
+
+// Decrease spacing when grid has spacing.
+.archive-event-style-grid-01,
+.archive-event-style-grid-02 {
+	.unicamp-grid-pagination {
+		padding: 0;
+	}
+}
+
+.archive-event-style-grid-01 {
+	.archive-pagination-wrap {
+		margin: 10px 0 0;
+	}
+}
+
+.archive-event-style-grid-02 {
+	.archive-pagination-wrap {
+		margin: 5px 0 0;
+	}
+}
+
+.archive-event-style-grid-03 {
+	.unicamp-grid-pagination {
+		padding: 10px 0 0;
+	}
+}
+
+@media screen and (min-width: 1510px) {
+	.unicamp-event {
+		&.style-grid-03 {
+			.event-time {
+				margin: 57px 0 0;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.unicamp-event {
+		&.style-list {
+			.unicamp-image {
+				width: 150px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.unicamp-event {
+		&.style-list {
+			.event-caption {
+				display: block;
+			}
+
+			.event-title {
+				font-size: 18px;
+			}
+
+			.event-caption-right {
+				padding: 20px 0 0 !important;
+				width: 100%;
+			}
+
+			.event-read-more {
+				.tm-button {
+					width: auto;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.unicamp-event {
+		&.style-list {
+			.unicamp-box {
+				display: block;
+			}
+
+			.unicamp-image {
+				width: 100%;
+				max-width: 100%;
+				margin: 0 0 20px !important;
+			}
+
+			.event-read-more {
+				margin: 18px 0 0;
+			}
+
+			.event-excerpt {
+				display: none;
+			}
+
+			.event-title {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.unicamp-event {
+		&.style-list {
+			.event-meta {
+				.meta-item {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.unicamp-event {
+		&.style-one-left-featured {
+			.featured-event {
+				padding-right: 35px;
+			}
+
+			.normal-events {
+				.grid-item {
+					padding-left: 35px;
+				}
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(md) {
+	.unicamp-event {
+		&.style-one-left-featured {
+			.event-title {
+				font-size: 20px;
+			}
+		}
+
+		&.style-grid-02,
+		&.style-grid-03,
+		&.style-carousel-02,
+		&.style-carousel-03 {
+			.event-title {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.unicamp-event {
+		&.style-one-left-featured {
+			.event-title {
+				font-size: 16px;
+			}
+		}
+
+		&.style-grid-02,
+		&.style-grid-03,
+		&.style-carousel-02,
+		&.style-carousel-03 {
+			.event-title {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.unicamp-event {
+		&.style-one-left-featured {
+			.event-meta {
+				margin: 10px 0 0;
+			}
+
+			.featured-event {
+				padding: 0 !important;
+			}
+
+			.normal-events {
+				margin-top: 30px;
+
+				.event-caption {
+					padding-left: 20px;
+				}
+
+				.grid-item {
+					margin-bottom: 20px;
+					padding-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.unicamp-event {
+		&.style-one-left-featured {
+			.event-meta {
+				margin: 5px 0 0;
+
+				.meta-list {
+					--separator: 10px;
+					--gap: 20px;
+				}
+			}
+
+			.featured-event {
+				.grid-item {
+					min-height: 270px;
+				}
+
+				.event-info {
+					padding: 25px 20px 20px;
+				}
+			}
+
+			.normal-events {
+				.event-caption {
+					padding-left: 15px;
+				}
+
+				.grid-item {
+					padding-left: 15px;
+					padding-bottom: 15px;
+					margin-bottom: 15px;
+				}
+
+				.event-thumbnail {
+					min-height: 80px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,190 @@
+.tm-social-networks {
+	line-height: 0;
+
+	ul {
+		@extend %clearfix;
+		display: inline-block;
+		padding: 0;
+		margin: 0 -8px;
+	}
+
+	li {
+		margin: 0;
+	}
+
+	// Fix wp 4.7 widget.
+	br {
+		display: none;
+	}
+
+	.item {
+		list-style-type: none;
+	}
+
+	.link {
+		display: inline-block;
+		padding: 5px 8px;
+		// Rounded style need background + border transition.
+		//transition: none;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	.link-icon,
+	.link-text {
+		@extend %NormalTransition;
+	}
+
+	&.layout-list {
+		display: block;
+	}
+
+	&.layout-inline {
+		.item {
+			display: inline-block;
+		}
+	}
+
+	&.layout-two-columns {
+
+		ul {
+			margin: 0 -10px;
+			width: 100%;
+		}
+
+		.item {
+			display: block;
+			float: left;
+			width: 50%;
+		}
+
+		.link {
+			padding: 5px 10px;
+		}
+	}
+
+	&.style-icons {
+		font-size: 16px;
+	}
+
+	&.style-large-icons {
+		font-size: 20px;
+
+		ul {
+			margin: 0 -13px;
+		}
+
+		.link {
+			padding: 5px 13px;
+		}
+	}
+
+	&.style-flat-rounded-icon {
+
+		ul {
+			margin: -8px;
+		}
+
+		li {
+			float: left;
+			margin: 8px;
+		}
+
+		.item {
+			&:hover {
+				.link {
+					background: $primary-color;
+				}
+
+				.link-icon {
+					color: #fff;
+				}
+			}
+		}
+
+		.link {
+			font-size: 14px;
+			display: block;
+			text-align: center;
+			height: 40px;
+			width: 40px;
+			background: $primary-color;
+			border-radius: 50%;
+			position: relative;
+		}
+
+		.link-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+		}
+	}
+
+	&.style-solid-rounded-icon {
+
+		ul {
+			margin: -8px;
+		}
+
+		li {
+			float: left;
+			margin: 8px;
+		}
+
+		.item {
+			&:hover {
+				.link {
+					background-color: $primary-color;
+					border-color: $primary-color;
+				}
+
+				.link-icon {
+					color: #fff;
+				}
+			}
+		}
+
+		.link {
+			font-size: 14px;
+			display: block;
+			text-align: center;
+			height: 40px;
+			width: 40px;
+			background: transparent;
+			border: 1px solid $box-border-lighten;
+			border-radius: 50%;
+			position: relative;
+		}
+
+		.link-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: $text-color;
+		}
+	}
+
+	&.style-icon-title {
+		.link-icon {
+			font-size: 16px;
+			min-width: 16px;
+			margin-right: 10px;
+		}
+	}
+
+	&.style-title {
+		line-height: 1.2;
+
+		.link {
+			line-height: 1;
+			padding: 0;
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.kungfu-accordion .accordion-title:after {
+  -webkit-transform: translate(0, -50%);
+  -khtml-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%); }
+
+.kungfu-accordion .accordion-title:after {
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.kungfu-accordion {
+  margin: 0 0 20px; }
+  .kungfu-accordion > .accordion-section {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 1px 1px #eee;
+    -khtml-box-shadow: 1px 1px 1px #eee;
+    -moz-box-shadow: 1px 1px 1px #eee;
+    -o-box-shadow: 1px 1px 1px #eee;
+    -ms-box-shadow: 1px 1px 1px #eee;
+    box-shadow: 1px 1px 1px #eee; }
+    .kungfu-accordion > .accordion-section.active > .accordion-title:after {
+      content: '\f106'; }
+  .kungfu-accordion .accordion-title {
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative; }
+    .kungfu-accordion .accordion-title:focus {
+      box-shadow: none; }
+    .kungfu-accordion .accordion-title:after {
+      font-size: 14px;
+      top: 50%;
+      left: auto;
+      right: 10px;
+      content: '\f107'; }
+  .kungfu-accordion .accordion-content {
+    padding: 20px 15px;
+    display: none;
+    border-top: 1px solid #e5e5e5; }
+  .kungfu-accordion .accordion-title {
+    color: #333;
+    background: #f1f1f1; }
+    .kungfu-accordion .accordion-title:hover {
+      background: #e5e5e5; }
+
+/*# sourceMappingURL=accordion.css.map */

@@ -1,0 +1,31 @@
+.rtl {
+	.unicamp-popup-video-icon-position-left {
+		.tm-popup-video.type-button {
+			> a {
+				text-align: right;
+			}
+		}
+	}
+
+	.unicamp-popup-video-icon-position-right {
+		.tm-popup-video.type-button {
+			> a {
+				text-align: left;
+			}
+		}
+	}
+
+	.unicamp-popup-video-button-effect-wave-pulse {
+		&.unicamp-popup-video-icon-position-left {
+			.video-button-play {
+				margin: 0 0 0 40px;
+			}
+		}
+
+		&.unicamp-popup-video-icon-position-right {
+			.video-button-play {
+				margin: 0 40px 0 0;
+			}
+		}
+	}
+}

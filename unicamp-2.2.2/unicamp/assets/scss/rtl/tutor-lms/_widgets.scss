@@ -1,0 +1,52 @@
+.rtl {
+	.unicamp-wp-widget-course-filter {
+
+		li {
+			@extend %clearfix;
+		}
+
+		ul.filter-checkbox-list {
+			a {
+				padding: 0 30px 0 0;
+
+				&:before,
+				&:after {
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+
+		ul.filter-radio-list {
+			a {
+				padding: 0 30px 0 0;
+
+				&:before,
+				&:after {
+					left: auto;
+					right: 0;
+				}
+
+				&:after {
+					transform: translate(-4px, 4px);
+				}
+			}
+		}
+
+		.count {
+			float: left;
+			margin: 0 5px 0 0;
+		}
+	}
+
+	.unicamp-wp-widget-courses {
+		.course-thumbnail {
+			margin: 0 0 0 12px;
+		}
+
+		.tutor-course-badge {
+			left: auto;
+			right: 5px;
+		}
+	}
+}

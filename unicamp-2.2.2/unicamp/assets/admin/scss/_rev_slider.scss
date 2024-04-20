@@ -1,0 +1,23 @@
+.slide_layer_type_image {
+	> .tp-caption {
+		> img {
+			border-radius: inherit;
+		}
+	}
+}
+
+.slide_layer_type_text {
+	.tp-caption {
+		font-family: "TT Commons", "Open Sans", Helvetica, Arial, sans-serif;
+	}
+}
+
+.rev-btn {
+	.left-icon {
+		margin-right: 10px !important;
+	}
+
+	.right-icon {
+		margin-left: 10px !important;
+	}
+}

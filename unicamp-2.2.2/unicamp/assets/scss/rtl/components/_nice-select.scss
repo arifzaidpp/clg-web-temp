@@ -1,0 +1,31 @@
+.rtl {
+	.unicamp-nice-select-wrap {
+		.unicamp-nice-select-current {
+			padding: 3px 14px 3px 34px;
+
+			&:after {
+				right: auto;
+				left: 15px;
+			}
+
+			.label {
+				margin: 0 0 0 4px;
+
+				&:before {
+					margin: 0 0 0 10px;
+				}
+			}
+		}
+
+		.unicamp-nice-select {
+			li {
+				text-align: right;
+
+				&:before {
+					left: auto;
+					right: 10px;
+				}
+			}
+		}
+	}
+}

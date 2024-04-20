@@ -1,0 +1,13 @@
+.wp-block-separator {
+	border: 0;
+	height: 2px;
+	background: #111;
+
+	&.is-style-wide {
+		height: 1px;
+	}
+
+	&.is-style-dots {
+		color: #111;
+	}
+}

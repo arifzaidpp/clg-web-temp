@@ -1,0 +1,51 @@
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
+.button,
+.wc-forward {
+	@extend %NormalTransition;
+	padding: 0 41px;
+	height: 52px;
+	line-height: 50px;
+	outline: none;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: $button-radius;
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+	text-align: center;
+
+	&:focus {
+		outline: none;
+	}
+
+	&[disabled] {
+		cursor: not-allowed;
+		opacity: .5;
+	}
+}
+
+.button,
+.wc-forward {
+	display: inline-block;
+}
+
+.updating-icon:before {
+	@extend %FontAwesomeRegularImportant;
+	animation: adding-spin 1s linear infinite !important;
+	content: '\f3f4' !important;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.button-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.tm-button-wrapper {
+		padding: 0 10px;
+	}
+}

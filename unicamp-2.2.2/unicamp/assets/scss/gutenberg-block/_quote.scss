@@ -1,0 +1,9 @@
+.wp-block-quote {
+	border-color: $primary-color;
+}
+
+.wp-block-column {
+	.wp-block-quote {
+		margin: 0 0 30px !important;
+	}
+}

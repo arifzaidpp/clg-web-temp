@@ -1,0 +1,16 @@
+.rtl {
+	.comment-list {
+		.comment-author {
+			float: right;
+		}
+
+		.comment-content {
+			margin: 0 90px 0 0;
+		}
+
+		.comment-actions a,
+		.comment-datetime {
+			margin: 0 0 0 10px;
+		}
+	}
+}

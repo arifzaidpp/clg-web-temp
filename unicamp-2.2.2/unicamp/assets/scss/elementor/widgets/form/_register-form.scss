@@ -1,0 +1,278 @@
+.elementor-widget-tm-register-form {
+	.unicamp-register-form {
+		position: relative;
+		padding: 0 20px 20px 0;
+
+		&:before {
+			display: block;
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			top: 20px;
+			left: 20px;
+			border: 1px solid $primary-color;
+		}
+	}
+
+	.tm-button {
+		width: 100%;
+		justify-content: flex-start;
+		padding: 0 20px 0 0;
+
+		.button-icon {
+			font-size: 18px;
+			min-width: 50px;
+			text-align: center;
+			line-height: 32px;
+			border-right: 1px solid #eee;
+		}
+
+		&:hover {
+			.button-icon {
+				border-color: rgba(255, 255, 255, .4) !important;
+			}
+		}
+	}
+
+	.register-form {
+		margin: 25px 0;
+	}
+
+	.unicamp-register-form-box {
+		position: relative;
+		background: #fff;
+		padding: 34px 30px 42px;
+		text-align: center;
+	}
+
+	.form-title {
+		position: relative;
+		font-size: 30px;
+		font-weight: $heading-font-weight-thin;
+		line-height: 1.47;
+		text-align: center;
+		padding: 0 0 9px;
+		margin: 0 0 30px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 66px;
+			height: 3px;
+			transform: translateX(-50%);
+			background: $secondary-color;
+		}
+	}
+
+	.form-label {
+		display: block;
+		font-size: 13px;
+		font-weight: $body-font-weight-medium;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 0 0 6px;
+
+	}
+
+	.form-group {
+		text-align: start;
+	}
+
+	.form-group {
+		margin: 0 0 15px;
+	}
+
+	.form-input-group {
+		position: relative;
+	}
+
+	.form-icon {
+		position: absolute;
+		top: 13px;
+		left: 15px;
+		font-size: 14px;
+		color: #9b9b9b;
+		min-width: 20px;
+	}
+
+	.form-submit {
+		margin: 25px 0 0;
+		display: flex;
+	}
+
+	.icons-on {
+		input {
+			padding-left: 42px !important;
+		}
+	}
+
+	.labels-off {
+		.form-label {
+			display: none !important;
+		}
+	}
+
+	.form-response-messages {
+		display: none;
+		margin-bottom: 20px;
+		margin-top: 20px;
+
+		&.error {
+			color: $error-color;
+		}
+
+		&.success {
+			color: $success-color;
+		}
+
+		a {
+			font-weight: $heading-font-weight;
+			color: $heading-color;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.login-link {
+		font-size: 14px;
+		margin: 12px 0 0;
+	}
+
+	.mo-openid-app-icons {
+		margin: 20px 0 0;
+	}
+
+	.mo-openid-app-icons.mo-openid-app-icons {
+		> p {
+			padding: 0;
+		}
+
+		.mo_btn-social {
+			flex-basis: 100%;
+			max-width: 100%;
+			margin: 0 0 10px !important;
+			color: #fff !important;
+			text-align: start;
+			padding: 6px 20px 6px 0 !important;
+			border: 2px solid transparent !important;
+			line-height: 32px;
+
+			&:before {
+				min-width: 50px;
+				text-align: center;
+				height: 32px;
+				line-height: 32px;
+				border-right: 1px solid rgba(255, 255, 255, 0.4);
+				margin: 0 11px 0 0;
+				font-size: 18px;
+			}
+
+			&.mo_btn-facebook {
+				background: #0859a6 !important;
+				border-color: #0859a6 !important;
+
+				svg {
+					background: #0859a6 !important;
+
+					* {
+						fill: #fff !important;
+					}
+				}
+
+				&:before {
+					content: '\f082';
+					color: #fff !important;
+				}
+			}
+
+			&.mo_btn-twitter {
+				background: #4a76a8 !important;
+				border-color: #0859a6 !important;
+
+				&:before {
+					content: '\f099';
+					color: #4a76a8;
+				}
+			}
+
+			&.mo_btn-google {
+				background: #ea4335 !important;
+				border-color: #ea4335 !important;
+
+				&:before {
+					content: '\f1a0';
+					color: #fff;
+				}
+			}
+
+			&.mo_btn-instagram {
+				&:before {
+					content: '\f16d';
+					color: #c32aa3;
+				}
+			}
+
+			&.mo_btn-linkedin {
+				&:before {
+					content: '\f08c';
+					color: #007bb5;
+				}
+			}
+
+			&.mo_btn-vk {
+				&:before {
+					content: '\f189';
+					color: #4a76a8;
+				}
+			}
+
+			/* Amazon */
+			&.mo_btn-soundcloud {
+				&:before {
+					content: '\f270';
+					color: #f90;
+				}
+			}
+
+			&.mo_btn-microsoft {
+				&:before {
+					content: '\f3ca';
+					color: #f35022;
+				}
+			}
+
+			&.mo_btn-yahoo {
+				&:before {
+					content: '\f19e';
+					color: #6001d2;
+				}
+			}
+
+			&.mo_btn-apple {
+				&:before {
+					content: '\f179';
+					color: #a6b1b7;
+				}
+			}
+
+			&.mo_btn-paypal {
+				&:before {
+					content: '\f1ed';
+					color: #0070ba;
+				}
+			}
+
+			&.mo_btn-wordpress {
+				&:before {
+					content: '\f19a';
+					color: #346da6;
+				}
+			}
+		}
+	}
+}

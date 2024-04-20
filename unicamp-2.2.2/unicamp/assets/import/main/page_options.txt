@@ -1,0 +1,1 @@
+a:3:{s:13:"show_on_front";s:4:"page";s:13:"page_on_front";s:13:"University 01";s:14:"page_for_posts";s:4:"Blog";}

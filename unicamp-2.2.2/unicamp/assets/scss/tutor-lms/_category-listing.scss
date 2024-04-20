@@ -1,0 +1,149 @@
+.unicamp-course-category-listing {
+	.unicamp-box {
+		display: block;
+		height: 100%;
+	}
+
+	.category-name {
+		@extend %NormalTransition;
+		margin: 0;
+		font-size: 20px;
+		font-weight: $heading-font-weight-thin;
+		line-height: 1.5;
+	}
+
+	.category-description {
+		@extend %NormalTransition;
+	}
+
+	.category-types {
+		@extend %NormalTransition;
+		font-size: 11px;
+		font-weight: $body-font-weight-medium;
+		color: $text-lighten2-color;
+		line-height: 26px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	&.style-grid-01 {
+		.category-caption {
+			padding: 16px 0 20px;
+		}
+	}
+
+	&.style-grid-02 {
+		.unicamp-box {
+			position: relative;
+
+			&:after {
+				@extend %NormalTransition;
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 3px;
+				background: $primary-color;
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			&:hover {
+				&:after {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		.category-caption {
+			background: #fff;
+			padding: 17px 30px 46px;
+		}
+
+		.category-types {
+			margin: 4px 0 0;
+		}
+	}
+
+	&.style-grid-03 {
+		*[fill^='#'],
+		*[stroke^='#'],
+		.primary-fill-color {
+			@extend %NormalTransition;
+		}
+
+		.unicamp-box {
+			border: 1px solid $box-white-border;
+			background: $box-white-background;
+			text-align: center;
+			padding: 38px 25px 36px;
+
+			&:hover {
+				border-color: $primary-color;
+				background: $primary-color;
+
+				.category-icon {
+					color: rgba(255, 255, 255, .4);
+
+					*[fill^='#'] {
+						fill: #fff;
+						fill-opacity: 0.4;
+					}
+
+					*[stroke^='#'] {
+						stroke: #fff;
+						stroke-opacity: 0.4;
+					}
+
+					.primary-fill-color {
+						fill: #fff !important;
+						fill-opacity: 1;
+					}
+				}
+
+				.category-name {
+					color: #fff;
+				}
+
+				.category-description {
+					color: #fff;
+				}
+
+				.category-types {
+					color: #fff;
+				}
+			}
+		}
+
+		.category-icon {
+			position: relative;
+			font-size: 60px;
+			width: 1em;
+			height: 1em;
+			margin: 0 auto 23px;
+
+			svg {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				max-width: 1em;
+				max-height: 1em;
+			}
+		}
+
+		.category-name {
+			font-family: $body-font-family;
+			font-weight: $body-font-weight-medium;
+			font-size: 16px;
+			line-height: 28px;
+		}
+
+		.category-description {
+			margin: 11px 0 0;
+			line-height: 26px;
+		}
+	}
+}

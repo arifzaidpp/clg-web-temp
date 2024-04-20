@@ -1,0 +1,17 @@
+.tm-swiper {
+	.swiper-slide {
+		text-align: right;
+	}
+
+	.swiper-button-prev {
+		i:before {
+			content: '\f105';
+		}
+	}
+
+	.swiper-button-next {
+		i:before {
+			content: '\f104';
+		}
+	}
+}

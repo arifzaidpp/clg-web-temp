@@ -1,0 +1,118 @@
+.tutor-analytics-title,
+.analytics-title,
+.tutor-analytics-widget-title {
+	font-size: 28px;
+	font-family: $heading-font-family;
+	font-weight: $heading-font-weight;
+	line-height: $heading-line-height;
+	color: $heading-color;
+	margin: 0 0 31px;
+}
+
+.tutor-analytics-info-cards {
+	.tutor-card {
+		> .tutor-d-flex {
+			flex-direction: column;
+		}
+
+		.tutor-round-box {
+			margin: 0 0 12px;
+		}
+	}
+}
+
+.tutor-analytics-filter-tabs {
+	background: $box-white-background;
+	padding: 20px;
+	margin: 0 0 20px;
+}
+
+.tutor-analytics-graph {
+	margin: 0 0 40px;
+}
+
+.tutor-analytics-widget {
+	margin: 0 0 32px;
+}
+
+.analytics-export-wrapper {
+	background: $box-white-background;
+	border-radius: 10px;
+}
+
+.tutor-analytics-sub-pages {
+	border-radius: 5px;
+	border: 1px solid $box-white-border;
+	background: $box-white-background;
+	margin: 0 0 10px;
+	max-width: 100%;
+	padding: 20px;
+
+	.tutor-p-32 {
+		padding: 64px;
+	}
+}
+
+.dashboard-analytics-export-page {
+	.tutor-analytics-sub-pages {
+		padding: 0;
+	}
+}
+
+.analytics-export-wrapper {
+	.tutor-color-black {
+		font-family: $heading-font-family;
+		font-weight: $heading-font-weight;
+		color: $heading-color;
+		font-size: 24px;
+	}
+}
+
+.td-statement-info {
+	.tutor-d-flex {
+		justify-content: center;
+		margin: 0 0 5px;
+
+		.tutor-badge-label {
+			margin: 0 10px 0 0;
+		}
+	}
+}
+
+.tutor-avatar {
+	display: inline-flex;
+	flex-shrink: 0;
+	height: 36px;
+	width: 36px;
+	background-color: #fff;
+	box-shadow: 0 0 0 1px var(--tutor-border-color);
+	border-radius: 100px;
+	overflow: hidden;
+}
+
+.tutor-ratio {
+	content: " ";
+	position: relative;
+	width: 100%;
+	display: block;
+
+	* {
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+	}
+}
+
+.tutor-ratio-1x1 {
+	padding-top: 100%;
+}
+
+.tutor-avatar-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgba(255, 255, 255, 0.8);
+	background-color: $primary-color;
+}

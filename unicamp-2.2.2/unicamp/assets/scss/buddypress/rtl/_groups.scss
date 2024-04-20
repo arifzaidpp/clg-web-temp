@@ -1,0 +1,33 @@
+.groups-list {
+	.item-avatar {
+		padding: 39px 20px 0 0;
+	}
+}
+
+.nav-and-filters-wrap {
+	.dir-search {
+		input {
+			padding: 3px 15px 3px 30px;
+		}
+	}
+
+	.subnav-filters {
+		select {
+			padding: 3px 15px 3px 25px;
+		}
+	}
+}
+
+.members.bp-invites-content {
+	.item-list {
+		.item-avatar {
+			margin: 0 0 0 15px;
+		}
+	}
+}
+
+#group-members-list-table {
+	.avatar {
+		margin: 0 0 0 20px;
+	}
+}

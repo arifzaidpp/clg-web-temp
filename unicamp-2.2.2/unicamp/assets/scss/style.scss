@@ -1,0 +1,78 @@
+/*!
+Theme Name: Unicamp
+Theme URI: https://unicamp.thememove.com
+Author: ThemeMove
+Author URI: https://thememove.com
+Description: Unicamp – Professional LMS for University, College, and School WordPress Theme
+Version: 2.2.2
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: unicamp
+Tags: editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Settings
+# Tools
+# Vendor
+# Generic
+# Elements
+# Objects
+# Components
+# Trumps
+--------------------------------------------------------------*/
+/*
+Settings store all variables, config switches, etc.
+Split up into logical sections, the smaller and simpler the better.
+*/
+@import "settings/global";
+@import "settings/bootstrap";
+/*
+Tools store all Sass functionality.
+If your tooling is simplistic enough, you can do something like:
+  tools.mixins
+If your tooling is more complex you can split it up like:
+  tools.grid
+  tools.typography
+  etc.
+*/
+@import "tools/mixins-base";
+@import "tools/elementor-breakpoints";
+/*
+Generic rules are project-agnostic.
+These can be copied from any project to the next
+*/
+@import "generic/normalize";
+@import "vendor/bootstrap/bootstrap-grid";
+@import "vendor/hint/hint";
+@import "vendor/spinkit/spinkit";
+/*
+Elements are rules for classless HTML tags.
+There can exist no classes at this layer, only further into our triangle.
+*/
+@import "elements/all";
+/*
+Objects are "formless", in other words invisible to the user, no cosmetics
+  Eg. wrappers, grid systems, etc.
+This is the first layer of classes and should be agnostically named
+  Eg. list-inline, ui-list, etc.
+*/
+@import "objects/all";
+/*
+Components are the stuff of UI. Eg. buttons, special titles, etc.
+These get much more explicitly named: eg. products-list, etc.
+*/
+@import "components/all";
+@import "pages/all";
+@import "templates/all";
+/*
+Widgets
+*/
+@import "widgets/all";
+@import "elementor/all";
+@import "gutenberg-block/all";
+/**
+ * Modules
+ */
+@import "faq/all";

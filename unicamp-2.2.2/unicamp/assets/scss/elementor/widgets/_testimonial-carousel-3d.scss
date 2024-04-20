@@ -1,0 +1,74 @@
+.elementor-widget-tm-testimonial-carousel-3d {
+	.carousel-vertical-3d {
+		margin: 100px 0;
+	}
+
+	.content-wrap {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.testimonial-item {
+		transition: all 1s;
+		padding: 38px 50px 40px;
+		background: #fff;
+		box-shadow: 0 14px 59px rgba(0, 0, 0, .12);
+		border-radius: 8px;
+		backface-visibility: hidden;
+		opacity: .4;
+	}
+
+	.carousel-item.is-active {
+		.testimonial-item {
+			opacity: 1;
+		}
+	}
+
+	.image {
+		margin: 0 23px 0 0;
+		flex-shrink: 0;
+
+		img {
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+		}
+	}
+
+	.text {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	.cite {
+		font-style: normal;
+	}
+
+	.title {
+		font-size: 20px;
+		line-height: 1.6;
+		margin-bottom: 15px;
+	}
+
+	.name {
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 26px;
+		margin-bottom: 0;
+	}
+
+	.position {
+		display: block;
+		font-size: 14px;
+		line-height: 26px;
+		margin: 4px 0 0;
+	}
+
+	.info {
+		display: flex;
+		align-items: center;
+		padding: 39px 0 0;
+	}
+}

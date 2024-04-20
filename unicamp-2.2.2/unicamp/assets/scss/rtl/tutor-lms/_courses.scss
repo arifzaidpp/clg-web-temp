@@ -1,0 +1,116 @@
+.rtl {
+	.course-loop-badges {
+		left: auto;
+		right: 10px;
+	}
+
+	.tutor-course-badge {
+		margin: 0 0 3px 5px;
+	}
+
+	.course-loop-meta {
+		.meta-label-icon {
+			margin: 0 0 0 6px;
+		}
+
+		&.style-01 {
+			.course-loop-meta-list {
+				margin: 0 -10px 0 -14px;
+			}
+
+			.course-loop-meta-item {
+				padding: 0 10px 0 14px;
+
+				+ .course-loop-meta-item {
+					&:before {
+						left: auto;
+						right: -4px;
+					}
+				}
+			}
+		}
+	}
+
+	.course-loop-rating {
+		.rating-count {
+			margin: 0 5px 0 0;
+		}
+	}
+
+	.course-loop-rating-average {
+		.tm-star-rating {
+			margin: 0 0 0 5px;
+		}
+	}
+
+	.course-loop-rating-average-02 {
+		.course-rating-average {
+			.rating-total {
+				margin: 0 5px 0 0;
+			}
+		}
+	}
+
+	.unicamp-courses {
+		&.style-carousel-03 {
+			.course-footer-meta-item {
+				.lead-meta-label {
+					margin: 0 0 0 8px;
+				}
+			}
+
+			.course-loop-price {
+				left: auto;
+				right: 0;
+			}
+
+			.tutor-price {
+				border-radius: 0 5px 0 5px;
+			}
+		}
+
+		&.style-list {
+			.tutor-course-header {
+				margin: 0 0 0 30px;
+			}
+
+			.course-loop-info {
+				padding: 0 0 0 130px;
+			}
+
+			.course-loop-footer {
+				right: auto;
+				left: 0;
+				text-align: left;
+			}
+
+			.course-loop-buttons {
+				> * {
+					margin: 10px 0 0 10px;
+				}
+			}
+		}
+
+		&.style-list-02 {
+			.tutor-course-header {
+				margin: 0 0 0 30px;
+			}
+
+			.course-loop-info {
+				padding: 0 0 0 130px;
+			}
+
+			.course-loop-footer {
+				right: auto;
+				left: 0;
+				text-align: left;
+			}
+
+			.course-loop-buttons {
+				> * {
+					margin: 10px 0 0 10px;
+				}
+			}
+		}
+	}
+}

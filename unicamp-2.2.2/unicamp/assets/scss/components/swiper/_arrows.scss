@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'UnicampArrow';
+	src: url('assets/fonts/swiper-arrow/Arrow.eot');
+	src: url('assets/fonts/swiper-arrow/Arrow.eot?#iefix') format("embedded-opentype"),
+	url('assets/fonts/swiper-arrow/Arrow.woff2') format('woff2'),
+	url('assets/fonts/swiper-arrow/Arrow.woff') format('woff'),
+	url('assets/fonts/swiper-arrow/Arrow.ttf') format('truetype'),
+	url('assets/fonts/swiper-arrow/Arrow.svg#Flaticon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	@font-face {
+		font-family: 'UnicampArrow';
+		src: url('assets/fonts/swiper-arrow/Arrow.svg#UnicampArrow') format('svg');
+	}
+}
+
+.unicamp-arrow:before {
+	display: inline-block;
+	font-family: 'UnicampArrow';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-rendering: optimizeLegibility;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+.unicamp-arrow-left-arrow:before {
+	content: '\f100';
+}
+
+.unicamp-arrow-next:before {
+	content: '\f101';
+}
+
+$font-unicamp-arrow-left-arrow: '\f100';
+$font-unicamp-arrow-next: '\f101';

@@ -1,0 +1,61 @@
+.rtl {
+	.unicamp-blog {
+		.meta-icon {
+			margin-right: 0;
+			margin-left: 6px;
+		}
+
+		.post-meta-author {
+			img {
+				margin: 0 0 0 6px;
+			}
+		}
+
+		.post-read-more {
+			.fa-long-arrow-right:before {
+				content: '\f177';
+			}
+		}
+
+		.post-overlay-categories {
+			left: auto;
+			right: 10px;
+		}
+	}
+
+	.unicamp-blog-list-02 {
+		.post-thumbnail-wrapper {
+			padding-right: 0;
+			padding-left: 30px;
+		}
+	}
+
+	.unicamp-blog-list-03 {
+		.post-title {
+			a {
+				padding: 0 30px 0 0;
+
+				&:before,
+				&:after {
+					content: '\f30a';
+					left: auto;
+					right: 0;
+				}
+
+				&:after {
+					transform: translateX(100%);
+				}
+
+				&:hover {
+					&:before {
+						transform: translateX(-100%);
+					}
+
+					&:after {
+						transform: translateX(0);
+					}
+				}
+			}
+		}
+	}
+}

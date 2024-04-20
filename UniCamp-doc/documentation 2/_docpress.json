@@ -1,0 +1,1055 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "Brook Documentation"
+      },
+      {
+        "title": "Getting Started",
+        "sections": [
+          {
+            "title": "Welcome to Brook",
+            "source": "README.md",
+            "url": "index.html",
+            "slug": "index"
+          },
+          {
+            "title": "Theme Requirements",
+            "source": "docs/getting-started/requirements.md",
+            "url": "getting-started/requirements.html",
+            "slug": "getting-startedrequirements",
+            "headings": [
+              {
+                "title": "Recommended PHP Configuration Limits",
+                "depth": 3,
+                "id": "recommended-php-configuration-limits"
+              },
+              {
+                "title": "How to choose PHP version and enabale PHP extension",
+                "depth": 3,
+                "id": "how-to-choose-php-version-and-enabale-php-extension"
+              }
+            ]
+          },
+          {
+            "title": "WordPress Knowledget Base",
+            "source": "docs/getting-started/knowledge-base.md",
+            "url": "getting-started/knowledge-base.html",
+            "slug": "getting-startedknowledge-base"
+          },
+          {
+            "title": "What's Included",
+            "source": "docs/getting-started/included.md",
+            "url": "getting-started/included.html",
+            "slug": "getting-startedincluded"
+          }
+        ]
+      },
+      {
+        "title": "Support",
+        "sections": [
+          {
+            "title": "ThemeMove Support System",
+            "source": "docs/getting-started/support.md",
+            "url": "getting-started/support.html",
+            "slug": "getting-startedsupport",
+            "headings": [
+              {
+                "title": "How To Start Receiving Support",
+                "depth": 3,
+                "id": "how-to-start-receiving-support"
+              },
+              {
+                "title": "Before You Submit Ticket",
+                "depth": 3,
+                "id": "before-you-submit-ticket"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Installation",
+        "sections": [
+          {
+            "title": "Theme Installation",
+            "source": "docs/installation/theme-installation.md",
+            "url": "installation/theme-installation.html",
+            "slug": "installationtheme-installation",
+            "headings": [
+              {
+                "title": "Install theme via WordPress",
+                "depth": 3,
+                "id": "install-theme-via-wordpress"
+              },
+              {
+                "title": "Install theme via FTP",
+                "depth": 3,
+                "id": "install-theme-via-ftp"
+              }
+            ]
+          },
+          {
+            "title": "Plugin Installation",
+            "source": "docs/installation/plugin-installation.md",
+            "url": "installation/plugin-installation.html",
+            "slug": "installationplugin-installation"
+          },
+          {
+            "title": "Plugin Configuation",
+            "source": "docs/installation/plugin-configuration.md",
+            "url": "installation/plugin-configuration.html",
+            "slug": "installationplugin-configuration"
+          },
+          {
+            "title": "Demo Installation",
+            "source": "docs/installation/demo-installation.md",
+            "url": "installation/demo-installation.html",
+            "slug": "installationdemo-installation"
+          },
+          {
+            "title": "Common Installation Issues",
+            "source": "docs/installation/installation-issues.md",
+            "url": "installation/installation-issues.html",
+            "slug": "installationinstallation-issues"
+          }
+        ]
+      },
+      {
+        "title": "Update",
+        "sections": [
+          {
+            "title": "Before Updating",
+            "source": "docs/update/before-update.md",
+            "url": "update/before-update.html",
+            "slug": "updatebefore-update"
+          },
+          {
+            "title": "Update Theme",
+            "source": "docs/update/update-theme.md",
+            "url": "update/update-theme.html",
+            "slug": "updateupdate-theme",
+            "headings": [
+              {
+                "title": "Update theme via Plugin",
+                "depth": 3,
+                "id": "update-theme-via-plugin"
+              },
+              {
+                "title": "Update theme via WordPress",
+                "depth": 3,
+                "id": "update-theme-via-wordpress"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Build Your Site",
+        "sections": [
+          {
+            "title": "WordPress Configuration",
+            "source": "docs/build-your-site/wordpress-configuration.md",
+            "url": "build-your-site/wordpress-configuration.html",
+            "slug": "build-your-sitewordpress-configuration"
+          },
+          {
+            "title": "Customize",
+            "source": "docs/build-your-site/theme-option.md",
+            "url": "build-your-site/theme-option.html",
+            "slug": "build-your-sitetheme-option"
+          }
+        ]
+      },
+      {
+        "title": "Page",
+        "sections": [
+          {
+            "title": "Create a New Page",
+            "source": "docs/page/create-new-page.md",
+            "url": "page/create-new-page.html",
+            "slug": "pagecreate-new-page"
+          },
+          {
+            "title": "Use Visual Composer to Build Page",
+            "source": "docs/page/use-visual-composer-to-build-page.md",
+            "url": "page/use-visual-composer-to-build-page.html",
+            "slug": "pageuse-visual-composer-to-build-page"
+          },
+          {
+            "title": "How to Change Page Title",
+            "source": "docs/page/how-to-change-page-title.md",
+            "url": "page/how-to-change-page-title.html",
+            "slug": "pagehow-to-change-page-title"
+          },
+          {
+            "title": "Page Options",
+            "source": "docs/page/page-options.md",
+            "url": "page/page-options.html",
+            "slug": "pagepage-options"
+          },
+          {
+            "title": "How to Setup Maintenance page",
+            "source": "docs/page/maintenance-page.md",
+            "url": "page/maintenance-page.html",
+            "slug": "pagemaintenance-page",
+            "headings": [
+              {
+                "title": "Setup Maintenance Page",
+                "depth": 3,
+                "id": "setup-maintenance-page"
+              },
+              {
+                "title": "Customize Maintenance Page",
+                "depth": 3,
+                "id": "customize-maintenance-page"
+              }
+            ]
+          },
+          {
+            "title": "How to setup a One-page Site",
+            "source": "docs/page/one-page-site.md",
+            "url": "page/one-page-site.html",
+            "slug": "pageone-page-site"
+          },
+          {
+            "title": "How to Create a One Page Scroll",
+            "source": "docs/page/one-page-scroll.md",
+            "url": "page/one-page-scroll.html",
+            "slug": "pageone-page-scroll"
+          }
+        ]
+      },
+      {
+        "title": "Menu",
+        "sections": [
+          {
+            "title": "How to Create a Menu",
+            "source": "docs/menu/create-a-menu.md",
+            "url": "menu/create-a-menu.html",
+            "slug": "menucreate-a-menu"
+          },
+          {
+            "title": "How to Edit Menu",
+            "source": "docs/menu/how-to-edit-menu.md",
+            "url": "menu/how-to-edit-menu.html",
+            "slug": "menuhow-to-edit-menu"
+          },
+          {
+            "title": "How to Create Mega Menu",
+            "source": "docs/menu/create-mega-menu.md",
+            "url": "menu/create-mega-menu.html",
+            "slug": "menucreate-mega-menu"
+          }
+        ]
+      },
+      {
+        "title": "Header",
+        "sections": [
+          {
+            "title": "How to set the default Header Style",
+            "source": "docs/header/header-setup.md",
+            "url": "header/header-setup.html",
+            "slug": "headerheader-setup"
+          },
+          {
+            "title": "How to customize the Header Style",
+            "source": "docs/header/customize-header-style.md",
+            "url": "header/customize-header-style.html",
+            "slug": "headercustomize-header-style"
+          },
+          {
+            "title": "How to use the Sticky Header",
+            "source": "docs/header/header-sticky.md",
+            "url": "header/header-sticky.html",
+            "slug": "headerheader-sticky"
+          }
+        ]
+      },
+      {
+        "title": "TopBar",
+        "sections": [
+          {
+            "title": "How to set the default Topbar",
+            "source": "docs/top-bar/default-topbar.md",
+            "url": "top-bar/default-topbar.html",
+            "slug": "top-bardefault-topbar"
+          },
+          {
+            "title": "How to customize the Top Bar Style",
+            "source": "docs/top-bar/customize-topbar.md",
+            "url": "top-bar/customize-topbar.html",
+            "slug": "top-barcustomize-topbar"
+          }
+        ]
+      },
+      {
+        "title": "Page Title",
+        "sections": [
+          {
+            "title": "How to choose the default Page Title Bar",
+            "source": "docs/page-title/default-title-bar.md",
+            "url": "page-title/default-title-bar.html",
+            "slug": "page-titledefault-title-bar"
+          },
+          {
+            "title": "How to Customize Page Title Bar",
+            "source": "docs/page-title/customize-page-title.md",
+            "url": "page-title/customize-page-title.html",
+            "slug": "page-titlecustomize-page-title"
+          }
+        ]
+      },
+      {
+        "title": "Footer",
+        "sections": [
+          {
+            "title": "How to Create a Footer Style",
+            "source": "docs/footer/create-footer.md",
+            "url": "footer/create-footer.html",
+            "slug": "footercreate-footer"
+          },
+          {
+            "title": "How to Set Default Fotter",
+            "source": "docs/footer/set-default-footer.md",
+            "url": "footer/set-default-footer.html",
+            "slug": "footerset-default-footer"
+          }
+        ]
+      },
+      {
+        "title": "Slider",
+        "sections": [
+          {
+            "title": "How to Create a New Slider",
+            "source": "docs/slider/create-new-slider.md",
+            "url": "slider/create-new-slider.html",
+            "slug": "slidercreate-new-slider"
+          },
+          {
+            "title": "How to Edit Your Slider",
+            "source": "docs/slider/edit-slider.md",
+            "url": "slider/edit-slider.html",
+            "slug": "slideredit-slider"
+          }
+        ]
+      },
+      {
+        "title": "Post",
+        "sections": [
+          {
+            "title": "How to Create a New Page",
+            "source": "docs/post/create-post.md",
+            "url": "post/create-post.html",
+            "slug": "postcreate-post"
+          },
+          {
+            "title": "How to Create a Category",
+            "source": "docs/post/create-category.md",
+            "url": "post/create-category.html",
+            "slug": "postcreate-category"
+          },
+          {
+            "title": "How to Create a Blog Archive Page",
+            "source": "docs/post/create-blog-archive-page.md",
+            "url": "post/create-blog-archive-page.html",
+            "slug": "postcreate-blog-archive-page"
+          }
+        ]
+      },
+      {
+        "title": "Widget",
+        "sections": [
+          {
+            "title": "How to Create a Sidebar",
+            "source": "docs/widget/create-sidebar.md",
+            "url": "widget/create-sidebar.html",
+            "slug": "widgetcreate-sidebar"
+          },
+          {
+            "title": "How to Add Widget in Sidebar",
+            "source": "docs/widget/add-widget-in-sidebar.md",
+            "url": "widget/add-widget-in-sidebar.html",
+            "slug": "widgetadd-widget-in-sidebar"
+          },
+          {
+            "title": "How to Edit Widget",
+            "source": "docs/widget/edit-widget.md",
+            "url": "widget/edit-widget.html",
+            "slug": "widgetedit-widget"
+          },
+          {
+            "title": "How to Add Sidebar for a Page",
+            "source": "docs/widget/add-sildebar-for-page.md",
+            "url": "widget/add-sildebar-for-page.html",
+            "slug": "widgetadd-sildebar-for-page",
+            "headings": [
+              {
+                "title": "Add default Sidebar",
+                "depth": 3,
+                "id": "add-default-sidebar"
+              },
+              {
+                "title": "Add Sidebar for particular page",
+                "depth": 3,
+                "id": "add-sidebar-for-particular-page"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Portfolio",
+        "sections": [
+          {
+            "title": "How to Create Portfolio",
+            "source": "docs/portfolio/create-portfolio.md",
+            "url": "portfolio/create-portfolio.html",
+            "slug": "portfoliocreate-portfolio"
+          },
+          {
+            "title": "How to Customize the Default Portfolio",
+            "source": "docs/portfolio/customize-default-portfolio.md",
+            "url": "portfolio/customize-default-portfolio.html",
+            "slug": "portfoliocustomize-default-portfolio"
+          }
+        ]
+      },
+      {
+        "title": "WooCommerce",
+        "sections": [
+          {
+            "title": "Set up an Online Store",
+            "source": "docs/woo-commerce/setup-online-store.md",
+            "url": "woo-commerce/setup-online-store.html",
+            "slug": "woo-commercesetup-online-store"
+          },
+          {
+            "title": "How to Customize Your Online Store",
+            "source": "docs/woo-commerce/customize-online-store.md",
+            "url": "woo-commerce/customize-online-store.html",
+            "slug": "woo-commercecustomize-online-store"
+          }
+        ]
+      },
+      {
+        "title": "FAQs",
+        "sections": [
+          {
+            "title": "What are Common Installation Issues",
+            "source": "docs/faqs/installation-issues.md",
+            "url": "faqs/installation-issues.html",
+            "slug": "faqsinstallation-issues"
+          },
+          {
+            "title": "How to Change Color",
+            "source": "docs/faqs/change-color.md",
+            "url": "faqs/change-color.html",
+            "slug": "faqschange-color"
+          },
+          {
+            "title": "How to Change Contact Information",
+            "source": "docs/faqs/change-contact-information.md",
+            "url": "faqs/change-contact-information.html",
+            "slug": "faqschange-contact-information"
+          },
+          {
+            "title": "How to Change Logo",
+            "source": "docs/faqs/change-logo.md",
+            "url": "faqs/change-logo.html",
+            "slug": "faqschange-logo"
+          }
+        ]
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "README.md",
+      "title": "Welcome to Brook - Brook Documentation",
+      "pageTitle": "Welcome to Brook",
+      "slug": "index"
+    },
+    "getting-started/requirements.html": {
+      "source": "docs/getting-started/requirements.md",
+      "title": "Theme Requirements - Brook Documentation",
+      "pageTitle": "Theme Requirements",
+      "slug": "getting-startedrequirements",
+      "headings": [
+        {
+          "title": "Recommended PHP Configuration Limits",
+          "depth": 3,
+          "id": "recommended-php-configuration-limits"
+        },
+        {
+          "title": "How to choose PHP version and enabale PHP extension",
+          "depth": 3,
+          "id": "how-to-choose-php-version-and-enabale-php-extension"
+        }
+      ]
+    },
+    "getting-started/knowledge-base.html": {
+      "source": "docs/getting-started/knowledge-base.md",
+      "title": "WordPress Knowledget Base - Brook Documentation",
+      "pageTitle": "WordPress Knowledget Base",
+      "slug": "getting-startedknowledge-base"
+    },
+    "getting-started/included.html": {
+      "source": "docs/getting-started/included.md",
+      "title": "What's Included - Brook Documentation",
+      "pageTitle": "What's Included",
+      "slug": "getting-startedincluded"
+    },
+    "getting-started/support.html": {
+      "source": "docs/getting-started/support.md",
+      "title": "ThemeMove Support System - Brook Documentation",
+      "pageTitle": "ThemeMove Support System",
+      "slug": "getting-startedsupport",
+      "headings": [
+        {
+          "title": "How To Start Receiving Support",
+          "depth": 3,
+          "id": "how-to-start-receiving-support"
+        },
+        {
+          "title": "Before You Submit Ticket",
+          "depth": 3,
+          "id": "before-you-submit-ticket"
+        }
+      ]
+    },
+    "installation/theme-installation.html": {
+      "source": "docs/installation/theme-installation.md",
+      "title": "Theme Installation - Brook Documentation",
+      "pageTitle": "Theme Installation",
+      "slug": "installationtheme-installation",
+      "headings": [
+        {
+          "title": "Install theme via WordPress",
+          "depth": 3,
+          "id": "install-theme-via-wordpress"
+        },
+        {
+          "title": "Install theme via FTP",
+          "depth": 3,
+          "id": "install-theme-via-ftp"
+        }
+      ]
+    },
+    "installation/plugin-installation.html": {
+      "source": "docs/installation/plugin-installation.md",
+      "title": "Plugin Installation - Brook Documentation",
+      "pageTitle": "Plugin Installation",
+      "slug": "installationplugin-installation"
+    },
+    "installation/plugin-configuration.html": {
+      "source": "docs/installation/plugin-configuration.md",
+      "title": "Plugin Configuation - Brook Documentation",
+      "pageTitle": "Plugin Configuation",
+      "slug": "installationplugin-configuration"
+    },
+    "installation/demo-installation.html": {
+      "source": "docs/installation/demo-installation.md",
+      "title": "Demo Installation - Brook Documentation",
+      "pageTitle": "Demo Installation",
+      "slug": "installationdemo-installation"
+    },
+    "installation/installation-issues.html": {
+      "source": "docs/installation/installation-issues.md",
+      "title": "Common Installation Issues - Brook Documentation",
+      "pageTitle": "Common Installation Issues",
+      "slug": "installationinstallation-issues"
+    },
+    "update/before-update.html": {
+      "source": "docs/update/before-update.md",
+      "title": "Before Updating - Brook Documentation",
+      "pageTitle": "Before Updating",
+      "slug": "updatebefore-update"
+    },
+    "update/update-theme.html": {
+      "source": "docs/update/update-theme.md",
+      "title": "Update Theme - Brook Documentation",
+      "pageTitle": "Update Theme",
+      "slug": "updateupdate-theme",
+      "headings": [
+        {
+          "title": "Update theme via Plugin",
+          "depth": 3,
+          "id": "update-theme-via-plugin"
+        },
+        {
+          "title": "Update theme via WordPress",
+          "depth": 3,
+          "id": "update-theme-via-wordpress"
+        }
+      ]
+    },
+    "build-your-site/wordpress-configuration.html": {
+      "source": "docs/build-your-site/wordpress-configuration.md",
+      "title": "WordPress Configuration - Brook Documentation",
+      "pageTitle": "WordPress Configuration",
+      "slug": "build-your-sitewordpress-configuration"
+    },
+    "build-your-site/theme-option.html": {
+      "source": "docs/build-your-site/theme-option.md",
+      "title": "Customize - Brook Documentation",
+      "pageTitle": "Customize",
+      "slug": "build-your-sitetheme-option"
+    },
+    "page/create-new-page.html": {
+      "source": "docs/page/create-new-page.md",
+      "title": "Create a New Page - Brook Documentation",
+      "pageTitle": "Create a New Page",
+      "slug": "pagecreate-new-page"
+    },
+    "page/use-visual-composer-to-build-page.html": {
+      "source": "docs/page/use-visual-composer-to-build-page.md",
+      "title": "Use Visual Composer to Build Page - Brook Documentation",
+      "pageTitle": "Use Visual Composer to Build Page",
+      "slug": "pageuse-visual-composer-to-build-page"
+    },
+    "page/how-to-change-page-title.html": {
+      "source": "docs/page/how-to-change-page-title.md",
+      "title": "How to Change Page Title - Brook Documentation",
+      "pageTitle": "How to Change Page Title",
+      "slug": "pagehow-to-change-page-title"
+    },
+    "page/page-options.html": {
+      "source": "docs/page/page-options.md",
+      "title": "Page Options - Brook Documentation",
+      "pageTitle": "Page Options",
+      "slug": "pagepage-options"
+    },
+    "page/maintenance-page.html": {
+      "source": "docs/page/maintenance-page.md",
+      "title": "How to Setup Maintenance page - Brook Documentation",
+      "pageTitle": "How to Setup Maintenance page",
+      "slug": "pagemaintenance-page",
+      "headings": [
+        {
+          "title": "Setup Maintenance Page",
+          "depth": 3,
+          "id": "setup-maintenance-page"
+        },
+        {
+          "title": "Customize Maintenance Page",
+          "depth": 3,
+          "id": "customize-maintenance-page"
+        }
+      ]
+    },
+    "page/one-page-site.html": {
+      "source": "docs/page/one-page-site.md",
+      "title": "How to setup a One-page Site - Brook Documentation",
+      "pageTitle": "How to setup a One-page Site",
+      "slug": "pageone-page-site"
+    },
+    "page/one-page-scroll.html": {
+      "source": "docs/page/one-page-scroll.md",
+      "title": "How to Create a One Page Scroll - Brook Documentation",
+      "pageTitle": "How to Create a One Page Scroll",
+      "slug": "pageone-page-scroll"
+    },
+    "menu/create-a-menu.html": {
+      "source": "docs/menu/create-a-menu.md",
+      "title": "How to Create a Menu - Brook Documentation",
+      "pageTitle": "How to Create a Menu",
+      "slug": "menucreate-a-menu"
+    },
+    "menu/how-to-edit-menu.html": {
+      "source": "docs/menu/how-to-edit-menu.md",
+      "title": "How to Edit Menu - Brook Documentation",
+      "pageTitle": "How to Edit Menu",
+      "slug": "menuhow-to-edit-menu"
+    },
+    "menu/create-mega-menu.html": {
+      "source": "docs/menu/create-mega-menu.md",
+      "title": "How to Create Mega Menu - Brook Documentation",
+      "pageTitle": "How to Create Mega Menu",
+      "slug": "menucreate-mega-menu"
+    },
+    "header/header-setup.html": {
+      "source": "docs/header/header-setup.md",
+      "title": "How to set the default Header Style - Brook Documentation",
+      "pageTitle": "How to set the default Header Style",
+      "slug": "headerheader-setup"
+    },
+    "header/customize-header-style.html": {
+      "source": "docs/header/customize-header-style.md",
+      "title": "How to customize the Header Style - Brook Documentation",
+      "pageTitle": "How to customize the Header Style",
+      "slug": "headercustomize-header-style"
+    },
+    "header/header-sticky.html": {
+      "source": "docs/header/header-sticky.md",
+      "title": "How to use the Sticky Header - Brook Documentation",
+      "pageTitle": "How to use the Sticky Header",
+      "slug": "headerheader-sticky"
+    },
+    "top-bar/default-topbar.html": {
+      "source": "docs/top-bar/default-topbar.md",
+      "title": "How to set the default Topbar - Brook Documentation",
+      "pageTitle": "How to set the default Topbar",
+      "slug": "top-bardefault-topbar"
+    },
+    "top-bar/customize-topbar.html": {
+      "source": "docs/top-bar/customize-topbar.md",
+      "title": "How to customize the Top Bar Style - Brook Documentation",
+      "pageTitle": "How to customize the Top Bar Style",
+      "slug": "top-barcustomize-topbar"
+    },
+    "page-title/default-title-bar.html": {
+      "source": "docs/page-title/default-title-bar.md",
+      "title": "How to choose the default Page Title Bar - Brook Documentation",
+      "pageTitle": "How to choose the default Page Title Bar",
+      "slug": "page-titledefault-title-bar"
+    },
+    "page-title/customize-page-title.html": {
+      "source": "docs/page-title/customize-page-title.md",
+      "title": "How to Customize Page Title Bar - Brook Documentation",
+      "pageTitle": "How to Customize Page Title Bar",
+      "slug": "page-titlecustomize-page-title"
+    },
+    "footer/create-footer.html": {
+      "source": "docs/footer/create-footer.md",
+      "title": "How to Create a Footer Style - Brook Documentation",
+      "pageTitle": "How to Create a Footer Style",
+      "slug": "footercreate-footer"
+    },
+    "footer/set-default-footer.html": {
+      "source": "docs/footer/set-default-footer.md",
+      "title": "How to Set Default Fotter - Brook Documentation",
+      "pageTitle": "How to Set Default Fotter",
+      "slug": "footerset-default-footer"
+    },
+    "slider/create-new-slider.html": {
+      "source": "docs/slider/create-new-slider.md",
+      "title": "How to Create a New Slider - Brook Documentation",
+      "pageTitle": "How to Create a New Slider",
+      "slug": "slidercreate-new-slider"
+    },
+    "slider/edit-slider.html": {
+      "source": "docs/slider/edit-slider.md",
+      "title": "How to Edit Your Slider - Brook Documentation",
+      "pageTitle": "How to Edit Your Slider",
+      "slug": "slideredit-slider"
+    },
+    "post/create-post.html": {
+      "source": "docs/post/create-post.md",
+      "title": "How to Create a New Page - Brook Documentation",
+      "pageTitle": "How to Create a New Page",
+      "slug": "postcreate-post"
+    },
+    "post/create-category.html": {
+      "source": "docs/post/create-category.md",
+      "title": "How to Create a Category - Brook Documentation",
+      "pageTitle": "How to Create a Category",
+      "slug": "postcreate-category"
+    },
+    "post/create-blog-archive-page.html": {
+      "source": "docs/post/create-blog-archive-page.md",
+      "title": "How to Create a Blog Archive Page - Brook Documentation",
+      "pageTitle": "How to Create a Blog Archive Page",
+      "slug": "postcreate-blog-archive-page"
+    },
+    "widget/create-sidebar.html": {
+      "source": "docs/widget/create-sidebar.md",
+      "title": "How to Create a Sidebar - Brook Documentation",
+      "pageTitle": "How to Create a Sidebar",
+      "slug": "widgetcreate-sidebar"
+    },
+    "widget/add-widget-in-sidebar.html": {
+      "source": "docs/widget/add-widget-in-sidebar.md",
+      "title": "How to Add Widget in Sidebar - Brook Documentation",
+      "pageTitle": "How to Add Widget in Sidebar",
+      "slug": "widgetadd-widget-in-sidebar"
+    },
+    "widget/edit-widget.html": {
+      "source": "docs/widget/edit-widget.md",
+      "title": "How to Edit Widget - Brook Documentation",
+      "pageTitle": "How to Edit Widget",
+      "slug": "widgetedit-widget"
+    },
+    "widget/add-sildebar-for-page.html": {
+      "source": "docs/widget/add-sildebar-for-page.md",
+      "title": "How to Add Sidebar for a Page - Brook Documentation",
+      "pageTitle": "How to Add Sidebar for a Page",
+      "slug": "widgetadd-sildebar-for-page",
+      "headings": [
+        {
+          "title": "Add default Sidebar",
+          "depth": 3,
+          "id": "add-default-sidebar"
+        },
+        {
+          "title": "Add Sidebar for particular page",
+          "depth": 3,
+          "id": "add-sidebar-for-particular-page"
+        }
+      ]
+    },
+    "portfolio/create-portfolio.html": {
+      "source": "docs/portfolio/create-portfolio.md",
+      "title": "How to Create Portfolio - Brook Documentation",
+      "pageTitle": "How to Create Portfolio",
+      "slug": "portfoliocreate-portfolio"
+    },
+    "portfolio/customize-default-portfolio.html": {
+      "source": "docs/portfolio/customize-default-portfolio.md",
+      "title": "How to Customize the Default Portfolio - Brook Documentation",
+      "pageTitle": "How to Customize the Default Portfolio",
+      "slug": "portfoliocustomize-default-portfolio"
+    },
+    "woo-commerce/setup-online-store.html": {
+      "source": "docs/woo-commerce/setup-online-store.md",
+      "title": "Set up an Online Store - Brook Documentation",
+      "pageTitle": "Set up an Online Store",
+      "slug": "woo-commercesetup-online-store"
+    },
+    "woo-commerce/customize-online-store.html": {
+      "source": "docs/woo-commerce/customize-online-store.md",
+      "title": "How to Customize Your Online Store - Brook Documentation",
+      "pageTitle": "How to Customize Your Online Store",
+      "slug": "woo-commercecustomize-online-store"
+    },
+    "faqs/installation-issues.html": {
+      "source": "docs/faqs/installation-issues.md",
+      "title": "What are Common Installation Issues - Brook Documentation",
+      "pageTitle": "What are Common Installation Issues",
+      "slug": "faqsinstallation-issues"
+    },
+    "faqs/change-color.html": {
+      "source": "docs/faqs/change-color.md",
+      "title": "How to Change Color - Brook Documentation",
+      "pageTitle": "How to Change Color",
+      "slug": "faqschange-color"
+    },
+    "faqs/change-contact-information.html": {
+      "source": "docs/faqs/change-contact-information.md",
+      "title": "How to Change Contact Information - Brook Documentation",
+      "pageTitle": "How to Change Contact Information",
+      "slug": "faqschange-contact-information"
+    },
+    "faqs/change-logo.html": {
+      "source": "docs/faqs/change-logo.md",
+      "title": "How to Change Logo - Brook Documentation",
+      "pageTitle": "How to Change Logo",
+      "slug": "faqschange-logo"
+    }
+  },
+  "sources": {
+    "README.md": "index.html",
+    "docs/getting-started/requirements.md": "getting-started/requirements.html",
+    "docs/getting-started/knowledge-base.md": "getting-started/knowledge-base.html",
+    "docs/getting-started/included.md": "getting-started/included.html",
+    "docs/getting-started/support.md": "getting-started/support.html",
+    "docs/installation/theme-installation.md": "installation/theme-installation.html",
+    "docs/installation/plugin-installation.md": "installation/plugin-installation.html",
+    "docs/installation/plugin-configuration.md": "installation/plugin-configuration.html",
+    "docs/installation/demo-installation.md": "installation/demo-installation.html",
+    "docs/installation/installation-issues.md": "installation/installation-issues.html",
+    "docs/update/before-update.md": "update/before-update.html",
+    "docs/update/update-theme.md": "update/update-theme.html",
+    "docs/build-your-site/wordpress-configuration.md": "build-your-site/wordpress-configuration.html",
+    "docs/build-your-site/theme-option.md": "build-your-site/theme-option.html",
+    "docs/page/create-new-page.md": "page/create-new-page.html",
+    "docs/page/use-visual-composer-to-build-page.md": "page/use-visual-composer-to-build-page.html",
+    "docs/page/how-to-change-page-title.md": "page/how-to-change-page-title.html",
+    "docs/page/page-options.md": "page/page-options.html",
+    "docs/page/maintenance-page.md": "page/maintenance-page.html",
+    "docs/page/one-page-site.md": "page/one-page-site.html",
+    "docs/page/one-page-scroll.md": "page/one-page-scroll.html",
+    "docs/menu/create-a-menu.md": "menu/create-a-menu.html",
+    "docs/menu/how-to-edit-menu.md": "menu/how-to-edit-menu.html",
+    "docs/menu/create-mega-menu.md": "menu/create-mega-menu.html",
+    "docs/header/header-setup.md": "header/header-setup.html",
+    "docs/header/customize-header-style.md": "header/customize-header-style.html",
+    "docs/header/header-sticky.md": "header/header-sticky.html",
+    "docs/top-bar/default-topbar.md": "top-bar/default-topbar.html",
+    "docs/top-bar/customize-topbar.md": "top-bar/customize-topbar.html",
+    "docs/page-title/default-title-bar.md": "page-title/default-title-bar.html",
+    "docs/page-title/customize-page-title.md": "page-title/customize-page-title.html",
+    "docs/footer/create-footer.md": "footer/create-footer.html",
+    "docs/footer/set-default-footer.md": "footer/set-default-footer.html",
+    "docs/slider/create-new-slider.md": "slider/create-new-slider.html",
+    "docs/slider/edit-slider.md": "slider/edit-slider.html",
+    "docs/post/create-post.md": "post/create-post.html",
+    "docs/post/create-category.md": "post/create-category.html",
+    "docs/post/create-blog-archive-page.md": "post/create-blog-archive-page.html",
+    "docs/widget/create-sidebar.md": "widget/create-sidebar.html",
+    "docs/widget/add-widget-in-sidebar.md": "widget/add-widget-in-sidebar.html",
+    "docs/widget/edit-widget.md": "widget/edit-widget.html",
+    "docs/widget/add-sildebar-for-page.md": "widget/add-sildebar-for-page.html",
+    "docs/portfolio/create-portfolio.md": "portfolio/create-portfolio.html",
+    "docs/portfolio/customize-default-portfolio.md": "portfolio/customize-default-portfolio.html",
+    "docs/woo-commerce/setup-online-store.md": "woo-commerce/setup-online-store.html",
+    "docs/woo-commerce/customize-online-store.md": "woo-commerce/customize-online-store.html",
+    "docs/faqs/installation-issues.md": "faqs/installation-issues.html",
+    "docs/faqs/change-color.md": "faqs/change-color.html",
+    "docs/faqs/change-contact-information.md": "faqs/change-contact-information.html",
+    "docs/faqs/change-logo.md": "faqs/change-logo.html",
+    "docs/css/custom.css": "css/custom.css",
+    "docs/images/CSS.jpg": "images/CSS.jpg",
+    "docs/images/Downloads.png": "images/Downloads.png",
+    "docs/images/PGP-Time-limit.png": "images/PGP-Time-limit.png",
+    "docs/images/PHP-Max-Input-Vars.png": "images/PHP-Max-Input-Vars.png",
+    "docs/images/WP-Memory-Limit.png": "images/WP-Memory-Limit.png",
+    "docs/images/activate-another.png": "images/activate-another.png",
+    "docs/images/activate-plugins.png": "images/activate-plugins.png",
+    "docs/images/active-theme.png": "images/active-theme.png",
+    "docs/images/add-category.png": "images/add-category.png",
+    "docs/images/add-element-box.png": "images/add-element-box.png",
+    "docs/images/add-element.png": "images/add-element.png",
+    "docs/images/add-new-attribute-swatches.png": "images/add-new-attribute-swatches.png",
+    "docs/images/add-new-color.png": "images/add-new-color.png",
+    "docs/images/add-new-page-2.jpg": "images/add-new-page-2.jpg",
+    "docs/images/add-new-page.jpg": "images/add-new-page.jpg",
+    "docs/images/add-new-post.png": "images/add-new-post.png",
+    "docs/images/add-new-product.png": "images/add-new-product.png",
+    "docs/images/add-new.png": "images/add-new.png",
+    "docs/images/add-sidebar-for-a-page.png": "images/add-sidebar-for-a-page.png",
+    "docs/images/add-widget.jpg": "images/add-widget.jpg",
+    "docs/images/appearance.png": "images/appearance.png",
+    "docs/images/attribute-swatches.png": "images/attribute-swatches.png",
+    "docs/images/back-or-front.png": "images/back-or-front.png",
+    "docs/images/brook01.png": "images/brook01.png",
+    "docs/images/brook02.png": "images/brook02.png",
+    "docs/images/change-contact.png": "images/change-contact.png",
+    "docs/images/change-image-slider.jpg": "images/change-image-slider.jpg",
+    "docs/images/change-info.png": "images/change-info.png",
+    "docs/images/change-logo.png": "images/change-logo.png",
+    "docs/images/check-plugin.jpg": "images/check-plugin.jpg",
+    "docs/images/choose-widget.jpg": "images/choose-widget.jpg",
+    "docs/images/coming-soon-02.png": "images/coming-soon-02.png",
+    "docs/images/coming-soon.png": "images/coming-soon.png",
+    "docs/images/contact-form01.png": "images/contact-form01.png",
+    "docs/images/contact-form3.png": "images/contact-form3.png",
+    "docs/images/contact-form4.png": "images/contact-form4.png",
+    "docs/images/contact7.jpg": "images/contact7.jpg",
+    "docs/images/create-a-footer-style.png": "images/create-a-footer-style.png",
+    "docs/images/create-a-footer-style-01.png": "images/create-a-footer-style-01.png",
+    "docs/images/create-blog-archive-page-2.png": "images/create-blog-archive-page-2.png",
+    "docs/images/create-blog-archive-page.png": "images/create-blog-archive-page.png",
+    "docs/images/create-mega-menu-02.png": "images/create-mega-menu-02.png",
+    "docs/images/create-mega-menu-03.png": "images/create-mega-menu-03.png",
+    "docs/images/create-mega-menu-04.png": "images/create-mega-menu-04.png",
+    "docs/images/create-mega-menu-05.png": "images/create-mega-menu-05.png",
+    "docs/images/create-mega-menu-06.png": "images/create-mega-menu-06.png",
+    "docs/images/create-mega-menu-07.png": "images/create-mega-menu-07.png",
+    "docs/images/create-mega-menu-08.png": "images/create-mega-menu-08.png",
+    "docs/images/create-mega-menu.png": "images/create-mega-menu.png",
+    "docs/images/create-new-menu.jpg": "images/create-new-menu.jpg",
+    "docs/images/create-variations-from-all-attributes.png": "images/create-variations-from-all-attributes.png",
+    "docs/images/customize-bar-title.png": "images/customize-bar-title.png",
+    "docs/images/customize-maintenance.png": "images/customize-maintenance.png",
+    "docs/images/customize-page-title-bar.png": "images/customize-page-title-bar.png",
+    "docs/images/customize-page.png": "images/customize-page.png",
+    "docs/images/customize-portfolio.png": "images/customize-portfolio.png",
+    "docs/images/customize-woocommerce.png": "images/customize-woocommerce.png",
+    "docs/images/customizing.png": "images/customizing.png",
+    "docs/images/delete-theme-2.jpg": "images/delete-theme-2.jpg",
+    "docs/images/delete-theme.jpg": "images/delete-theme.jpg",
+    "docs/images/dicussion.jpg": "images/dicussion.jpg",
+    "docs/images/done import.jpg": "images/done import.jpg",
+    "docs/images/download.png": "images/download.png",
+    "docs/images/edit-currency.jpg": "images/edit-currency.jpg",
+    "docs/images/edit-mega-menu.png": "images/edit-mega-menu.png",
+    "docs/images/edit-menu-1.jpg": "images/edit-menu-1.jpg",
+    "docs/images/edit-menu-2.jpg": "images/edit-menu-2.jpg",
+    "docs/images/edit-menu-item.jpg": "images/edit-menu-item.jpg",
+    "docs/images/edit-menu.jpg": "images/edit-menu.jpg",
+    "docs/images/enable-PHP-extension.png": "images/enable-PHP-extension.png",
+    "docs/images/enter-slider-2.jpg": "images/enter-slider-2.jpg",
+    "docs/images/enter-slider.jpg": "images/enter-slider.jpg",
+    "docs/images/enter-widget.jpg": "images/enter-widget.jpg",
+    "docs/images/front-page.jpg": "images/front-page.jpg",
+    "docs/images/general-setting.png": "images/general-setting.png",
+    "docs/images/header-edit.png": "images/header-edit.png",
+    "docs/images/header-general.png": "images/header-general.png",
+    "docs/images/header-sticky.png": "images/header-sticky.png",
+    "docs/images/header-style-customize.png": "images/header-style-customize.png",
+    "docs/images/header-style.png": "images/header-style.png",
+    "docs/images/hit-slider.jpg": "images/hit-slider.jpg",
+    "docs/images/how-to-add-widget-in-sidebar.png": "images/how-to-add-widget-in-sidebar.png",
+    "docs/images/how-to-create-a-sidebar.png": "images/how-to-create-a-sidebar.png",
+    "docs/images/how-to-create-portfolio-01.png": "images/how-to-create-portfolio-01.png",
+    "docs/images/icon-1.png": "images/icon-1.png",
+    "docs/images/icon2.png": "images/icon2.png",
+    "docs/images/import-complete.png": "images/import-complete.png",
+    "docs/images/import-demo.png": "images/import-demo.png",
+    "docs/images/import-working.png": "images/import-working.png",
+    "docs/images/importing.png": "images/importing.png",
+    "docs/images/install-2.png": "images/install-2.png",
+    "docs/images/install-at-once.png": "images/install-at-once.png",
+    "docs/images/install-now.png": "images/install-now.png",
+    "docs/images/install-plugin-done.jpg": "images/install-plugin-done.jpg",
+    "docs/images/install-plugins-success.png": "images/install-plugins-success.png",
+    "docs/images/install-plugins.jpg": "images/install-plugins.jpg",
+    "docs/images/install-required-plugins.png": "images/install-required-plugins.png",
+    "docs/images/install-theme.png": "images/install-theme.png",
+    "docs/images/islogo.jpg": "images/islogo.jpg",
+    "docs/images/logo.png": "images/logo.png",
+    "docs/images/media.jpg": "images/media.jpg",
+    "docs/images/mega-menu.png": "images/mega-menu.png",
+    "docs/images/menu-created.jpg": "images/menu-created.jpg",
+    "docs/images/menu-setting.jpg": "images/menu-setting.jpg",
+    "docs/images/name-menu.jpg": "images/name-menu.jpg",
+    "docs/images/new-slider-listed.jpg": "images/new-slider-listed.jpg",
+    "docs/images/new-slider.png": "images/new-slider.png",
+    "docs/images/new-theme-activated.png": "images/new-theme-activated.png",
+    "docs/images/one-page-scroll-02.png": "images/one-page-scroll-02.png",
+    "docs/images/one-page-scroll-03.png": "images/one-page-scroll-03.png",
+    "docs/images/one-page-scroll.png": "images/one-page-scroll.png",
+    "docs/images/one-page-site-01.png": "images/one-page-site-01.png",
+    "docs/images/one-page-site-02.png": "images/one-page-site-02.png",
+    "docs/images/one-page-site-03.png": "images/one-page-site-03.png",
+    "docs/images/one-page-site-04.png": "images/one-page-site-04.png",
+    "docs/images/one-page-site-05.png": "images/one-page-site-05.png",
+    "docs/images/one-page-stie-06.png": "images/one-page-stie-06.png",
+    "docs/images/page-options.png": "images/page-options.png",
+    "docs/images/page-title-bar-style-customize.png": "images/page-title-bar-style-customize.png",
+    "docs/images/page-title-bar-style.png": "images/page-title-bar-style.png",
+    "docs/images/permailink-3.png": "images/permailink-3.png",
+    "docs/images/php-configuration-limits.png": "images/php-configuration-limits.png",
+    "docs/images/quat-usb-2-canh-roi-4.jpg": "images/quat-usb-2-canh-roi-4.jpg",
+    "docs/images/quick-edit-2.jpg": "images/quick-edit-2.jpg",
+    "docs/images/quick-edit.jpg": "images/quick-edit.jpg",
+    "docs/images/reading1-1.jpg": "images/reading1-1.jpg",
+    "docs/images/redux.png": "images/redux.png",
+    "docs/images/save-slider.jpg": "images/save-slider.jpg",
+    "docs/images/search-heading.png": "images/search-heading.png",
+    "docs/images/select-a-menu-to-edit.jpg": "images/select-a-menu-to-edit.jpg",
+    "docs/images/select-a-page-template.png": "images/select-a-page-template.png",
+    "docs/images/select-menu.jpg": "images/select-menu.jpg",
+    "docs/images/select-menu.png": "images/select-menu.png",
+    "docs/images/select-php-version.png": "images/select-php-version.png",
+    "docs/images/set-default-footer.png": "images/set-default-footer.png",
+    "docs/images/setting-all-price.png": "images/setting-all-price.png",
+    "docs/images/setting-attribute.png": "images/setting-attribute.png",
+    "docs/images/setting-color-attribute.png": "images/setting-color-attribute.png",
+    "docs/images/setting-mega-menu.png": "images/setting-mega-menu.png",
+    "docs/images/shortcodes.png": "images/shortcodes.png",
+    "docs/images/sidebar.png": "images/sidebar.png",
+    "docs/images/site.jpg": "images/site.jpg",
+    "docs/images/slider1.png": "images/slider1.png",
+    "docs/images/theme-detail.png": "images/theme-detail.png",
+    "docs/images/theme.png": "images/theme.png",
+    "docs/images/top-bar-style.png": "images/top-bar-style.png",
+    "docs/images/top-bar.png": "images/top-bar.png",
+    "docs/images/turn-on-mega-menu.png": "images/turn-on-mega-menu.png",
+    "docs/images/update-by-plugin.png": "images/update-by-plugin.png",
+    "docs/images/update-plugins.png": "images/update-plugins.png",
+    "docs/images/vafpress.jpg": "images/vafpress.jpg",
+    "docs/images/variable-product.png": "images/variable-product.png",
+    "docs/images/welcome.jpg": "images/welcome.jpg",
+    "docs/images/wishlist.png": "images/wishlist.png",
+    "docs/images/woo-add-coupon.jpg": "images/woo-add-coupon.jpg",
+    "docs/images/woo-add-order.jpg": "images/woo-add-order.jpg",
+    "docs/images/woo-customize.png": "images/woo-customize.png",
+    "docs/images/woo-general-setting.png": "images/woo-general-setting.png",
+    "docs/images/woocommerce1-150x150.png": "images/woocommerce1-150x150.png",
+    "docs/images/wpbakery.png": "images/wpbakery.png",
+    "docs/images/yith-compare.jpg": "images/yith-compare.jpg",
+    "docs/images/zip-file.png": "images/zip-file.png"
+  }
+}

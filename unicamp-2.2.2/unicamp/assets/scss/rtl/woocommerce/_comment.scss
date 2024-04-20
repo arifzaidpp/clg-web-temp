@@ -1,0 +1,15 @@
+.rtl {
+	&.single-product {
+		.comment {
+			.product-comment-rating {
+				margin: 0 0 0 16px;
+			}
+		}
+	}
+
+	.comment-form-rating {
+		.stars {
+			margin: 0 26px 0 0 !important;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.wp-block-button {
+	margin-bottom: 30px;
+
+	.wp-block-button__link {
+		padding: 16px 41px;
+	}
+
+	&.is-style-outline {
+		.wp-block-button__link {
+			border-color: currentColor !important;
+			background-color: transparent;
+			padding: 14px 41px;
+
+			&:not(.has-text-color) {
+				color: inherit;
+			}
+		}
+	}
+}

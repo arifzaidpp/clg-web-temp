@@ -1,0 +1,44 @@
+.rtl {
+	.header-notification-list {
+		right: auto;
+		left: -27px;
+		padding: 26px 30px 14px 20px;
+
+		&:before,
+		&:after {
+			right: auto;
+			left: 35px;
+		}
+
+		&:before {
+			transform: translateX(-1px);
+		}
+	}
+
+	.notification-list {
+		li {
+			padding: 0 0 0 15px;
+		}
+
+		.notification-status {
+			right: auto;
+			left: 0;
+		}
+
+		.notification-avatar {
+			margin: 0 0 0 14px;
+		}
+	}
+
+	.notification-footer {
+		a {
+			i {
+				margin: 0 5px 0 0;
+
+				&:before {
+					content: '\f104';
+				}
+			}
+		}
+	}
+}

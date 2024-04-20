@@ -1,0 +1,5 @@
+/* Poppup */
+.insight-popup{position:relative;background-color:#fff;display:none;padding:20px;margin:0 auto}
+.mfp-content .insight-popup{display:block}
+.insight-popup-never-show input[type="checkbox"]{margin-right:5px;margin-bottom:0;display:inline-block;vertical-align:middle}
+.insight-popup-never-show span{display:inline-block;vertical-align:middle}

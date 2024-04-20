@@ -1,0 +1,58 @@
+// Default Spacing.
+.page-content {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+// Remove if has title bar.
+.page-title-bar + .page-content {
+	margin-top: 0;
+}
+
+.elementor-page.page-has-sidebar {
+	.page-content {
+		> .container {
+			max-width: 1200px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.elementor-section.elementor-top-section > .elementor-container {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.elementor-page.page-has-no-sidebar {
+	.page-content {
+		> .container {
+			max-width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	.page-main-content {
+		padding: 0;
+	}
+}
+
+body {
+	&.elementor-archive-page,
+	&.elementor-page {
+		.page-content {
+			margin-top: 0;
+		}
+
+		&.page-has-no-sidebar {
+			.page-content {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.hentry {
+	@extend %clearfix;
+}

@@ -1,0 +1,195 @@
+.rtl {
+	.tutor-course-badges-wrap {
+		.tutor-course-badges {
+			margin: 0 0 0 10px;
+		}
+
+		.tutor-course-badge {
+			margin: 0 0 10px 10px;
+		}
+	}
+
+	.tutor-single-course-lead-meta {
+		.lead-meta-label {
+			margin: 0 0 0 14px;
+		}
+
+		.lead-meta-item {
+			+ .lead-meta-item {
+				&:before {
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+	}
+
+	.prerequisites-course-lists {
+		li {
+			&:first-child {
+				padding: 13px 58px 13px 20px;
+
+				> span {
+					left: auto;
+					right: 20px;
+				}
+			}
+
+			.prerequisites-course-title {
+				padding: 0 15px 0 0;
+			}
+		}
+	}
+
+	.tutor-course-tags-wrap {
+		.course-tags-title {
+			margin: 0 0 0 11px;
+		}
+	}
+
+	.tutor-course-benefits-wrap {
+		.benefit-content {
+			padding: 0 31px 0 0;
+		}
+
+		.benefit-icon {
+			left: auto;
+			right: 0;
+			margin: 0 0 0 10px;
+		}
+	}
+
+	.tutor-course-target-audience-items {
+		li {
+			padding: 0 23px 0 0;
+
+			&:before {
+				left: auto;
+				right: 0;
+				content: '\f30a';
+			}
+		}
+	}
+
+	.tutor-course-topics-header {
+		.tutor-course-topics-header-right {
+			span:not(:first-child) {
+				margin: 0 45px 0 0;
+			}
+		}
+	}
+
+	.tutor-course-lesson {
+		h5 {
+			i {
+				margin-left: 5px;
+			}
+		}
+	}
+
+	.single-instructor-wrap {
+		.instructor-avatar {
+			margin: 0 0 0 30px;
+		}
+
+		.instructor-ratings {
+			.tm-star-rating {
+				margin: 0 0 0 5px;
+			}
+		}
+
+		.instructor-meta {
+			.meta-icon {
+				margin: 0 0 0 2px;
+			}
+		}
+
+		.instructor-profile-url {
+			span {
+				margin: 0 0 0 5px;
+			}
+		}
+	}
+
+	.tutor-price-preview-box {
+		.tutor-price {
+			> .price {
+				margin: 0 0 0 10px;
+			}
+		}
+
+		.price ins + del {
+			margin: 0 18px 0 0;
+		}
+
+		.tutor-meta-top {
+			> div {
+				.meta-icon {
+					margin: 0 0 0 4px;
+				}
+			}
+		}
+
+		.tutor-course-purchase-box {
+			button {
+				i {
+					margin-right: 0;
+				}
+			}
+		}
+
+		.tutor-course-categories {
+			a {
+				margin: 0 6px 0 0;
+			}
+		}
+	}
+
+	.tutor-course-form-actions {
+		button,
+		.tm-button,
+		.tutor-button {
+			margin: 10px 0 0 24px;
+		}
+	}
+
+	.tutor-attachments-wrap {
+		.tutor-lesson-attachment {
+			padding: 10px 12px 10px 16px;
+		}
+
+		.tutor-attachment-info {
+			padding: 0 15px 0 0;
+		}
+	}
+
+	.tutor-course-header-categories {
+		a + a {
+			margin: 0 5px 0 0;
+		}
+	}
+
+	.tutor-zoom-lesson-countdown {
+		.countdown-item {
+			margin: 0 5px 0 0;
+		}
+
+		.countdown-line-amount {
+			margin: 0 0 0 4px;
+		}
+	}
+
+	.course-ratings-average-wrap {
+		margin: 0 0 0 40px;
+	}
+
+	.course-rating-meter .rating-meter-bar-wrap {
+		margin: 0 20px 0 13px;
+	}
+
+	.tutor-review-individual-item .tutor-review-user-info {
+		padding-left: 0;
+		padding-right: 20px;
+	}
+
+}

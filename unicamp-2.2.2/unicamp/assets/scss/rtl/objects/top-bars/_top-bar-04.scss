@@ -1,0 +1,14 @@
+.rtl .top-bar-04 {
+	.top-bar-right {
+		.top-bar-wrap {
+			div {
+				+ div {
+					&:before {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}

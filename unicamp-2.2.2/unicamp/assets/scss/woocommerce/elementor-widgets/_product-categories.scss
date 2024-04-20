@@ -1,0 +1,28 @@
+.unicamp-product-categories {
+	.product-cat-wrapper {
+		position: relative;
+		display: block;
+	}
+
+	.product-cat-info {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 0 40px 27px;
+	}
+
+	.product-cat-name {
+		font-size: 21px;
+		font-weight: 300;
+		margin: 0;
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.unicamp-product-categories {
+		.product-cat-info {
+			padding: 0 25px 22px;
+		}
+	}
+}

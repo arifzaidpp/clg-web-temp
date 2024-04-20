@@ -1,0 +1,32 @@
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #eee;
+	padding: 10px;
+	vertical-align: middle;
+	text-align: start;
+}
+
+th {
+	color: $heading-color;
+	font-weight: $body-font-weight-medium;
+}
+
+table {
+	th {
+		&.empty {
+			visibility: hidden;
+			border: 0;
+			background: none;
+		}
+	}
+
+	tr:nth-child(2n) {
+		td {
+			background: rgba(0, 0, 0, .01);
+		}
+	}
+}

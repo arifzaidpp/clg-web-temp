@@ -1,0 +1,48 @@
+.wp-block-image {
+	margin: 0;
+
+	.alignleft {
+		margin-right: 2em;
+	}
+
+	.alignright {
+		margin-left: 2em;
+	}
+
+	figcaption {
+		margin: 0;
+		color: inherit;
+		font-size: .9em;
+	}
+}
+
+figure.wp-block-image {
+	margin-bottom: 2em;
+
+	&.alignleft {
+		margin-right: 2em;
+	}
+
+	&.alignright {
+		margin-left: 2em;
+	}
+}
+
+.wp-block-image .aligncenter,
+.wp-block-image .alignleft,
+.wp-block-image .alignright,
+.wp-block-image.is-resized {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+@include elementor-breakpoint-up(md) {
+	.wp-block-image .aligncenter,
+	.wp-block-image .alignleft,
+	.wp-block-image .alignright,
+	.wp-block-image.is-resized,
+	figure.wp-block-image {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}

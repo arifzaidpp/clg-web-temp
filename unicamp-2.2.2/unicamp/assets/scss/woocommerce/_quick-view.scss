@@ -1,0 +1,143 @@
+.popup-product-quick-view-content {
+	display: none;
+}
+
+.popup-product-quick-view {
+	@include LightCloseCursor;
+	z-index: 100001 !important;
+	--spacing: 30px;
+	--gap-ver: 20px;
+	--gap-hoz: 20px;
+
+	.single-product {
+		position: relative;
+	}
+
+	.mfp-content {
+		position: relative;
+		max-width: 1170px;
+		padding: var(--spacing) 0;
+	}
+
+	.product-container {
+		position: relative;
+		overflow: hidden;
+		padding: var(--gap-ver) 0 var(--gap-ver) var(--gap-hoz);
+		display: flex;
+		background: #fff;
+		box-shadow: 0 2px 20px rgba(0, 0, 0, .06);
+	}
+
+	.woo-single-images {
+		width: 42%;
+	}
+
+	.product_title {
+		font-size: 28px;
+		display: none;
+
+		&.title-with-link {
+			display: block;
+		}
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.unicamp-main-swiper {
+		.swiper-slide {
+			text-align: center;
+
+			img {
+				width: auto;
+				/*
+				 * Popup top & bottom spacing + container padding + thumbnail slider.
+				 */
+				max-height: calc(100vh - 120px - (var(--spacing) * 2) - (var(--spacing) * 2));
+			}
+		}
+	}
+
+	.unicamp-thumbs-swiper {
+		margin: 20px auto 0;
+		width: 382px;
+		max-width: 100%;
+	}
+
+	.entry-summary {
+		width: 58%;
+		margin: 0;
+		padding: 0;
+
+		.inner-content {
+			position: relative;
+			max-width: 100%;
+			overflow: hidden;
+
+			> .inner {
+				max-width: calc(100% - var(--gap-hoz));
+				padding-left: 30px;
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+		right: 0;
+	}
+}
+
+@media screen and (min-height: 760px) {
+	.popup-product-quick-view {
+		--gap-ver: 40px;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.popup-product-quick-view {
+		--gap-hoz: 50px;
+	}
+
+	.single-product .entry-title {
+		font-size: 34px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.popup-product-quick-view {
+		.product-container {
+			display: block;
+			padding: var(--gap-ver) var(--gap-hoz);
+		}
+
+		.entry-summary {
+			margin: 30px 0 0;
+			width: 100%;
+
+			.inner-content > .inner {
+				max-width: 100%;
+				padding-left: 0;
+				margin-bottom: 20px;
+			}
+		}
+
+		.woo-single-images {
+			width: 100%;
+		}
+
+		.single-product {
+			.entry-title {
+				font-size: 22px;
+			}
+
+			form.cart {
+				padding: 0 0 5px;
+
+				.quantity-button-wrapper {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}

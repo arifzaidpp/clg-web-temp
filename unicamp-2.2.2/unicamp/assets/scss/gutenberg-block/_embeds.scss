@@ -1,0 +1,15 @@
+.wp-block-embed {
+	margin: 0 0 40px;
+
+	&.is-type-video {
+		.wp-block-embed__wrapper {
+			&:before {
+				display: none !important;
+			}
+		}
+
+		.embed-responsive {
+			margin: 0
+		}
+	}
+}

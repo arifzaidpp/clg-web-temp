@@ -1,0 +1,44 @@
+.rtl {
+	.popular-instructor-rating {
+		.tm-star-rating {
+			margin: 0 0 0 5px;
+		}
+	}
+
+	.popular-instructor-avatar {
+		margin: 0 0 0 16px;
+	}
+
+	.popular-instructor-footer {
+		.meta-icon {
+			margin: 0 0 0 4px;
+		}
+	}
+
+	.course-quick-view-popup {
+		.course-loop-benefit {
+			padding: 0 22px 0 0;
+
+			&:before {
+				left: auto;
+				right: 0;
+				transform: rotate(180deg);
+			}
+		}
+
+		.course-loop-wishlist-button {
+			.tm-button {
+				&.icon-left .button-icon {
+					margin-right: 0;
+					margin-left: 9px;
+				}
+			}
+		}
+
+		.course-loop-rating-average {
+			.rating-count {
+				margin: 0 5px 0 0;
+			}
+		}
+	}
+}

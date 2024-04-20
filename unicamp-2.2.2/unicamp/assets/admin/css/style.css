@@ -1,0 +1,63 @@
+.notice.elementor-message,
+.rs-update-notice-wrap {
+  display: none; }
+
+.wp-list-table.plugins #revslider-update .update-message {
+  display: none; }
+
+.notice.wpc-notice {
+  display: none; }
+
+.nav-menus-php .item-edit {
+  font-size: 0; }
+
+.edit-post-layout__metaboxes:last-child {
+  margin-bottom: 120px; }
+
+.kungfu-message.kungfu-message-info:before {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900; }
+
+.slide_layer_type_image > .tp-caption > img {
+  border-radius: inherit; }
+
+.slide_layer_type_text .tp-caption {
+  font-family: "TT Commons", "Open Sans", Helvetica, Arial, sans-serif; }
+
+.rev-btn .left-icon {
+  margin-right: 10px !important; }
+
+.rev-btn .right-icon {
+  margin-left: 10px !important; }
+
+.insight-label {
+  display: inline-block;
+  padding: .4em .8em;
+  margin: 0 10px 2px 0;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline; }
+
+.insight-label-info {
+  background-color: #337ab7; }
+
+.insight-label-success {
+  background-color: #5cb85c; }
+
+.insight-label-warning {
+  background-color: #f0ad4e; }
+
+.insight-label-error {
+  background-color: #d9534f; }
+
+#customize-control-logo_light .thumbnail-image {
+  background: #000;
+  padding: 15px; }
+
+#customize-control-mobile_menu_logo .thumbnail-image,
+#customize-control-logo_dark .thumbnail-image {
+  background: #f5f5f5;
+  padding: 15px; }

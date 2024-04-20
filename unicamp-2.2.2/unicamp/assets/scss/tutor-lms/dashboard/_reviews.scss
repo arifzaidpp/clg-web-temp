@@ -1,0 +1,259 @@
+/**
+ * Given reviews.
+ */
+.dashboard-given-review {
+	border-radius: 0;
+	border: 1px solid $box-white-border;
+	background: $box-white-background;
+	padding: 20px;
+	margin: 0 0 10px;
+	display: flex;
+
+	.review-header {
+		flex-shrink: 0;
+		margin: 0 30px 0 0;
+	}
+
+	.review-body {
+		flex-grow: 1;
+	}
+
+	.review-course-title-wrap {
+		display: flex;
+	}
+
+	.review-course-title {
+		flex-grow: 1;
+		font-size: 18px;
+		margin: 0 0 10px;
+
+		span {
+			display: inline-block;
+			font-weight: 400;
+			line-height: 26px;
+			color: $text-color;
+		}
+
+		a {
+			display: inline-block;
+			color: inherit;
+			font-size: inherit;
+			line-height: 26px;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.tm-star-rating {
+		margin: 0 15px 0 0;
+	}
+
+	.review-meta {
+		font-size: 13px;
+		line-height: 26px;
+	}
+
+	.review-content {
+		margin: 14px 0 0;
+	}
+
+	.review-links {
+		text-align: right;
+		flex-shrink: 0;
+		min-width: 135px;
+
+		a {
+			color: $primary-color;
+
+			> i {
+				margin: 0 4px 0 0;
+			}
+		}
+	}
+}
+
+/**
+ * Received reviews.
+ */
+.tutor-dashboard-reviews-wrap {
+	border-radius: 5px;
+	border: 1px solid $box-white-border;
+	background: $box-white-background;
+	padding: 0 0 20px;
+}
+
+.tutor-dashboard-pagination-results-stats {
+	font-weight: $heading-font-weight;
+	color: $text-lighten-color;
+	padding: 23px 30px;
+	border-bottom: 1px solid $box-border;
+	margin: 0;
+}
+
+.tutor-dashboard-reviews {
+	padding: 0 30px;
+}
+
+.tutor-dashboard-single-review {
+	margin: 0;
+	border: 0;
+	border-radius: 0;
+	border-bottom: 1px solid $box-border;
+	padding: 30px 0 26px;
+	display: flex;
+
+	&:last-child {
+		border: 0;
+	}
+
+	.review-content {
+		margin: 14px 0 0;
+	}
+}
+
+.tutor-dashboard-review-header {
+	display: flex;
+	flex-shrink: 0;
+	min-width: 270px;
+	padding: 0 20px 0 0;
+
+	.review-avatar {
+		margin: 0 14px 0 0;
+
+		.tutor-text-avatar,
+		img {
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+		}
+
+		.tutor-text-avatar {
+			line-height: 70px;
+			font-size: 20px;
+		}
+	}
+
+	.review-name {
+		font-size: 15px;
+		margin: 0 0 5px;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.review-date {
+		color: $text-bit-lighten-color;
+	}
+}
+
+.individual-dashboard-review-body {
+	padding: 0;
+	flex-grow: 1;
+}
+
+h3.tutor-dashboard-review-title {
+	font-size: 18px;
+	font-weight: $heading-font-weight;
+	margin: 0 0 10px;
+
+	span {
+		display: inline-block;
+		font-weight: 400;
+		line-height: 26px;
+		color: $text-color;
+	}
+
+	a {
+		display: inline-block;
+		color: inherit;
+		font-size: inherit;
+		line-height: 26px;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+/**
+ * Popup Edit Review
+ */
+.tutor-modal-content {
+	border-radius: 0;
+}
+
+.tutor-star-rating-group {
+	margin: 0 0 10px;
+}
+
+.tutor-modal-wrap.tutor-edit-review-modal-wrap {
+	.tutor-modal-content {
+		margin: 0;
+		max-height: 90%;
+	}
+
+	form {
+		margin: 0 0 20px;
+	}
+
+	.modal-close-wrap a.modal-close-btn {
+		top: 0;
+		width: 52px;
+		height: 52px;
+		line-height: 54px;
+	}
+
+	.modal-header {
+		padding: 11px 60px 11px 30px;
+	}
+
+	.modal-container {
+		padding: 25px 30px 10px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tutor-dashboard-single-review {
+		display: block;
+	}
+
+	.tutor-dashboard-review-header {
+		padding: 0;
+		margin: 0 0 20px;
+		align-items: center;
+	}
+
+	.tutor-dashboard-reviews,
+	.tutor-dashboard-pagination-results-stats {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.dashboard-given-review {
+		.review-header {
+			margin: 0 20px 0 0;
+		}
+
+		.review-course-title-wrap {
+			display: block;
+		}
+
+		.review-links {
+			text-align: left;
+			margin: 0 0 7px;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.dashboard-given-review {
+		display: block;
+
+		.review-header {
+			margin: 0 0 20px;
+		}
+	}
+}

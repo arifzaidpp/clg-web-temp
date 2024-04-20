@@ -1,0 +1,93 @@
+.tm-star-rating {
+	display: inline-block;
+
+	.tm-star-full {
+		@extend %FontAwesomeSolid;
+		color: $star-full-color;
+
+		&:before {
+			content: "\f005";
+		}
+	}
+
+	&.style-01 {
+		.tm-star-half {
+			@extend %FontAwesomeDuotone;
+
+			&:before {
+				position: absolute;
+				content: "\f089";
+				color: $star-full-color;
+			}
+
+			&:after {
+				content: "\10f089";
+				color: #ccc;
+				opacity: 1;
+			}
+		}
+
+		.tm-star-empty {
+			@extend %FontAwesomeSolid;
+			color: #ccc;
+
+			&:before {
+				content: "\f005";
+			}
+		}
+	}
+
+	&.style-02 {
+		.tm-star-half {
+			@extend %FontAwesomeDuotone;
+
+			&:before {
+				position: absolute;
+				content: "\f5c0";
+				color: $star-full-color;
+			}
+
+			&:after {
+				content: "\10f5c0";
+				color: #ababab;
+				opacity: 1;
+			}
+		}
+
+		.tm-star-empty {
+			@extend %FontAwesomeRegular;
+			color: #ababab;
+
+			&:before {
+				content: "\f005";
+			}
+		}
+	}
+
+	&.style-03 {
+		.tm-star-half {
+			@extend %FontAwesomeDuotone;
+
+			&:before {
+				position: absolute;
+				content: "\f5c0";
+				color: $star-full-color;
+			}
+
+			&:after {
+				content: "\10f5c0";
+				color: $star-full-color;
+				opacity: 1;
+			}
+		}
+
+		.tm-star-empty {
+			@extend %FontAwesomeLight;
+			color: $star-full-color;
+
+			&:before {
+				content: "\f005";
+			}
+		}
+	}
+}

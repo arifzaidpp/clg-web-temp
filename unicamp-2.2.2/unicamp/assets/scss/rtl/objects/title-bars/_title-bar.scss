@@ -1,0 +1,17 @@
+.rtl {
+	.insight_core_breadcrumb {
+		li {
+			margin: 0 0 0 5px;
+
+			+ li {
+				padding-left: 0;
+				padding-right: 13px;
+
+				&:before {
+					left: auto;
+					right: -1px;
+				}
+			}
+		}
+	}
+}

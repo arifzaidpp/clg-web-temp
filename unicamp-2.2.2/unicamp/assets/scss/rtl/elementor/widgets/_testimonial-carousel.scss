@@ -1,0 +1,29 @@
+.rtl {
+	.elementor-widget-tm-testimonial {
+		&.layout-image-inline {
+			&.align-right {
+				.info {
+					flex-direction: unset;
+				}
+			}
+		}
+
+		.testimonial-quote-icon {
+			right: auto;
+			left: 30px;
+		}
+	}
+
+	.unicamp-testimonial-style-01 {
+		&.layout-image-inline {
+			.image {
+				margin: 0 0 0 15px;
+			}
+		}
+
+		.testimonial-quote-icon {
+			right: auto;
+			left: 20px;
+		}
+	}
+}

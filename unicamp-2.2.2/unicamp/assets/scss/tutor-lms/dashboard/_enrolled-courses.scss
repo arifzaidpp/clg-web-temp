@@ -1,0 +1,48 @@
+.dashboard-enrolled-courses {
+	.unicamp-box {
+		display: flex;
+		align-items: flex-start;
+
+		&:hover {
+			.course-title {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.course-title {
+		@extend %NormalTransition;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tutor-mycourse-thumbnail {
+		flex: 0 0 150px;
+	}
+
+	.tutor-mycourse-content {
+		padding: 0 0 0 20px;
+	}
+}
+
+@media (max-width: 580px) {
+	.tutor-mycourse-thumbnail {
+		margin: 0 0 20px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.tutor-mycourse-content {
+		padding: 0;
+	}
+}
+
+@media (max-width: 400px) {
+	.tutor-mycourse-thumbnail {
+		height: 150px;
+	}
+}

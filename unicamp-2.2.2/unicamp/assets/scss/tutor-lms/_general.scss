@@ -1,0 +1,426 @@
+.tutor-container {
+	max-width: 1200px;
+}
+
+a.tutor-btn,
+a.tutor-button,
+.tutor-btn,
+.tutor-button {
+	@include NormalTransition();
+	text-align: center;
+	border-radius: 0 !important;
+	padding: 0 41px;
+	line-height: 50px;
+}
+
+.single_add_to_cart_button,
+a.tutor-button,
+.tutor-button,
+a.tutor-btn,
+.tutor-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 31px;
+
+	i {
+		margin: 0 10px 0 0;
+	}
+}
+
+a.tutor-button.bordered-button,
+.tutor-button.bordered-button,
+a.tutor-btn.bordered-btn,
+.tutor-btn.bordered-btn {
+	color: $primary-color;
+	background: #fff;
+	border: 2px solid #eee;
+	line-height: 48px;
+	filter: none !important;
+
+	&:hover {
+		color: #fff;
+		background: $primary-color !important;
+		border: 2px solid $primary-color;
+	}
+}
+
+.tutor-btn.tutor-btn-outline-primary {
+	border-color: $primary-color;
+	color: $primary-color;
+	background-color: transparent;
+}
+
+.tutor-button-xs {
+	height: 40px;
+	line-height: 38px;
+	font-size: 14px !important;
+}
+
+.tutor-gc-blue-button {
+	border-radius: 0;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 0 20px;
+	height: 52px;
+	line-height: 52px;
+}
+
+.tutor-dropdown-menu {
+	li {
+		margin: 0;
+	}
+}
+
+.tutor-updating-message {
+	&:before {
+		@extend %FontAwesomeRegularImportant;
+		content: '\f3f4' !important;
+		vertical-align: initial;
+		line-height: inherit;
+		margin: 0 10px 0 0;
+		animation: adding-spin 1s linear infinite !important;
+	}
+}
+
+.on-sale {
+	ins .amount {
+		color: #d31819;
+	}
+}
+
+.tutor-price {
+	&.course-free {
+		font-weight: 700;
+
+		.decimals-separator {
+			display: none;
+		}
+	}
+}
+
+.tutor-option-field-row label,
+.tutor-form-group label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.tutor-option-field-label,
+.tutor-input-group,
+.tutor-form-group {
+	> label {
+		display: block;
+		font-size: 14px;
+		font-weight: $heading-font-weight;
+		color: $heading-color;
+		margin: 0 0 5px;
+	}
+}
+
+.tutor-custom-list-style {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		position: relative;
+		padding-left: 25px;
+		line-height: 26px;
+		margin-bottom: 0;
+
+		&:before {
+			@extend %FontAwesomeRegular;
+			color: $primary-color;
+			content: '\f00c';
+			position: absolute;
+			top: 6px;
+			left: 0;
+		}
+	}
+}
+
+.tutor-course-badge {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5px 3px 0;
+	padding: 3px 7px;
+	min-height: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	border-radius: 0;
+	min-width: 48px;
+
+	&.hot {
+		background: #d31819;
+	}
+
+	&.onsale {
+		background: $primary-color;
+	}
+
+	&.new {
+		background: #50d7e9;
+	}
+
+	&.free {
+		background: #6cbd7e;
+	}
+
+	&.best-seller {
+		background: #000;
+	}
+
+	&.out-of-stock {
+		background: #6d5b5d;
+	}
+}
+
+.tutor-option-field-row label,
+.tutor-form-group label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.tutor-option-field-label,
+.tutor-input-group,
+.tutor-form-group {
+	> label {
+		display: block;
+		font-size: 14px;
+		font-weight: $heading-font-weight;
+		color: $heading-color;
+		margin: 0 0 5px;
+	}
+}
+
+.tutor-option-field,
+.tutor-input-group,
+.tutor-form-group {
+	textarea,
+	select,
+	input {
+		margin-bottom: 20px;
+	}
+
+	textarea {
+		padding: 12px 20px;
+		height: 180px;
+	}
+}
+
+.tutor-form-group .wp-editor-wrap {
+	margin: 0 0 20px;
+}
+
+.tutor-styled-radio {
+	font-size: 14px;
+	font-weight: $heading-font-weight;
+
+	> span {
+		&:before {
+			background: #fff !important;
+			border: 1px solid #cacaca !important;
+		}
+
+		&:after {
+			position: absolute;
+			top: 50%;
+			margin-top: -5px;
+			left: 4px;
+			content: '';
+			border-radius: 50%;
+			width: 10px;
+			height: 10px;
+			background: $primary-color;
+			transform: scale(0);
+			transition: transform .3s ease;
+		}
+	}
+
+	> input:checked + span::after {
+		transform: scale(1);
+	}
+}
+
+.date-range-input {
+	input {
+		border-radius: 0 !important;
+	}
+}
+
+.plyr__controls {
+	.plyr__control {
+		min-height: 0;
+		height: 32px;
+	}
+}
+
+.plyr__control--overlaid {
+	height: 50px;
+}
+
+.tutor-progress-bar-wrap {
+	display: flex;
+	width: 100%;
+}
+
+.tutor-progress-bar {
+	position: relative;
+	height: 8px;
+	color: #000;
+	line-height: 25px;
+	background: #f1f1f1;
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%;
+	border-radius: 30px;
+	margin-top: 7.5px;
+
+	.tutor-progress-filled {
+		border-radius: 30px;
+		width: var(--tutor-progress-left);
+
+		&:after {
+			content: "";
+			position: absolute;
+			height: 15px;
+			width: 15px;
+			border: 7.5px solid var(--tutor-primary-color);
+			border-radius: 50%;
+			background: #fff;
+			left: var(--tutor-progress-left);
+			transform: translateY(-50%) translateX(-50%);
+			top: 50%;
+			box-sizing: border-box;
+		}
+	}
+}
+
+.tutor-pagination-hints {
+	display: none;
+}
+
+.tutor-ui-pagination {
+	margin: 40px 0 0;
+}
+
+.tutor-pagination-numbers {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 700;
+	color: $heading-color;
+	text-transform: uppercase;
+	text-align: center;
+
+	> span,
+	> a {
+		display: block;
+		text-align: center;
+		min-width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border: 0;
+		border-radius: 40px;
+		color: inherit;
+		padding: 0 5px;
+	}
+
+	> a {
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	.current {
+		color: #fff;
+		background: $primary-color;
+	}
+
+	.dots {
+		background: none;
+		border: 0;
+		min-width: 20px;
+	}
+
+	.next,
+	.prev {
+		min-width: 0;
+		font-size: 14px;
+	}
+}
+
+.tutor-form-check {
+	label {
+		display: inline-block;
+		margin: 0;
+	}
+
+	input {
+		margin-bottom: 0 !important;
+	}
+}
+
+.tutor-modal-window {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.tutor-modal-content {
+	position: relative;
+	width: var(--edumall-modal-width, 500px);
+	max-width: 90%;
+	background: $box-white-background;
+	border-radius: 5px;
+	padding: 2em;
+	text-align: center;
+
+	.tutor-color-black {
+		color: $heading-color;
+		font-size: 24px;
+		font-family: $heading-font-family;
+		font-weight: $heading-font-weight;
+	}
+}
+
+.tutor-modal {
+	.tutor-modal-close-o {
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(50%, -50%);
+		cursor: pointer;
+		height: 40px;
+		width: 40px;
+		border: 0;
+		padding: 0;
+		border-radius: 50%;
+		background: #fff;
+		color: $heading-color;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.17);
+		line-height: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.tutor-modal-actions {
+		margin: 30px 0 0;
+		display: flex;
+		justify-content: center;
+
+		button {
+			margin: 5px 10px 0;
+		}
+	}
+}

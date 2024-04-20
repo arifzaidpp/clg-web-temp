@@ -1,0 +1,140 @@
+.dashboard-quiz-attempt-history {
+	td {
+		width: auto;
+	}
+	.col-course-info {
+		width: 470px;
+	}
+
+	.col-correct-answer,
+	.col-incorrect-answer {
+		width: 150px;
+	}
+
+	.col-student {
+		width: 220px;
+	}
+
+	.col-earned-marks {
+		width: 120px;
+	}
+
+	.col-result {
+		width: 120px;
+	}
+
+	.col-detail-link {
+		width: 100px;
+	}
+
+	.course-title {
+		font-size: 15px;
+		line-height: 26px;
+		margin: 0 0 8px;
+
+		a {
+			color: inherit;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+.quiz-attempt-detail-link {
+	color: $primary-color;
+}
+
+.dashboard-quiz-attempt-metas {
+	display: flex;
+	flex-wrap: wrap;
+
+	.meta-item {
+		margin: 0 25px 0 0;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	.meta-name {
+		font-weight: $heading-font-weight;
+		color: #9aa5b3;
+	}
+
+	.meta-value {
+		font-weight: $heading-font-weight;
+		color: $heading-color;
+	}
+}
+
+.prev-btn {
+	color: $text-color;
+
+	span {
+		color: $primary-color;
+	}
+}
+
+.tutor-dashboard-qna-vew-as {
+	.tutor-form-toggle-input {
+		display: none;
+	}
+
+	&.tutor-form-toggle input {
+		~ .tutor-form-toggle-control {
+			width: 38px;
+			height: 22px;
+			background-color: transparent;
+			border: 1px solid $primary-color;
+			margin: 0 7px;
+
+			&:before {
+				top: 2px;
+				background: $primary-color;
+				height: 16px;
+				width: 16px;
+			}
+		}
+
+		&:checked ~ .tutor-form-toggle-control::before {
+			left: 17px;
+		}
+	}
+}
+
+.tutor-dashboard .tutor-dashboard-content .tutor-dashboard-qna-vew-as.current-view-student .tutor-form-toggle-label.tutor-form-toggle-checked {
+	color: $primary-color;
+}
+
+.tutor-dashboard-qna-vew-as.current-view-student .tutor-form-toggle-label.tutor-form-toggle-checked {
+	color: $primary-color;
+}
+
+.tutor-dashboard-qna-vew-as.current-view-instructor .tutor-form-toggle-label.tutor-form-toggle-checked {
+	color: $primary-color;
+}
+
+.tutor-dashboard-qna-vew-as.current-view-instructor .tutor-form-toggle-label.tutor-form-toggle-unchecked {
+	color: $text-color;
+}
+
+.quiz-manual-review-action {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+	overflow: hidden;
+	border-radius: 3px;
+	border: 1px solid $box-separator;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.tutor-quiz-answer-status-correct {
+	td.tutor-bg-gray-10 {
+		background: none !important;
+	}
+}

@@ -1,0 +1,20 @@
+.rtl {
+	.form-input-group.form-input-password .btn-pw-toggle {
+		right: auto;
+		left: 0;
+	}
+
+	.mo-openid-app-icons.mo-openid-app-icons {
+		.mo_btn-social:before {
+			margin: 0 0 0 8px;
+		}
+
+		> p:before {
+			margin: 0 0 0 15px;
+		}
+
+		> p:after {
+			margin: 0 15px 0 0;
+		}
+	}
+}

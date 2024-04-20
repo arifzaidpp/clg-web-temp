@@ -1,0 +1,37 @@
+#adminbarsearch {
+	input {
+		min-height: 0;
+	}
+}
+
+.admin-bar {
+	.headroom {
+		&.headroom--not-top {
+			.page-header-inner {
+				top: 32px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.admin-bar {
+		.headroom {
+			&.headroom--not-top {
+				.page-header-inner {
+					top: 46px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.admin-bar {
+		.headroom.headroom--not-top {
+			.page-header-inner {
+				top: 0;
+			}
+		}
+	}
+}

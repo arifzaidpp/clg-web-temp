@@ -1,0 +1,211 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0)
+    }
+    50% {
+        transform: rotate(179deg)
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+#isw_manager {
+    margin-bottom: 30px
+}
+
+#isw_manager .isw_clear {
+    display: block;
+    width: 100%;
+    clear: both
+}
+
+#isw_manager .isw_fields {
+    margin-bottom: 20px
+}
+
+#isw_manager .isw_fields .isw_add_new_btn.loading {
+    opacity: .6;
+    cursor: wait
+}
+
+#isw_manager .isw_fields .isw_add_new_btn.loading:before {
+    content: "\f463";
+    font-family: dashicons;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+    animation: spin .7s infinite linear;
+    -webkit-animation: spin .7s infinite linear
+}
+
+#isw_manager .isw_items .isw_element .isw_element_content {
+    display: none
+}
+
+#isw_manager .isw_items .isw_element_content > label {
+    display: block;
+    margin-top: 10px
+}
+
+#isw_manager .isw_items .isw_element_content > label:first-child {
+    margin-top: 20px
+}
+
+#isw_manager .isw_items .isw_element_content > label span {
+    display: inline-block;
+    width: 200px;
+    line-height: 28px;
+    vertical-align: top
+}
+
+#isw_manager .isw_items .isw_element_content > label span.isw_checkbox_desc {
+    width: auto;
+    line-height: inherit;
+    vertical-align: middle
+}
+
+#isw_manager .isw_items .isw_element_content > label input[type=text] {
+    width: 300px
+}
+
+#isw_manager .isw_items .isw_element_content > label .wp-picker-input-wrap input {
+    width: auto
+}
+
+#isw_manager .isw_items .isw_element_content > label select, #isw_manager .isw_items .isw_element_content > label textarea {
+    width: 300px
+}
+
+#isw_manager .isw_items .isw_element {
+    display: block;
+    max-width: 840px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 12px 24px;
+    margin-top: 10px;
+    line-height: 24px;
+    border-radius: 3px
+}
+
+#isw_manager .isw_items .isw_element:first-child {
+    margin-top: 0
+}
+
+#isw_manager .isw_items .isw_element .isw_element_heading {
+    line-height: 30px
+}
+
+#isw_manager .isw_items .isw_element .isw_element_heading a {
+    font-size: 24px;
+    text-decoration: none;
+    float: right;
+    margin-left: 10px
+}
+
+#isw_manager .isw_items .isw_element .isw_element_heading a.isw_reorder {
+    cursor: move
+}
+
+#isw_manager .isw_items .isw_element .isw_element_heading a.isw_attribute_title {
+    float: left;
+    font-size: 18px;
+    line-height: 36px;
+    margin-left: 0
+}
+
+#isw_manager .isw_items .isw_element .isw_terms {
+    margin-top: 10px
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_option {
+    display: inline-block;
+    line-height: 28px;
+    margin-right: 6px;
+    margin-top: 1px;
+    vertical-align: top
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_option em {
+    font-size: 12px;
+    display: block
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_term {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_term .isw_option {
+    width: 240px
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_term .isw_option.isw_option_button {
+    width: 120px
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_term .isw_option.isw_option_color {
+    width: 300px
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_term .isw_option.isw_option_plaintext {
+    width: 100%
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_term .isw_option.isw_option_text {
+    width: 400px
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_term .isw_option input {
+    width: 100%
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_term textarea {
+    width: 90%;
+    min-height: 100px
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_term_style {
+    margin-top: 10px;
+    font-size: 10px;
+    text-transform: uppercase
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_term_style .isw_option .wp-picker-container, #isw_manager .isw_items .isw_element .isw_terms .isw_term_style .isw_option > input, #isw_manager .isw_items .isw_element .isw_terms .isw_term_style .isw_option > select {
+    display: block
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_option .wp-picker-holder {
+    position: absolute;
+    z-index: 1
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_option .wp-color-result {
+    margin-bottom: 1px;
+    height: 28px
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_option .wp-color-result:after {
+    line-height: 28px
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_option .wp-picker-default {
+    display: none
+}
+
+#isw_manager .isw_items .isw_element .isw_terms .isw_option .wp-color-picker {
+    line-height: 22px
+}
+
+#isw_manager .isw_items .isw_selectbox {
+    margin-top: 10px
+}
+
+#isw_manager .isw_items .isw_selectbox i {
+    font-size: 20px;
+    color: #0073aa
+}

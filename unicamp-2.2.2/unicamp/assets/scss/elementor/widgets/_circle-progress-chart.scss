@@ -1,0 +1,44 @@
+.tm-circle-progress-chart {
+	.chart-number {
+		margin-bottom: 0;
+	}
+
+	.tm-svg {
+		line-height: 0;
+
+		* {
+			stroke: currentColor;
+		}
+	}
+
+	.chart-wrap {
+		line-height: 0;
+	}
+
+	.chart {
+		position: relative;
+		display: inline-block;
+		width: 214px;
+		height: 214px;
+
+		canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.inner-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.chart-number {
+		font-size: 24px;
+		font-weight: $heading-font-weight;
+		color: #111;
+		margin-bottom: 0;
+	}
+}

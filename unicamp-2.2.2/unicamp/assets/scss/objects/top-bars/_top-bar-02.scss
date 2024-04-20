@@ -1,0 +1,15 @@
+.top-bar-02 {
+	.top-bar-wrap {
+		height: 100%;
+	}
+
+	.top-bar-left {
+		flex-grow: 1;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.top-bar-02 {
+		display: none;
+	}
+}

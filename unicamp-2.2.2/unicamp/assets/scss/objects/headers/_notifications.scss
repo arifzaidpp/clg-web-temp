@@ -1,0 +1,192 @@
+.header-notifications {
+	position: relative;
+	padding: 0 !important;
+
+	.header-notifications-open {
+		position: relative;
+		display: block;
+		padding: 0 10px;
+	}
+
+	.badge {
+		position: absolute;
+		top: -4px;
+		right: 0;
+		padding: 0 4px;
+		min-width: 20px;
+		height: 20px;
+		border-radius: 20px;
+		color: #fff;
+		background: $primary-color;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 20px;
+		text-align: center;
+	}
+
+	&.open {
+		.header-notification-list {
+			visibility: visible;
+			opacity: 1;
+			transform: translate(0, 10px);
+		}
+	}
+}
+
+.header-notification-list {
+	@extend %NormalTransition;
+	position: absolute;
+	top: 100%;
+	right: -27px;
+	width: 370px;
+	max-width: 85vw;
+	max-height: 80vh;
+	overflow: auto;
+	border-radius: 8px;
+	background: $sub-menu-background;
+	border: 1px solid $sub-menu-border;
+	box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+	padding: 26px 20px 14px 30px;
+	transform: translate(0, 30px);
+	opacity: 0;
+	visibility: hidden;
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 100%;
+		right: 35px;
+		width: 0;
+		height: 0;
+	}
+
+	&:before {
+		transform: translateX(1px);
+		border-left: 9px solid transparent;
+		border-right: 9px solid transparent;
+		border-bottom: 11px solid $sub-menu-border;
+		filter: drop-shadow(0 0 30px rgba(0, 0, 0, .12));
+	}
+
+	&:after {
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-bottom: 10px solid $sub-menu-background;
+	}
+}
+
+.unicamp-bp-full-link {
+	font-size: 0 !important;
+}
+
+.notification-list-heading {
+	font-size: 20px;
+	line-height: 1.6;
+	margin: 0 0 22px;
+}
+
+.notification-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	li {
+		position: relative;
+		display: flex;
+		padding: 0 15px 0 0;
+
+		+ li {
+			margin: 17px 0 0;
+		}
+	}
+
+	.notification-status {
+		position: absolute;
+		top: 7px;
+		right: 0;
+		flex-shrink: 0;
+		width: 7px;
+		height: 7px;
+		background: $primary-color;
+		border-radius: 50%;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.unread {
+		.notification-status {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.notification-placeholder {
+		align-items: center;
+
+		.notification-avatar {
+			width: 40px;
+			height: 40px;
+			background: #e2e2e2;
+			border-radius: 50%;
+		}
+
+		.notification-content {
+			height: 26px;
+			width: 100%;
+			border-radius: 5px;
+			background: #f8f8f8;
+		}
+	}
+
+	.notification-avatar {
+		width: 40px;
+		flex-shrink: 0;
+		margin: 0 14px 0 0;
+	}
+
+	.avatar {
+		width: 40px;
+		border-radius: 50%;
+	}
+
+	.notification-content {
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 500;
+		color: #9b9b9b;
+
+		a {
+			color: $heading-color;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.posted {
+		display: block;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 24px;
+		margin: 4px 0 0;
+		color: $text-bit-lighten-color;
+	}
+}
+
+.notification-footer {
+	font-size: 15px;
+	line-height: 26px;
+	font-weight: $heading-font-weight;
+	text-align: center;
+	margin: 19px 0 0;
+
+	a {
+		color: $primary-color;
+
+		i {
+			margin: 0 0 0 5px;
+		}
+	}
+}

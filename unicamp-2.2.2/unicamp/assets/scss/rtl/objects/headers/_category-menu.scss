@@ -1,0 +1,63 @@
+.rtl .header-category-menu {
+	margin: 0 28px 0 25px;
+	padding: 10px 28px 10px 0;
+
+	&:before {
+		left: auto;
+		right: 0;
+	}
+
+	.category-toggle-icon {
+		margin: 0 0 0 15px;
+	}
+
+	.header-category-dropdown {
+		&:after,
+		&:before {
+			left: auto;
+			right: 42px;
+		}
+
+		&:before {
+			transform: translateX(1px);
+		}
+	}
+
+	.header-category-dropdown-wrap {
+		left: auto;
+		right: 0;
+
+		ul {
+			.children {
+				transform: translateX(5px);
+				left: auto;
+				right: 100%;
+			}
+
+			li {
+				> a {
+					.toggle-sub-menu {
+						right: auto;
+						left: 20px;
+
+						&:before {
+							content: '\f104' !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	ul.course-list {
+		.course-thumbnail {
+			margin: 0 0 0 12px;
+		}
+	}
+
+	ul.course-placeholder {
+		.course-thumbnail-placeholder {
+			margin: 0 0 0 12px;
+		}
+	}
+}

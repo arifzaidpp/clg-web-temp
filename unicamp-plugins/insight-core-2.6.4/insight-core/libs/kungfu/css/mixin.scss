@@ -1,0 +1,303 @@
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+   -khtml-#{$property}: #{$value};
+     -moz-#{$property}: #{$value};
+       -o-#{$property}: #{$value};
+      -ms-#{$property}: #{$value};
+          #{$property}: #{$value};
+}
+
+@mixin css3-new-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+     -moz-#{$property}: #{$value};
+       -o-#{$property}: #{$value};
+      -ms-#{$property}: #{$value};
+          #{$property}: #{$value};
+}
+
+@mixin css3-newer-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+     -moz-#{$property}: #{$value};
+       -o-#{$property}: #{$value};
+          #{$property}: #{$value};
+}
+
+@mixin user-select($value : 'none') {
+  @include css3-prefix('user-select', $value);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@mixin background-gradient($startColor: #3c3c3c, $endColor: #999) {
+  background-color: $startColor;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+  background-image: -webkit-linear-gradient(top, $startColor, $endColor);
+  background-image:    -moz-linear-gradient(top, $startColor, $endColor);
+  background-image:     -ms-linear-gradient(top, $startColor, $endColor);
+  background-image:      -o-linear-gradient(top, $startColor, $endColor);
+  background-image:         linear-gradient(top, $startColor, $endColor);
+  filter:            progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$startColor}', endColorStr='#{$endColor}');
+}
+
+@mixin background-gradient-image($url, $startColor: #3c3c3c, $endColor: #999, $left: 0, $top: 0, $repeat: repeat) {
+  background-color: $startColor;
+  background: url($url) $left $top $repeat;
+  background: url($url) $left $top $repeat, -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+  background: url($url) $left $top $repeat, -webkit-linear-gradient(top, $startColor, $endColor);
+  background: url($url) $left $top $repeat,    -moz-linear-gradient(top, $startColor, $endColor);
+  background: url($url) $left $top $repeat,     -ms-linear-gradient(top, $startColor, $endColor);
+  background: url($url) $left $top $repeat,      -o-linear-gradient(top, $startColor, $endColor);
+  background: url($url) $left $top $repeat,         linear-gradient(to bottom, $startColor, $endColor);
+  filter:     progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$startColor}', endColorstr='#{$endColor}',GradientType=0 ), progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$url}');
+}
+
+@mixin background-radial($startColor: #fff, $startPos: 0%, $endColor: #000, $endPos:100%) {
+  background: -moz-radial-gradient(center, ellipse cover, $startColor $startPos, $endColor $endPos);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop($startPos,$startColor), color-stop($endPos,$endColor));
+  background: -webkit-radial-gradient(center, ellipse cover, $startColor $startPos,$endColor $endPos);
+  background: -o-radial-gradient(center, ellipse cover, $startColor $startPos,$endColor $endPos);
+  background: -ms-radial-gradient(center, ellipse cover, $startColor $startPos,$endColor $endPos);
+  background: radial-gradient(ellipse at center, $startColor $startPos,$endColor $endPos);
+  filter:     progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$startColor}', endColorstr='#{$endColor}',GradientType=1 );
+}
+
+@mixin background-size($width: 100%, $height: $width) {
+  @if type-of($width) == 'number' and $height != null {
+    @include css3-prefix('background-size', $width $height);
+  } @else {
+    @include css3-prefix('background-size', $width);
+  }
+}
+
+@mixin background-opacity($color: #000, $opacity: 0.85) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+@mixin border-radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius; 
+  border-radius: $radius; 
+}
+
+@mixin border-radius-separate($topLeftRadius: 5px, $topRightRadius: 5px, $bottomLeftRadius: 5px, $bottomRightRadius: 5px) {
+  -webkit-border-top-left-radius:     $topLeftRadius;
+  -webkit-border-top-right-radius:    $topRightRadius;
+  -webkit-border-bottom-right-radius: $bottomRightRadius;
+  -webkit-border-bottom-left-radius:  $bottomLeftRadius;
+
+  -moz-border-radius-topleft:     $topLeftRadius;
+  -moz-border-radius-topright:    $topRightRadius;
+  -moz-border-radius-bottomright: $bottomRightRadius;
+  -moz-border-radius-bottomleft:  $bottomLeftRadius;
+
+  border-top-left-radius:     $topLeftRadius;
+  border-top-right-radius:    $topRightRadius;
+  border-bottom-right-radius: $bottomRightRadius;
+  border-bottom-left-radius:  $bottomLeftRadius;
+}
+@mixin border-top-left-radius($radius: 5px) {
+  -webkit-border-top-left-radius: $radius;
+  -moz-border-radius-topleft:     $radius;
+  border-top-left-radius:         $radius;
+}
+@mixin border-top-right-radius($radius: 5px) {
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-radius-topright:     $radius;
+  border-top-right-radius:         $radius;
+}
+@mixin border-bottom-left-radius($radius: 5px) {
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomleft:     $radius;
+  border-bottom-left-radius:         $radius;
+}
+@mixin border-bottom-right-radius($radius: 5px) {
+  -webkit-border-bottom-right-radius: $radius;
+  -moz-border-radius-bottomright:     $radius;
+  border-bottom-right-radius:         $radius;
+}
+
+@mixin box($orient: horizontal, $pack: center, $align: center) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+
+  @include css3-prefix('box-orient', $orient);
+  @include css3-prefix('box-pack', $pack);
+  @include css3-prefix('box-align', $align);
+}
+
+@mixin box-rgba($r: 60, $g: 3, $b: 12, $opacity: 0.23, $color: #3c3c3c) {
+  background-color: transparent;
+  background-color: rgba($r, $g, $b, $opacity);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$color}',endColorstr='#{$color}');
+            zoom:   1;
+}
+
+@mixin box-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4), $inset: "") {
+  @if ($inset != "") {
+    @include css3-prefix('box-shadow', $inset $x $y $blur $color);
+  } @else {
+    @include css3-prefix('box-shadow', $x $y $blur $color);
+  }
+}
+
+@mixin box-shadow-none($v: 'none') {
+  @include css3-prefix('box-shadow', $v);
+}
+
+@mixin box-sizing($type: border-box) {
+  @include css3-prefix('box-sizing', $type);
+}
+
+@mixin columns($count: 3, $gap: 10) {
+  @include css3-prefix('column-count', $count);
+  @include css3-prefix('column-gap', $gap);
+}
+
+@mixin double-borders($colorOne: #3c3c3c, $colorTwo: #999, $radius: 0) {
+  border: 1px solid $colorOne;
+
+  @include css3-prefix('box-shadow', 0 0 0 1px $colorTwo);
+
+  @include border-radius( $radius );
+}
+
+@mixin flex($value: 1) {
+  @include css3-prefix('box-flex', $value);
+}
+
+@mixin flip($scaleX: -1) {
+  @include css3-prefix('transform', scaleX($scaleX));
+  filter:            FlipH;
+  -ms-filter:        "FlipH";
+}
+
+@mixin font-face($fontFamily: myFont, $eotFileSrc: 'myFont.eot', $woffFileSrc: 'myFont.woff', $ttfFileSrc: 'myFont.ttf') {
+  font-family: $fontFamily;
+  src: url($eotFileSrc)  format('eot'),
+       url($woffFileSrc) format('woff'),
+       url($ttfFileSrc)  format('truetype');
+}
+
+@mixin opacity($opacity: 0.5) {
+  filter:         alpha(opacity=($opacity * 100));
+  -ms-filter:     "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + ($opacity * 100) + ")";
+  @include css3-prefix('opacity', $opacity);
+}
+
+@mixin outline-radius($radius: 5px) {
+  @include css3-prefix('outline-radius', $radius);
+}
+
+@mixin resize($direction: both) {
+  @include css3-prefix('resize', $direction);
+}
+
+@mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0) {
+  @include css3-prefix('transform', rotate($deg + deg));
+  filter: progid:DXImageTransform.Microsoft.Matrix(
+       M11=#{$m11}, M12=#{$m12}, M21=#{$m21}, M22=#{$m22}, sizingMethod='auto expand');
+    zoom: 1;
+}
+
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4)) {
+  text-shadow: $x $y $blur $color;
+}
+
+@mixin transform($params) {
+  @include css3-prefix('transform', $params);
+}
+
+@mixin transform-style($style: preserve-3d) {
+  @include css3-prefix('transform-style', $style);
+}
+
+@mixin transition($what: all, $length: 1s, $easing: ease-in-out) {
+  @include css3-prefix('transition', $what $length $easing);
+}
+
+@mixin triple-borders($colorOne: #3c3c3c, $colorTwo: #999, $colorThree: #999, $radius: 0) {
+  border: 1px solid $colorOne;
+
+  @include border-radius($radius);
+
+  @include css3-prefix('box-shadow', 0 0 0 1px $colorTwo, 0 0 0 2px $colorThree);
+}
+
+@mixin keyframes($animation-name...) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }  
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($animate) {
+  $max: length($animate);
+  $animations: '';
+
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+  @include css3-new-prefix('animation', $animations);  
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin scale-origin($size) {
+  -moz-transform: scale($size);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale($size);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale($size);
+  -webkit-transform-origin: 0 0;
+  transform: scale($size);
+  transform-origin: 0 0;
+  .ie8 & {
+    zoom: $size;
+  }
+}
+@mixin scale($size) {
+  -moz-transform: scale($size);
+  -o-transform: scale($size);
+  -webkit-transform: scale($size);
+  transform: scale($size);
+  .ie8 & {
+    zoom: $size;
+  }
+}
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$S:     480px;   
+$M:     768px;     
+$L:     960px;     
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+}

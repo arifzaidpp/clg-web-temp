@@ -1,0 +1,46 @@
+.lg-backdrop {
+	z-index: 999998 !important;
+}
+
+.lg-outer {
+	// Fix popup not working on rtl.
+	direction: ltr;
+	z-index: 999999 !important;
+
+	.lg-thumb-item {
+		&.active,
+		&:hover {
+			border-color: $primary-color !important;
+		}
+	}
+}
+
+.lg-progress-bar {
+	.lg-progress {
+		background: $primary-color !important;
+	}
+}
+
+.lg-sub-html {
+	* {
+		color: inherit;
+	}
+}
+
+.lg-actions {
+	.lg-prev,
+	.lg-next {
+		border: 0;
+
+		&:before,
+		&:after {
+			color: #fff;
+		}
+	}
+}
+
+.lg-sub-html h4 {
+	font-size: 14px;
+	font-family: $body-font-family;
+	font-weight: $body-font-weight-medium;
+}

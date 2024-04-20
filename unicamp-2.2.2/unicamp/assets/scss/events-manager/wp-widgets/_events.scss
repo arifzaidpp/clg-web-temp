@@ -1,0 +1,78 @@
+.unicamp-wp-widget-events {
+	.event-item {
+		+ .event-item {
+			border-top: 1px solid $box-separator;
+			padding-top: 20px;
+			margin-top: 13px;
+		}
+	}
+
+	.unicamp-box {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.event-thumbnail {
+		@include NormalRounded();
+		position: relative;
+		flex-shrink: 0;
+		overflow: hidden;
+		margin: 0 17px 0 0;
+		max-width: 45%;
+	}
+
+	.event-title {
+		font-size: 15px;
+		font-weight: $heading-font-weight-thin;
+		line-height: 26px;
+		margin: 0;
+	}
+
+	.event-category {
+		font-size: 11px;
+		font-weight: $heading-font-weight-thin;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		color: $text-lighten-color;
+		margin: 0 0 5px;
+
+		a {
+			color: inherit;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+
+	.event-date {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+
+		span {
+			display: inline-block;
+			background: $primary-color;
+			color: #fff;
+			font-size: 11px;
+			font-weight: $heading-font-weight-thin;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: 22px;
+			padding: 1px 8px;
+			min-width: 64px;
+		}
+	}
+
+	.event-time {
+		font-size: 12px;
+		text-transform: uppercase;
+		margin: 3px 0 0;
+	}
+
+	.event-price {
+		margin: 0 0 5px;
+	}
+}

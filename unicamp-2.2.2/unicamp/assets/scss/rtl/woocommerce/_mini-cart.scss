@@ -1,0 +1,41 @@
+.rtl {
+	.mini-cart {
+		.widget_shopping_cart_content {
+			right: auto;
+			left: 0;
+
+			li {
+				> a:not(.remove) {
+					padding-right: 0;
+					padding-left: 20px;
+				}
+			}
+
+			.total {
+				.amount {
+					float: left;
+				}
+			}
+		}
+	}
+
+	.cart_list.product_list_widget {
+		li {
+			padding: 0 0 0 20px;
+
+			.remove {
+				right: auto;
+				left: 0;
+			}
+
+			.product-thumbnail {
+				margin: 0 0 0 10px;
+			}
+
+			img {
+				float: right;
+				margin: 0 0 0 20px;
+			}
+		}
+	}
+}

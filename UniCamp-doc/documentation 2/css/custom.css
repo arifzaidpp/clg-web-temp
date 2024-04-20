@@ -1,0 +1,16 @@
+.markdown-body {
+    max-width: 95%;
+    padding: 30px 15px 40px;
+    color: #34495e;
+}
+
+@media (min-width: 960px) {
+    .markdown-body {
+        max-width: 70%;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400 !important;
+    color: #34495e;
+}

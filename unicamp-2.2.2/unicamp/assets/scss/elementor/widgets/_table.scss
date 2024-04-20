@@ -1,0 +1,42 @@
+.tm-table {
+	overflow-x: auto;
+
+	table {
+		margin: 0;
+		border-collapse: separate;
+	}
+
+	caption {
+		color: $heading-color;
+	}
+
+	&.style-01 {
+
+
+		th {
+			font-size: 20px;
+			font-weight: 600;
+			color: #b2b2b2;
+		}
+
+		td, th {
+			text-align: left;
+			border: 0;
+			padding: 36px 10px 36px;
+		}
+
+		td {
+			color: $heading-color;
+		}
+
+		tr {
+			th, td {
+				border-bottom: 1px solid #eee;
+			}
+
+			&:nth-child(2n) td {
+				background: none;
+			}
+		}
+	}
+}

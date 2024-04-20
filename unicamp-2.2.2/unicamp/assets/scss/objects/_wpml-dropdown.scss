@@ -1,0 +1,152 @@
+.switcher-language-wrapper {
+	.wpml-ls,
+	.wpml-ls > ul,
+	.wpml-ls > ul > li {
+		height: 100%;
+	}
+
+	.wpml-ls > ul > li {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	.wpml-ls-legacy-dropdown {
+		.wpml-ls-flag {
+			width: 20px;
+			height: auto;
+			vertical-align: middle;
+		}
+	}
+
+	.wpml-ls {
+		width: auto;
+
+		> ul {
+			position: relative;
+			padding: 0;
+			margin: 0 !important;
+			list-style-type: none;
+		}
+
+		.wpml-ls-slot-shortcode_actions {
+			&:hover {
+				.wpml-ls-sub-menu {
+					visibility: visible !important;
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+
+		.wpml-ls-item-toggle {
+			position: relative;
+			background: none !important;
+			border: 0;
+			line-height: 1;
+			padding: 10px 15px 10px 10px;
+
+			&:after {
+				@extend %FontAwesomeLight;
+				content: '\f107';
+				font-size: 14px;
+				border: 0;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translate(0, -50%);
+			}
+		}
+
+		.wpml-ls-native {
+			position: relative;
+			vertical-align: middle;
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 24px;
+			text-transform: none;
+			letter-spacing: 0;
+		}
+
+		.wpml-ls-flag {
+			+ span {
+				margin-left: 10px;
+			}
+		}
+
+		.wpml-ls-sub-menu {
+			@extend %NormalTransition;
+			@include NormalRounded();
+			min-width: 200px;
+			position: absolute;
+			top: 100%;
+			right: 0;
+			left: 0;
+			padding: 13px 0 16px;
+			margin: 0;
+			list-style-type: none;
+			z-index: 102;
+			background: $box-white-background;
+			box-shadow: 0 0 37px rgba(0, 0, 0, .07);
+			border: 1px solid $box-white-border;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(20px);
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 100%;
+				left: 42px;
+				width: 0;
+				height: 0;
+			}
+
+			&:before {
+				transform: translateX(-1px);
+				border-left: 9px solid transparent;
+				border-right: 9px solid transparent;
+				border-bottom: 11px solid $box-white-border;
+				filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.12));
+			}
+
+			&:after {
+				border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+				border-bottom: 10px solid $box-white-background;
+			}
+
+			&.hover-back {
+				right: 0;
+				left: auto;
+			}
+
+			li {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			a {
+				display: block;
+				text-decoration: none;
+				padding: 6px 30px;
+				border: 0;
+				background: none !important;
+				color: $text-color;
+				line-height: 1;
+				text-transform: uppercase;
+
+				&:hover {
+					color: $primary-color;
+				}
+
+				img {
+					width: 18px;
+					height: auto;
+				}
+			}
+		}
+	}
+}

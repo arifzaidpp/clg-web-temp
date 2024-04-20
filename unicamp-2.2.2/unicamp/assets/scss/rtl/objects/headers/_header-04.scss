@@ -1,0 +1,10 @@
+.rtl .header-04 {
+	.header-right {
+		padding: 0 30px 0 0;
+
+		&:before {
+			left: auto;
+			right: 5px;
+		}
+	}
+}

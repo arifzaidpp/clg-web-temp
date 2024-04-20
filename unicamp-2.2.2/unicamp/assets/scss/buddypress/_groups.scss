@@ -1,0 +1,444 @@
+body.buddypress.groups {
+	background: #f8f8f8;
+
+	.page-content {
+		margin-top: 50px;
+
+		> .container {
+			max-width: 1200px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	.bp-subhead {
+		text-align: center;
+		font-size: 40px;
+		line-height: 1.4;
+		margin: 20px 0 58px;
+	}
+}
+
+.nav-and-filters-wrap {
+	background: $box-white-background;
+	border: 1px solid #efefef;
+	border-radius: 0 !important;
+	padding: 15px 20px 0;
+	margin: 0 0 24px;
+
+	.filters-wrap {
+		display: flex;
+		align-items: center;
+
+		.title {
+			font-size: 20px;
+			line-height: 1.6;
+			flex-grow: 1;
+			margin: 0 0 8px;
+		}
+	}
+
+	.subnav-filters {
+		background: none;
+		border-radius: 0;
+		box-shadow: none;
+		padding: 0;
+		border: 0;
+		margin: 0 0 8px;
+		display: flex;
+		align-items: center;
+
+		> div {
+			margin: 0 0 0 10px;
+		}
+
+		select {
+			min-height: 48px;
+			padding: 3px 25px 3px 15px;
+		}
+	}
+
+	.bp-dir-search-form {
+		outline: 0;
+	}
+
+	.dir-search {
+		input {
+			width: 200px;
+			min-height: 48px;
+			padding: 3px 30px 3px 15px;
+		}
+
+		button {
+			height: 48px;
+			line-height: 46px;
+		}
+	}
+
+	.main-navs {
+		margin: 0;
+		padding: 0 !important;
+	}
+
+	.groups-nav {
+		li {
+			padding: 0 0 12px !important;
+		}
+	}
+}
+
+.groups.group-create {
+	.buddypress-wrap {
+		max-width: 970px;
+		margin: 0 auto;
+	}
+
+	.bp-navs {
+		.subnav {
+			width: 100%;
+		}
+
+		.button-tabs {
+			display: flex;
+			flex-wrap: wrap;
+			text-align: center;
+
+			li {
+				flex-grow: 1;
+			}
+		}
+	}
+
+	.subnav-wrap {
+		box-shadow: none;
+		padding: 0;
+	}
+
+	.unicamp-bp-box {
+		margin: 30px 0 0;
+		padding: 38px 30px 30px;
+	}
+
+	#previous-next {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		input {
+			background: #f5f5f5;
+			border-color: #f5f5f5;
+			color: $primary-color;
+			margin: 10px 10px 0 0;
+
+			&:hover {
+				background: $primary-color;
+				border-color: $primary-color;
+				color: #fff;
+			}
+		}
+	}
+
+	.group-settings-selections {
+		fieldset {
+			border: 0;
+			border-radius: 0;
+			margin: 0;
+			padding: 0;
+
+			legend {
+				font-size: 16px;
+				font-weight: $heading-font-weight;
+				line-height: 28px;
+				width: 100%;
+				padding: 0 0 5px;
+				margin: 0 0 14px;
+				border-bottom: 1px solid $box-separator;
+			}
+
+			label {
+				color: $text-color;
+				margin: 0 0 10px;
+			}
+
+			p {
+				font-size: 13px;
+				line-height: 26px;
+				outline: 0;
+			}
+
+			ul {
+				padding: 0;
+				margin: 0 0 17px 19px;
+				font-size: 13px;
+				line-height: 26px;
+
+				li {
+					list-style-type: none;
+					position: relative;
+					padding: 0 0 0 15px;
+					margin: 0;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: 11px;
+						left: 0;
+						width: 4px;
+						height: 4px;
+						border-radius: 50%;
+						background: $text-lighten-color;
+					}
+				}
+			}
+		}
+	}
+
+	.standard-form {
+		.main-column {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			font-size: 13px;
+			line-height: 24px;
+			min-height: 150px;
+
+			p {
+				margin: 0 0 5px;
+			}
+		}
+	}
+
+	&.group-details {
+		.unicamp-bp-box {
+			padding-bottom: 50px;
+		}
+	}
+
+	&.group-avatar {
+		.left-menu {
+			img {
+				width: 150px;
+			}
+		}
+
+		#previous-next {
+			margin: 40px 0 0;
+		}
+	}
+
+	&.group-cover-image {
+		#header-cover-image {
+			border-radius: 0;
+			background: #e2e2e2;
+			height: 190px !important;
+			margin: 0 0 20px !important;
+		}
+
+		#previous-next {
+			margin: 30px 0 0;
+		}
+	}
+
+	&.group-invites {
+		.bp-screen-title {
+			margin: 0;
+		}
+
+		.bp-navs.bp-invites-nav {
+			li {
+				padding: 4px 0 8px;
+			}
+		}
+
+		.bp-invites-feedback {
+			.bp-feedback {
+				margin: 0 0 20px;
+			}
+		}
+	}
+
+	.group-invites-column {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+
+		> * {
+			padding: 0 15px;
+		}
+
+		.members {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+
+	.bp-invites-search-form {
+		margin: 0 0 20px;
+	}
+
+	form[data-bp-search].bp-invites-search-form {
+		input {
+			min-height: 52px;
+		}
+
+		button {
+			height: 52px;
+			width: 52px;
+			line-height: 50px;
+		}
+	}
+
+	&.group-course-settings {
+		.tutor-bp-group-activities {
+			label {
+				color: $text-color;
+			}
+		}
+	}
+}
+
+.group-cover-image-instruction {
+	font-size: 13px;
+}
+
+#group-invites-container {
+	.bp-navs {
+		border: 0;
+	}
+
+	.subnav-filters {
+		border: 0;
+	}
+}
+
+.members.bp-invites-content .item-list {
+	margin: 0;
+	padding: 20px 19px;
+	border: 1px solid $box-separator;
+	border-radius: 8px;
+	display: grid;
+	grid-gap: 4px 60px;
+
+	&:before,
+	&:after {
+		display: none;
+	}
+
+	li {
+		@extend %NormalTransition;
+		min-width: 0;
+		display: flex;
+		align-items: center;
+		border-radius: 5px;
+		padding: 8px 10px;
+
+		&.selected {
+			background: #f8f8f8;
+
+			.invite-button .icons:before {
+				content: '\f057';
+			}
+		}
+	}
+
+	.item {
+		flex-grow: 1;
+	}
+
+	.item-avatar {
+		width: 56px;
+		height: 56px;
+		flex-shrink: 0;
+		margin: 0 15px 0 0;
+
+		img {
+			width: 100%;
+			border-radius: 50%;
+		}
+	}
+
+	.list-title {
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: $heading-font-weight;
+		color: $heading-color;
+	}
+
+	.action {
+		flex-shrink: 0;
+	}
+
+	.button {
+		background: none;
+		border: 0;
+		color: #bfc5d0;
+		font-size: 24px;
+		padding: 0;
+		height: auto;
+		line-height: 1;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	.invite-button {
+		.icons {
+			@extend %FontAwesomeLight;
+
+			&:before {
+				content: '\f055';
+			}
+		}
+	}
+}
+
+#group-members-list-table {
+	.avatar {
+		margin: 0 20px 0 0;
+		border-radius: 50%;
+	}
+
+	.group-member {
+		a {
+			font-size: 15px;
+			font-weight: $heading-font-weight;
+			color: $heading-color;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.members.bp-invites-content {
+		.item-list {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.groups {
+		&.group-create {
+			.group-invites-column {
+				> * {
+					flex: 0 0 50%;
+					max-width: 50%;
+				}
+			}
+
+			.unicamp-bp-box {
+				padding-left: 70px;
+				padding-right: 70px;
+			}
+
+			.standard-form {
+				.left-menu {
+					float: left;
+				}
+
+				.main-column {
+					margin: 0 0 0 180px;
+				}
+			}
+		}
+	}
+}

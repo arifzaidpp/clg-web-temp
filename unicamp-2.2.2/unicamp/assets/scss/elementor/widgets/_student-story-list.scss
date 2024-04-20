@@ -1,0 +1,228 @@
+.unicamp-student-story-list {
+	display: flex;
+
+	> div {
+		flex: 1 0 0;
+	}
+
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, #fff 30%, rgba(255, 255, 255, 1) 100%);
+	padding: 54px 0;
+
+	.student-story-image-list {
+		position: relative;
+		overflow: hidden;
+		min-height: 400px;
+		height: 100%;
+		max-width: 640px;
+		margin: 0 30px 0 0;
+	}
+
+	.student-story-image-item {
+		@extend %NormalTransition;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			transition: all 1s;
+			transform: scale(.9, .9);
+		}
+
+		&.active {
+			z-index: 1;
+			opacity: 1;
+
+			img {
+				transform: scale(1, 1);
+			}
+		}
+	}
+
+	.student-story-list {
+		position: relative;
+		z-index: 1;
+		max-width: 630px;
+		margin: 0 30px 0 0;
+	}
+
+	.post-item {
+		display: flex;
+		align-items: flex-start;
+		border-bottom: 1px solid #eee;
+		padding: 30px 0;
+
+		&:last-of-type {
+			border: 0;
+		}
+
+		&.active {
+			.post-count {
+				color: $primary-color;
+
+				&:before {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+
+			.post-title {
+				color: $heading-color;
+			}
+
+			.student-name {
+				color: $heading-color;
+			}
+		}
+	}
+
+	.post-title {
+		@extend %NormalTransition;
+		font-size: 24px;
+		font-weight: $heading-font-weight-thin;
+		line-height: 1.5;
+		color: $text-color;
+		margin: 0;
+	}
+
+	.post-count {
+		@extend %NormalTransition;
+		flex-shrink: 0;
+		position: relative;
+		font-family: $heading-font-family;
+		font-weight: $heading-font-weight;
+		font-size: 48px;
+		line-height: 1;
+		color: #ccc;
+		min-width: 60px;
+		margin: 0 20px 0 0;
+		padding: 5px 0 0;
+
+		&:before {
+			@extend %NormalTransition;
+			content: '';
+			position: absolute;
+			top: 23px;
+			right: 100%;
+			width: 80px;
+			height: 2px;
+			background: $primary-color;
+			transform: translateX(-30px);
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	.post-meta {
+		font-size: 14px;
+		overflow: hidden;
+		margin: 7px 0 0;
+
+		.meta-list {
+			--gap: 26px;
+			--separator: 18px;
+			display: flex;
+			flex-wrap: wrap;
+			line-height: 26px;
+			margin: 0 calc(-1 * var(--gap));
+		}
+
+		.meta-item {
+			padding: 0 var(--gap);
+			margin: 0;
+
+			+ .meta-item {
+				position: relative;
+
+				&:before {
+					content: '';
+					position: absolute;
+					top: 12px;
+					left: calc(var(--separator) / -2);
+					width: var(--separator);
+					height: 1px;
+					background: #ccc;
+				}
+			}
+		}
+	}
+
+	.student-name {
+		@extend %NormalTransition;
+		font-weight: 500;
+	}
+
+	.box-footer {
+		font-size: 0;
+		line-height: 1;
+		text-align: center;
+		padding: 5px 0 0;
+	}
+
+	.btn-view-more {
+		display: inline-block;
+		font-size: 30px;
+		line-height: 1;
+		color: $primary-color;
+		height: 52px;
+		min-width: 52px;
+	}
+}
+
+@include elementor-breakpoint-down(md) {
+	.unicamp-student-story-list {
+		padding: 35px 0;
+
+		.post-item {
+			padding: 20px 0;
+		}
+
+		.post-title {
+			font-size: 20px;
+		}
+
+		.post-count {
+			font-size: 40px;
+			min-width: 45px;
+		}
+	}
+}
+
+@include elementor-breakpoint-down(sm) {
+	.unicamp-student-story-list {
+		display: block;
+		background: #fff;
+		padding: 25px 20px 0;
+
+		.student-story-image-list {
+			margin: 0 0 10px;
+			min-height: 370px;
+		}
+
+		.student-story-list {
+			margin: 0;
+		}
+
+		.post-title {
+			font-size: 16px;
+		}
+
+		.post-count {
+			font-size: 32px;
+			min-width: 35px;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.unicamp-student-story-list {
+		.student-story-image-list {
+			min-height: 220px;
+		}
+	}
+}

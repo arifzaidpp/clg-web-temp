@@ -1,0 +1,16 @@
+.notice.elementor-message,
+.rs-update-notice-wrap {
+	display: none;
+}
+
+.wp-list-table.plugins {
+	#revslider-update {
+		.update-message {
+			display: none;
+		}
+	}
+}
+
+.notice.wpc-notice {
+	display: none;
+}

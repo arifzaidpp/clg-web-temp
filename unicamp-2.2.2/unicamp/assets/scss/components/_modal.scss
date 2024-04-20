@@ -1,0 +1,212 @@
+.unicamp-modal {
+	--modal-rounded: 5px;
+	--modal-width: 500px;
+	--modal-spacing: 2rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 100001;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include LightCloseCursor();
+
+	&.open {
+		@extend %NormalTransition;
+		opacity: 1;
+		visibility: visible;
+
+		.modal-content {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.modal-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: #000;
+		opacity: .5;
+	}
+
+	.button-close-modal {
+		@extend %FontAwesomeLight;
+		@extend %NormalTransition;
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 20px;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 50%;
+		background: #fff;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.17);
+		transform: translate(50%, -50%);
+		cursor: pointer;
+		text-align: center;
+		color: $heading-color;
+		z-index: 1;
+
+		&:before {
+			content: '\f00d';
+		}
+
+		&:hover {
+			background: $heading-color;
+			color: #fff;
+		}
+	}
+
+	.modal-content {
+		@extend %NormalTransition;
+		position: relative;
+		opacity: 0;
+		visibility: hidden;
+		width: var(--modal-width);
+		max-width: calc(100vw - 50px);
+		cursor: auto;
+	}
+
+	.modal-content-header {
+		position: relative;
+		text-align: center;
+		margin: 0 0 19px;
+	}
+
+	.modal-title {
+		position: relative;
+		z-index: 1;
+		font-size: 32px;
+		line-height: 1.5;
+		margin: 0;
+	}
+
+	.modal-description {
+		position: relative;
+		z-index: 1;
+		font-size: 15px;
+		line-height: 26px;
+		margin: 8px 0 0;
+	}
+
+	.modal-content-wrap {
+		position: relative;
+		overflow-y: auto;
+		border-radius: var(--modal-rounded);
+		background: $box-white-background;
+		max-height: calc(100vh - 60px);
+
+		.handheld & {
+			overflow-y: scroll;
+		}
+	}
+
+	.modal-content-inner {
+		padding: var(--modal-spacing);
+	}
+
+	.form-group {
+		margin-bottom: 15px;
+	}
+
+	.form-label {
+		display: none;
+	}
+
+	.form-label-checkbox {
+		display: block;
+
+		input[type='checkbox'] {
+			margin: 0 8px 0 2px;
+		}
+	}
+
+	.form-submit-wrap {
+		margin: 19px 0 18px;
+	}
+
+	.form-submit {
+		margin: 30px 0 0;
+		width: 100%;
+	}
+
+	.form-description {
+		margin: 0 0 7px;
+	}
+
+	.forgot-password {
+		font-size: 15px;
+		padding-bottom: 2px;
+	}
+
+	.form-response-messages {
+		display: none;
+		margin-bottom: 20px;
+		margin-top: 20px;
+
+		&.error {
+			color: $error-color;
+		}
+
+		&.success {
+			color: $success-color;
+		}
+	}
+}
+
+.form-input-group {
+	position: relative;
+
+	&.form-input-password {
+		.btn-pw-toggle {
+			@extend %FontAwesomeRegular;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: auto;
+			background: none !important;
+			box-shadow: none !important;
+			padding: 0 15px !important;
+			border: 0;
+			font-size: 16px;
+			color: $text-color;
+
+			&:hover {
+				color: $heading-color;
+			}
+
+			&:before {
+				content: '\f06e';
+			}
+		}
+
+		&.show-pw {
+			.btn-pw-toggle {
+				&:before {
+					content: '\f070';
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.unicamp-modal {
+		--modal-spacing: 2rem 20px;
+		.modal-content-header {
+			margin: 0 0 20px;
+		}
+
+		.modal-title {
+			font-size: 22px;
+		}
+	}
+}

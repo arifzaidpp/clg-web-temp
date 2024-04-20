@@ -1,0 +1,70 @@
+.mfp-bg.mfp-bg {
+	background: #000;
+	opacity: .4;
+	z-index: 100000 !important;
+}
+
+.mfp-wrap.mfp-wrap {
+	@extend %LightCloseCursor;
+	z-index: 100001 !important;
+}
+
+.mfp-inline-holder {
+	.mfp-content {
+		@extend %LightCloseCursor;
+	}
+}
+
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	transition: all 0.15s ease-out;
+}
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: .5;
+}
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	transition: all 0.15s ease-out;
+}
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+.mfp-close.mfp-close {
+	@extend %FontAwesomeLightImportant;
+	background: none !important;
+	border: 0 !important;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	transform: translateY(-100%);
+	cursor: pointer;
+	text-align: center;
+	color: #fff !important;
+	font-size: 0;
+	opacity: 1;
+
+	&:before {
+		font-size: 24px;
+		content: '\f00d';
+	}
+}

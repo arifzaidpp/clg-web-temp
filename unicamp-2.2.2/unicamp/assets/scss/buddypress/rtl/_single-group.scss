@@ -1,0 +1,22 @@
+.entry-group-status {
+	margin: 0 0 0 11px;
+
+	&:before {
+		margin: 0 0 0 8px;
+	}
+}
+
+.entry-group-activity {
+	padding: 0 13px 0 0;
+
+	&:before {
+		left: auto;
+		right: 0;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.groups.single-item #buddypress #item-header-cover-image #item-header-avatar {
+		padding: 0 20px 0 0;
+	}
+}
